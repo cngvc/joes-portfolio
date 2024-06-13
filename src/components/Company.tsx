@@ -7,7 +7,7 @@ const Company: React.FC<{
   company: string;
   url?: string;
   role?: string;
-  job: string;
+  job: string[];
   description: string;
   tech: string[];
 }> = ({ time, company, url, role, description, job, tech }) => {
@@ -30,13 +30,14 @@ const Company: React.FC<{
               </span>
             </a>
             <div
-              className="t5 text-white/60 mb-4"
+              className="t5 text-white/80 mb-4"
               dangerouslySetInnerHTML={{ __html: description }}
             />
-            <div
-              className="t5 text-white/60 mb-4"
-              dangerouslySetInnerHTML={{ __html: job }}
-            />
+            {job.map((e, index) => (
+              <div key={index} className="t5 text-white/80 mb-4">
+                {e}
+              </div>
+            ))}
             <div className="flex flex-wrap gap-2">
               {tech.map((e, index) => (
                 <div

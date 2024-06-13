@@ -23,16 +23,18 @@ const Layout: React.FC<{ children: ReactNode }> = ({ children }) => {
 
   return (
     <RootLayout>
-      <main className="bg-primary relative">
-        <LoadingBar
-          color="#ECAA43"
-          progress={pagePercent}
-          shadow={false}
-          waitingTime={10000000}
-          loaderSpeed={0}
-        />
-        <div className="min-h-screen max-w-screen-xl w-full flex flex-col mx-auto px-2 sm:px-6 md:px-12 lg:px-24 py-12 md:py-20 lg:py-0">
-          {children}
+      <main className="relative bg-pane">
+        <div className="bg-pane-html">
+          <LoadingBar
+            color="#ECAA43"
+            progress={pagePercent}
+            shadow={false}
+            waitingTime={10000000}
+            loaderSpeed={0}
+          />
+          <div className="min-h-screen max-w-screen-xl w-full flex flex-col mx-auto px-2 sm:px-6 md:px-12 lg:px-24 py-12 md:py-20 lg:py-0">
+            {children}
+          </div>
         </div>
       </main>
     </RootLayout>

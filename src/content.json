@@ -1,113 +1,181 @@
 {
-  "name": "Joe",
-  "role": "Full-Stack <span class='text-secondary'>Developer</span>",
-  "bio": "I am a developer with 5+ years of experience building and deploying scalable web and mobile applications. I also have 1+ year of experience in the blockchain field.",
-  "about": "Hello, My name is Cong. You can call me <span class='text-secondary font-semibold'>Joe</span>. <br/>I started as a mobile developer using React Native at the end of 2017. Now I can build a system from scratch, maintain and update it continuously.<br/>I've also been lucky enough to work on several blockchain projects, so I can write smart-contracts and interact with them on networks in a react-env.",
+  "name": "Cong <span class='text-secondary'>\"Joe\"</span> Vu",
+  "role": "<span class='text-secondary'>Full-Stack</span> Developer",
+  "skills": "React | Node | React Native",
+  "bio": "I am a developer with over five years of experience in building and deploying scalable web and mobile applications. Additionally, I have more than one year of experience in the blockchain field.",
+  "about": "Hello, my name is Cong, but you can call me <span class='text-secondary font-semibold'>Joe</span>.<br/>I began my career as a mobile developer using React Native. Over time, I have developed the capability to build systems from scratch and continuously maintain and update them.<br/>Additionally, I have had the opportunity to work on several blockchain projects, allowing me to write smart contracts and interact with them on networks within a React environment. Due to privacy policies, I cannot list these blockchain projects here.",
   "companies": [
     {
       "time": "Feb 2023 - Apr 2024",
       "company": "Freelance Full-Stack Developer",
-      "description": "As a Freelance Full-Stack Developer, I worked for Vietnam, and US clients, always looking for new opportunities to develop myself.",
-      "job": "Familiar with time-tracking software such as HubStaff with high activity (>75%) and a flexible work schedule.<br/>Developed and maintained blockchain systems, including the creation of smart contracts and managed them on both testnet and mainnet environments. I've also taken the initiative to build a presale website and an accompanying admin dashboard.",
-      "tech": ["Node", "Docker", "AWS", "Solidity", "React", "Next"]
+      "description": "As a Freelance Full-Stack Developer, I have worked with clients from Vietnam and the United States, always seeking new opportunities for professional growth.",
+      "job": [
+        "I am proficient in using time-tracking software such as HubStaff, maintaining high activity levels (>75%) and adapting to flexible work schedules. My experience includes developing and maintaining blockchain systems, creating and managing smart contracts on both testnet and mainnet environments. Additionally, I have taken the initiative to build a presale website and an accompanying admin dashboard.",
+        "I have worked on projects involving purchases via smart contracts as well as projects utilizing third-party services, and managed user tokens with a Node.js server. Furthermore, I have successfully managed multiple projects simultaneously while leading a team of 2-3 people."
+      ],
+      "tech": ["Node", "Solidity", "React", "Next", "Vercel", ".Net Core"]
     },
     {
       "time": "Jul 2019 - Feb 2023",
       "company": "Bright Software Solution",
       "url": "https://www.brightsoftsolution.com/",
       "role": "Full-Stack Developer",
-      "description": "At Bright Software Solution, I worked for Swedish, Indian, and European clients, focusing on new technology and being flexible in my work. Some of my key responsibilities and accomplishments include:",
-      "job": "Developed and maintained a mobile application for teachers to manage students, classes, and CMS to manage employees, sessions, etc. Also in the field of education, I've developed web and mobile applications to help students and teachers interact through video calls and real-time features.",
-      "tech": ["Docker", "Grails", ".NET Core", "React Native", "React", "Vue"]
-    },
-    {
-      "time": "May - Sep 2021",
-      "company": "@PrismTech Inc. (Client of Bright Software Solution)",
-      "url": "https://prismtechinc.io/",
-      "role": "Front-End Developer (Remote)",
-      "description": "During my time at Bright Software Solution, I worked <span class='text-white'>remotely</span> as a Front-End Developer at PrismTech for US clients and their team members in Vietnam.",
-      "job": "Cooperated with the design team to create a clean and responsive UI, maintained a web application for managing event promotions for schools and communities. Moreover, I've participated in the code review process and provided feedback to team members to ensure code quality and consistency.",
-      "tech": ["Django", "React"]
-    },
-    {
-      "time": "Jun - Oct 2020",
-      "company": "@Comartek (Client of Bright Software Solution)",
-      "url": "https://comartek.vn/",
-      "role": "Full-Stack Developer (Onsite)",
-      "description": "During my time at Bright Software Solution, I worked <span class='text-white'>onsite</span> as a Full-Stack Developer at Comartek for US clients and their team members in Vietnam.",
-      "job": "Developed a mobile application and an admin site for sales, introducing products at stores.",
-      "tech": [".NET Core", "React Native"]
+      "description": "At Bright Software Solution, I worked with clients from Sweden, India, and various European countries, focusing on new technologies and maintaining flexibility in my work. Some of my key responsibilities and accomplishments include:",
+      "job": [
+        "Developed and maintained a mobile application for teachers to manage students, classes, and a CMS to manage employees and sessions.",
+        "Created web and mobile applications in the education sector to facilitate interaction between students and teachers through video calls and real-time features.",
+        "Participated in the code review process, providing feedback to ensure code quality and consistency.",
+        "Collaborated with the design team from the client side to create a clean and responsive UI. Additionally, I maintained a web application for managing event promotions for schools and communities. Furthermore, I actively participated in the code review process, offering feedback to team members to ensure code quality and consistency.",
+        "Sent to work onsite at partner companies for about six months, which yielded good results."
+      ],
+      "tech": ["Grails", ".NET Core", "React Native", "React", "Vue"]
     },
     {
       "time": "Mar 2018 - May 2019",
       "company": "Rabiloo Co., Ltd",
       "url": "https://rabiloo.com/en",
       "role": "Mobile Developer",
-      "description": "At Rabiloo, I worked for Japanese clients. During my time here, I:",
-      "job": "Developed a mobile application to book cleaners including payments, chat, and map.<br/>Received recognition as one of the Top 5 new employees of the year in 2018.",
-      "tech": [".NET Core", "React Native"]
+      "description": "During my tenure at Rabiloo, I served Japanese clients and undertook the following responsibilities:",
+      "job": [
+        "Developed a mobile application facilitating cleaner bookings, incorporating features such as payments, chat functionality, and map integration.",
+        "Worked closely with the test and design teams daily to ensure high-quality deliverables.",
+        "Received recognition as one of the Top 5 new employees of the year in 2018."
+      ],
+      "tech": ["Node", "React Native"]
     },
     {
       "time": "Aug 2017 - Mar 2018",
       "company": "KEETOOL",
       "url": "https://www.facebook.com/keetool/",
       "role": "Internship Mobile Developer",
-      "description": "Developed internal projects of the company. As my first company, I've learned a lot, I:",
-      "job": "Built and maintained mobile application for managing employees, classes, sessions, check-in, and check-out using Wi-Fi connection. Participated in the process of releasing the application to the store.",
-      "tech": ["React Native"]
+      "description": "During my time at my first company, I developed internal projects, contributing significantly to my learning and growth. Specifically, I:",
+      "job": [
+        "Built and maintained a mobile application designed for managing employees, classes, sessions, check-ins, and check-outs utilizing Wi-Fi connections.",
+        "Actively participated in the process of releasing the application to the store, gaining valuable experience in the deployment and distribution of mobile applications.",
+        "Participated in the company's design and design mindset courses to improve my knowledge of user experience."
+      ],
+      "tech": ["React Native", "Adobe Xd"]
     }
   ],
   "projects": [
     {
+      "image": "",
+      "url": "",
+      "title": "Blockchain Project (ICO Token)",
+      "composition": {
+        "size": "2 members",
+        "role": "Comprised myself as the main developer and one main designer"
+      },
+      "role": [
+        "Developed essential project components, including a landing page, client dashboard, and admin dashboard using React. Additionally, a Node.js server managed backend operations."
+      ],
+      "description": [
+        "Phase 1 - Smart Contract Integration for Presale Purchases: In this phase, I orchestrated the implementation of smart contracts to facilitate presale token purchases.",
+        "Phase 2 - Transition to Third-Party Service: We integrated third-party services to automate token transactions, enhancing efficiency, scalability, and user experience. Specifically, we enabled automatic asset transfers to the client's wallet, streamlining the process and ensuring seamless management of digital assets.",
+        "In short, we utilized smart-contracts and third-party services to facilitate user participation in the presale, as well as to manage their assets, addresses, and accounts efficiently."
+      ],
+      "tech": ["React", "Node", "Solidity"]
+    },
+    {
       "image": "assets/grapeseed.png",
       "url": "https://apps.apple.com/app/grapeseed-connect/id1638056937",
       "title": "GrapeSEED Connect",
-      "description": "Application for learning English online, focuses on the interaction between students and teachers through streaming platforms.",
-      "tech": ["Vue.js", "React Native", "Agora SDK", "Zoom SDK", ".NET Core"]
+      "composition": {
+        "size": "3 members",
+        "role": "React Native developers and one main tester"
+      },
+      "collaboration": [
+        "Coordinated with the client for design integration and backend connectivity. Worked closely with the other developer to ensure timely delivery and quality of the application"
+      ],
+      "role": [
+        "Led the development of the application, developed and implemented key features",
+        "Reviewed code to ensure quality and adherence to best practices"
+      ],
+      "description": [
+        "An online English learning application, with a focus on facilitating interaction between students and teachers through streaming platforms.",
+        "Used React Native and WebRTC to develop real-time video streaming capabilities, facilitating seamless interaction between students and teachers and significantly improving the online learning experience."
+      ],
+      "tech": ["Vue", "React Native", "Agora SDK", "Zoom SDK", ".NET Core"]
     },
     {
       "image": "assets/om.png",
       "title": "Work Management | Projects Management",
-      "description": "Projects life cycle management, tasks and processes of team members, etc.",
-      "tech": ["Vue.js", "React Native", "Groovy"]
+      "description": [
+        "Management of project lifecycle(s), including overseeing tasks and processes of team members, among other responsibilities."
+      ],
+      "composition": {
+        "size": "3-4 members",
+        "role": "A backend developer, mobile and frontend developers, and tester team "
+      },
+      "role": [
+        "Involved frontend and mobile development while also providing assistance to the backend developer as needed."
+      ],
+      "tech": ["React", "React Native", "Groovy"]
     },
     {
       "image": "assets/iconist.png",
       "title": "The Iconist | Media Social",
-      "description": "A social place to share random images that submitted by moderators.",
+      "description": [
+        "A social platform designed for sharing random images curated by moderators."
+      ],
+      "composition": {
+        "size": "2 members",
+        "role": "A full-stack developer, and a frontend intern"
+      },
+      "role": [
+        "Implemented both the backend infrastructure using Firebase and the frontend components.",
+        "Supervised and mentored a frontend intern, guiding them in frontend development tasks."
+      ],
       "tech": ["React Native", "React", "Firebase", "Expo"]
     },
     {
       "image": "assets/eheart.png",
       "url": "https://eheart.se/",
       "title": "E-Heart",
-      "description": "A place where patients can book appointments at clinics near them.",
-      "tech": ["React", "React Native", ".NET Core"]
+      "composition": {
+        "size": "2 members",
+        "role": ".NET Core developers"
+      },
+      "role": [
+        "Researched and implemented the Orchard framework meticulously, ensuring alignment with customer requirements throughout the development process."
+      ],
+      "description": [
+        "An online platform where patients can conveniently book appointments at clinics located near them."
+      ],
+      "tech": [".NET Core"]
     },
     {
       "image": "assets/base23.png",
       "url": "https://play.google.com/store/apps/details?id=se.ekokardiografi.BASE23",
       "title": "Dance School | School Management",
-      "description": "School management system, manage classrooms, students, class schedule reminder.",
+      "description": [
+        "A comprehensive school management system designed to efficiently manage classrooms, students, and class schedules, including reminder functionalities."
+      ],
       "tech": ["React", "React Native", ".NET Core"]
     },
     {
       "image": "assets/mas.png",
       "url": "https://www.milesatsea.com",
       "title": "Miles at sea",
-      "description": "Distance tracking and logging, get rewards according to the quests according to the route.",
+      "description": [
+        "An application for tracking and logging distance traveled, with rewards earned based on completing quests along the route."
+      ],
       "tech": ["React Native", "Firebase", "Google Map APIs"]
     },
     {
       "image": "assets/vio.png",
       "title": "Vio Studio",
-      "description": "The idea is for students to know what is happening and what will happen around them.",
+      "description": [
+        "The concept aims to provide students with real-time information about current and upcoming events in their vicinity."
+      ],
       "tech": ["React", "Django"]
     },
     {
       "image": "assets/osouji.png",
       "title": "Osouji | Cleaner booking",
-      "description": "The idea is a marketplace job related to house cleaning, hotels, payment integration, and directions.",
+      "description": [
+        "The concept revolves around creating a job marketplace focused on services related to house cleaning and hotels, integrating payment systems and providing directions for seamless transactions."
+      ],
       "tech": ["React Native"]
     }
   ]

@@ -1,4 +1,10 @@
-import { FaLinkedinIn, FaGithubAlt, FaEnvelope } from "react-icons/fa";
+import {
+  FaLinkedinIn,
+  FaGithubAlt,
+  FaEnvelope,
+  FaTelegramPlane,
+  FaTwitter,
+} from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import Layout from "../components/Layout";
 import { externals } from "../urls";
@@ -23,17 +29,18 @@ function Home() {
     <Layout>
       <Surface />
       <div className="grid grid-cols-1 lg:grid-cols-12">
-        <div className="lg:col-span-5 p-4 lg:h-screen lg:sticky top-0 flex flex-col gap-4 w-11/12 lg:py-20">
+        <div className="lg:col-span-5 p-4 lg:h-screen lg:sticky top-0 flex flex-col gap-4 w-11/12 lg:py-14 overflow-y-auto scroll-smooth-thin">
           <div className="flex flex-col gap-4 mb-5 md:mb-10">
             <p className="c1">Hi, I am</p>
             <div className="marker-variation">
-              <h1>{content.name}</h1>
+              <h2 dangerouslySetInnerHTML={{ __html: content.name }}></h2>
             </div>
             <p
               className="t3"
               dangerouslySetInnerHTML={{ __html: content.role }}
             />
-            <p className="t4 opacity-60">{content.bio}</p>
+            <p className="t4 opacity-80 font-mono">{content.skills}</p>
+            <p className="t4 opacity-80">{content.bio}</p>
           </div>
 
           <div className="flex flex-col gap-4 mb-5 md:mb-10">
@@ -46,7 +53,7 @@ function Home() {
                 about.current?.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              <span className="c1">01.</span> about
+              <span className="c1">01.</span> 🤔 about
             </p>
 
             <p
@@ -58,7 +65,7 @@ function Home() {
                 exp.current?.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              <span className="c1">02.</span> experience
+              <span className="c1">02.</span> 🧑‍💻 experience
             </p>
 
             <p
@@ -70,26 +77,46 @@ function Home() {
                 project.current?.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              <span className="c1">03.</span> projects
+              <span className="c1">03.</span> 💻 projects
             </p>
           </div>
           <div className="flex items-center gap-4">
+            <span className="t5 opacity-60">My CV:</span>
+
             <a className="c1" target="_blank" href="/assets/congscv.pdf">
-              Full in PDF
+              PDF
             </a>
-            <span className="text-secondary"> | </span>
+            <span className="text-white"> | </span>
             <a className="c1" target="_blank" href={externals.cv}>
               Online
             </a>
           </div>
 
-          <div className="flex flex-wrap gap-4">
-            <Social url={externals.linkedin} icon={<FaLinkedinIn />} />
-            <Social url={externals.github} icon={<FaGithubAlt />} />
-            <Social url={externals.email} icon={<FaEnvelope />} />
+          <div className="flex flex-wrap gap-2">
+            <Social
+              url={externals.linkedin}
+              icon={<FaLinkedinIn className="w-5 h-5" />}
+            />
+            <Social
+              url={externals.github}
+              icon={<FaGithubAlt className="w-5 h-5" />}
+            />
+            <Social
+              url={externals.telegram}
+              icon={<FaTelegramPlane className="w-5 h-5" />}
+            />
+            <Social
+              url={externals.twitter}
+              icon={<FaTwitter className="w-5 h-5" />}
+            />
+            <Social
+              url={externals.email}
+              icon={<FaEnvelope className="w-5 h-5" />}
+            />
           </div>
         </div>
-        <div className="lg:col-span-7 py-20 max-lg:pb-20 overflow-y-auto">
+
+        <div className="lg:col-span-7 py-20 max-lg:pb-20 overflow-y-auto scroll-smooth-thin">
           <div ref={aboutRef} className="mb-10">
             <div className="p-6 flex gap-2 items-center" ref={about}>
               <span className="c1">01.</span> About me{" "}
@@ -110,13 +137,11 @@ function Home() {
                 </div>
               </div>
 
-              <div className="border border-secondary grid grid-cols-12 p-3 md:p-6 items-center">
-                <div className="col-span-12">
-                  <div
-                    className="t5 text-white/80 mr-4"
-                    dangerouslySetInnerHTML={{ __html: content.about }}
-                  />
-                </div>
+              <div className="border border-secondary grid grid-cols-12 p-3 md:p-6 items-center rounded-md">
+                <div
+                  className="t5 text-white/80 col-span-12"
+                  dangerouslySetInnerHTML={{ __html: content.about }}
+                />
               </div>
             </div>
           </div>
@@ -143,7 +168,11 @@ function Home() {
 
           <div ref={projectRef} className="">
             <div className="p-6" ref={project}>
-              <span className="c1">03.</span> Projects I've participated in
+              <span className="c1">03.</span> Projects I've participated in{" "}
+              <span className="italic opacity-40 font-thin">
+                (some projects cannot be disclosed due to privacy policies)
+              </span>
+              :
             </div>
             <div className="flex flex-col gap-2 overflow-hidden">
               {content.projects.map((e, index) => (
@@ -154,6 +183,9 @@ function Home() {
                   title={e.title}
                   description={e.description}
                   tech={e.tech}
+                  composition={e.composition}
+                  collaboration={e.collaboration}
+                  role={e.role}
                 />
               ))}
             </div>

@@ -11,7 +11,7 @@
     @apply text-white;
   }
   html {
-    @apply scroll-smooth scrollbar-thin scrollbar-thumb-secondary/60 scrollbar-track-primary;
+    @apply scroll-smooth-thin;
   }
   body {
     @apply bg-primary;
@@ -37,6 +37,10 @@
 }
 
 @layer components {
+  .scroll-smooth-thin {
+    @apply scroll-smooth scrollbar-thin scrollbar-thumb-secondary/60 scrollbar-track-primary;
+  }
+
   .t1 {
     @apply font-primary text-2xl lg:text-3xl text-white font-bold;
   }
@@ -75,28 +79,4 @@
   .bg_header {
     @apply bg-[#1C1D20]/60 backdrop-blur-md;
   }
-}
-
-.highlight-container,
-.highlight {
-  position: relative;
-}
-
-.highlight-container {
-  display: inline-block;
-}
-.highlight-container:before {
-  content: " ";
-  display: block;
-  height: 90%;
-  width: 100%;
-  margin-left: -3px;
-  margin-right: -3px;
-  position: absolute;
-  background: #ecaa43;
-  transform: rotate(2deg);
-  top: -1px;
-  left: -1px;
-  border-radius: 20% 25% 20% 24%;
-  padding: 10px 3px 3px 10px;
 }
