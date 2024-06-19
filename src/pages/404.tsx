@@ -7,7 +7,7 @@ const NotFound = () => {
   return (
     <RootLayout>
       <Surface />
-      <div className="h-screen max-w-screen-xl w-full flex flex-col mx-auto px-6 md:px-12 lg:px-24">
+      <div className="h-screen max-w-screen-2xl w-full flex flex-col mx-auto px-6 md:px-12 lg:px-24">
         <div className="flex flex-col items-center justify-center h-full">
           <div className="flex flex-col gap-2 relative w-full md:w-4/5 lg:w-3/5 items-center">
             <img

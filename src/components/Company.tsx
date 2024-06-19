@@ -1,5 +1,4 @@
 import React from "react";
-import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import Card from "./Card";
 
 const Company: React.FC<{
@@ -22,22 +21,24 @@ const Company: React.FC<{
             <a
               target="_blank"
               href={url ?? "#"}
-              className="t4 leading-7 font-semibold mb-2 group-hover:text-secondary flex items-center gap-2"
+              className="t4 leading-7 font-medium mb-2 w-auto"
             >
-              {role ? `${role} | ` : ""} {company}
-              <span className="text-white">
-                <FaArrowUpRightFromSquare className="text-sm fill-white group-hover:fill-secondary" />
-              </span>
+              {role ? `${role}, ` : ""}{" "}
+              <span className="text-secondary font-semibold">{company}</span>
             </a>
+
             <div
               className="t5 text-white/80 mb-4"
               dangerouslySetInnerHTML={{ __html: description }}
             />
-            {job.map((e, index) => (
-              <div key={index} className="t5 text-white/80 mb-4">
-                {e}
-              </div>
-            ))}
+
+            <ul className="list-disc list-inside t5 text-white/60">
+              {job.map((e, index) => (
+                <li key={index} className="t5 text-white/80 mb-4">
+                  {e}
+                </li>
+              ))}
+            </ul>
             <div className="flex flex-wrap gap-2">
               {tech.map((e, index) => (
                 <div

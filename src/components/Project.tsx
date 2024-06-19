@@ -1,12 +1,12 @@
 import React from "react";
 import { FaFileCode } from "react-icons/fa";
-import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import Card from "./Card";
 
 const Project: React.FC<{
   url?: string;
   image?: string;
   title: string;
+  subtitle?: string;
   description: string[];
   composition:
     | {
@@ -22,6 +22,7 @@ const Project: React.FC<{
   url,
   image,
   title,
+  subtitle,
   description,
   job,
   tech,
@@ -32,28 +33,26 @@ const Project: React.FC<{
   return (
     <Card>
       <div className="group grid grid-cols-12 p-3 md:p-6">
-        <div className="col-span-3 py-2 flex justify-center items-start">
+        <div className="col-span-3 py-2 justify-center items-start hidden md:flex mr-4 md:mr-8 ">
           {image ? (
             <img
               src={image}
-              className="w-full h-auto object-contain bg-secondary/20"
+              className="w-full h-auto object-contain bg-secondary/20 rounded-md"
             />
           ) : (
             <FaFileCode fill="#ECAA4320" className="w-3/5 h-auto" />
           )}
         </div>
-        <div className="col-span-9 ml-4 md:ml-8 mt-0.5">
+        <div className="col-span-full md:col-span-9 mt-0.5">
           <div className="flex flex-col">
             <a
               target="_blank"
               href={url ?? "#"}
               className="t4 leading-7 font-semibold mb-2 group-hover:text-secondary flex items-center gap-2"
             >
-              {title}
-              {url && (
-                <span className="text-white">
-                  <FaArrowUpRightFromSquare className="text-sm fill-white group-hover:fill-secondary" />
-                </span>
+              {title}{" "}
+              {subtitle && (
+                <span className="t5 font-light opacity-60">({subtitle})</span>
               )}
             </a>
 

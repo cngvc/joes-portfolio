@@ -29,8 +29,8 @@ function Home() {
     <Layout>
       <Surface />
       <div className="grid grid-cols-1 lg:grid-cols-12">
-        <div className="lg:col-span-5 p-4 lg:h-screen lg:sticky top-0 flex flex-col gap-4 w-11/12 lg:py-14 overflow-y-auto scroll-smooth-thin">
-          <div className="flex flex-col gap-4 mb-5 md:mb-10">
+        <div className="lg:col-span-5 p-4 lg:h-screen lg:sticky top-0 flex flex-col gap-4 lg:w-11/12 lg:pt-12 lg:pb-6 overflow-y-auto scroll-smooth-thin">
+          <div className="flex flex-col gap-4 mb-3">
             <p className="c1">Hi, I am</p>
             <div className="marker-variation">
               <h2 dangerouslySetInnerHTML={{ __html: content.name }}></h2>
@@ -39,11 +39,11 @@ function Home() {
               className="t3"
               dangerouslySetInnerHTML={{ __html: content.role }}
             />
-            <p className="t4 opacity-80 font-mono">{content.skills}</p>
-            <p className="t4 opacity-80">{content.bio}</p>
+            <p className="t5 opacity-80 font-mono">{content.skills}</p>
+            <p className="t5 opacity-80">{content.bio}</p>
           </div>
 
-          <div className="flex flex-col gap-4 mb-5 md:mb-10">
+          <div className="flex flex-col gap-3 mb-3">
             <p
               className={twMerge(
                 "t4 opacity-40 transition-all duration-200 cursor-pointer hover:opacity-100",
@@ -80,19 +80,19 @@ function Home() {
               <span className="c1">03.</span> 💻 projects
             </p>
           </div>
-          <div className="flex items-center gap-4">
-            <span className="t5 opacity-60">My CV:</span>
-
-            <a className="c1" target="_blank" href="/assets/congscv.pdf">
-              PDF
-            </a>
-            <span className="text-white"> | </span>
-            <a className="c1" target="_blank" href={externals.cv}>
-              Online
+          <div className="flex items-center mb-3">
+            <a
+              href="/assets/congs-resume.pdf"
+              target="_blank"
+              className="relative inline-flex items-center justify-center p-0.5 overflow-hidden rounded-lg group bg-gradient-to-r from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 text-white focus:ring-0 focus:outline-none duration-100 shadow-lg shadow-pink-400/50"
+            >
+              <span className="t5 font-normal relative px-4 py-2 transition-all ease-in bg-primary rounded-md group-hover:bg-opacity-0 duration-100">
+                My Resume
+              </span>
             </a>
           </div>
 
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 mb-4">
             <Social
               url={externals.linkedin}
               icon={<FaLinkedinIn className="w-5 h-5" />}
@@ -114,6 +114,8 @@ function Home() {
               icon={<FaEnvelope className="w-5 h-5" />}
             />
           </div>
+
+          <div className="t5 opacity-20">Designed by Joe</div>
         </div>
 
         <div className="lg:col-span-7 py-20 max-lg:pb-20 overflow-y-auto scroll-smooth-thin">
@@ -146,7 +148,7 @@ function Home() {
             </div>
           </div>
           <div ref={expRef} className="mb-10">
-            <div className="p-6" ref={exp}>
+            <div className="p-3 md:p-6" ref={exp}>
               <span className="c1">02.</span> Where I've worked
             </div>
 
@@ -167,7 +169,7 @@ function Home() {
           </div>
 
           <div ref={projectRef} className="">
-            <div className="p-6" ref={project}>
+            <div className="p-3 md:p-6" ref={project}>
               <span className="c1">03.</span> Projects I've participated in{" "}
               <span className="italic opacity-40 font-thin">
                 (some projects cannot be disclosed due to privacy policies)
@@ -184,6 +186,7 @@ function Home() {
                   description={e.description}
                   tech={e.tech}
                   composition={e.composition}
+                  subtitle={e.subtitle}
                   collaboration={e.collaboration}
                   role={e.role}
                 />

@@ -1,17 +1,18 @@
 {
   "name": "Cong <span class='text-secondary'>\"Joe\"</span> Vu",
   "role": "<span class='text-secondary'>Full-Stack</span> Developer",
-  "skills": "React | Node | React Native",
-  "bio": "I am a developer with over five years of experience in building and deploying scalable web and mobile applications. Additionally, I have more than one year of experience in the blockchain field.",
-  "about": "Hello, my name is Cong, but you can call me <span class='text-secondary font-semibold'>Joe</span>.<br/>I began my career as a mobile developer using React Native. Over time, I have developed the capability to build systems from scratch and continuously maintain and update them.<br/>Additionally, I have had the opportunity to work on several blockchain projects, allowing me to write smart contracts and interact with them on networks within a React environment. Due to privacy policies, I cannot list these blockchain projects here.",
+  "skills": "React, Node, React Native",
+  "bio": "As a Full-Stack Developer, I bring over five years of experience in building and deploying scalable web and mobile applications. Additionally, I have more than one year of expertise in the blockchain field.",
+  "about": "Hello, my name is Cong, but you can call me <span class='text-secondary font-semibold'>Joe</span>.<br/>I started my career as a mobile developer using React Native, gradually evolving to build systems from scratch and ensuring their continuous maintenance and updates. Furthermore, I've gained experience in blockchain projects, involving the development and interaction of smart contracts within a React environment, although specifics cannot be disclosed due to privacy policies.",
   "companies": [
     {
       "time": "Feb 2023 - Apr 2024",
-      "company": "Freelance Full-Stack Developer",
-      "description": "As a Freelance Full-Stack Developer, I have worked with clients from Vietnam and the United States, always seeking new opportunities for professional growth.",
+      "company": "GK-Team",
+      "role": "Full-Stack Developer",
+      "description": "As a member of a freelance full-stack developer team, I collaborated with clients from Vietnam and the United States, continuously pursuing avenues for professional advancement.",
       "job": [
-        "I am proficient in using time-tracking software such as HubStaff, maintaining high activity levels (>75%) and adapting to flexible work schedules. My experience includes developing and maintaining blockchain systems, creating and managing smart contracts on both testnet and mainnet environments. Additionally, I have taken the initiative to build a presale website and an accompanying admin dashboard.",
-        "I have worked on projects involving purchases via smart contracts as well as projects utilizing third-party services, and managed user tokens with a Node.js server. Furthermore, I have successfully managed multiple projects simultaneously while leading a team of 2-3 people."
+        "Proficient in time-tracking software (e.g., HubStaff) with activity levels consistently exceeding 75%. Skilled in blockchain system development and smart contract management across testnet and mainnet environments. Demonstrated initiative in building presale websites and admin dashboards.",
+        "Experienced in projects involving smart contract-based purchases and integration of third-party services. Proficient in managing user tokens utilizing a Node.js server. Successfully led teams of 2-3 members while managing multiple projects concurrently."
       ],
       "tech": ["Node", "Solidity", "React", "Next", "Vercel", ".Net Core"]
     },
@@ -20,12 +21,12 @@
       "company": "Bright Software Solution",
       "url": "https://www.brightsoftsolution.com/",
       "role": "Full-Stack Developer",
-      "description": "At Bright Software Solution, I worked with clients from Sweden, India, and various European countries, focusing on new technologies and maintaining flexibility in my work. Some of my key responsibilities and accomplishments include:",
+      "description": "At Bright Software Solution, I collaborated with clients from Sweden, India, and diverse European countries, prioritizing new technologies and adaptability in work. Key responsibilities and achievements include:",
       "job": [
         "Developed and maintained a mobile application for teachers to manage students, classes, and a CMS to manage employees and sessions.",
         "Created web and mobile applications in the education sector to facilitate interaction between students and teachers through video calls and real-time features.",
         "Participated in the code review process, providing feedback to ensure code quality and consistency.",
-        "Collaborated with the design team from the client side to create a clean and responsive UI. Additionally, I maintained a web application for managing event promotions for schools and communities. Furthermore, I actively participated in the code review process, offering feedback to team members to ensure code quality and consistency.",
+        "Collaborated with client-side design teams to craft clean, responsive UI designs. Managed a web application dedicated to promoting events for schools and communities. Actively engaged in code reviews, providing constructive feedback to uphold code quality and coherence.",
         "Sent to work onsite at partner companies for about six months, which yielded good results."
       ],
       "tech": ["Grails", ".NET Core", "React Native", "React", "Vue"]
@@ -59,7 +60,7 @@
   ],
   "projects": [
     {
-      "image": "",
+      "image": "assets/ico.jpg",
       "url": "",
       "title": "Blockchain Project (ICO Token)",
       "composition": {
@@ -70,19 +71,39 @@
         "Developed essential project components, including a landing page, client dashboard, and admin dashboard using React. Additionally, a Node.js server managed backend operations."
       ],
       "description": [
-        "Phase 1 - Smart Contract Integration for Presale Purchases: In this phase, I orchestrated the implementation of smart contracts to facilitate presale token purchases.",
-        "Phase 2 - Transition to Third-Party Service: We integrated third-party services to automate token transactions, enhancing efficiency, scalability, and user experience. Specifically, we enabled automatic asset transfers to the client's wallet, streamlining the process and ensuring seamless management of digital assets.",
-        "In short, we utilized smart-contracts and third-party services to facilitate user participation in the presale, as well as to manage their assets, addresses, and accounts efficiently."
+        "Phase 1 - Smart Contract Integration for Presale Purchases: Led the implementation of smart contracts to facilitate presale token purchases.",
+        "Phase 2 - Transition to Third-Party Service: Implemented third-party services for automating token transactions, enhancing efficiency, scalability, and user experience. Enabled automatic asset transfers to client wallets, streamlining processes and ensuring seamless digital asset management.",
+        "In summary, we employed smart contracts and third-party services to enable user participation in the presale while efficiently managing their assets, addresses, and accounts"
       ],
       "tech": ["React", "Node", "Solidity"]
+    },
+    {
+      "image": "assets/fitness.jpg",
+      "url": "",
+      "title": "Fitness Mobile Application",
+      "composition": {
+        "size": "4 members",
+        "role": "One project manager, one designer, one backend developer, and one frontend developers (me)"
+      },
+      "role": [
+        "Contributed to developing the mobile user interface.",
+        "Provided support for backend APIs as needed to ensure seamless integration between the frontend and backend components of the app",
+        "Researched Azure Portal APIs and authored integration documents for the development team.",
+        "Wrote Azure Pipeline scripts for automated deployment of new app versions to Expo Go"
+      ],
+      "description": [
+        "Fitness mobile app was designed to provide users with personalized workout courses focusing on specific muscle groups."
+      ],
+      "tech": ["React Native", "Expo", "Azure Portal"]
     },
     {
       "image": "assets/grapeseed.png",
       "url": "https://apps.apple.com/app/grapeseed-connect/id1638056937",
       "title": "GrapeSEED Connect",
+      "subtitle": "Stream Learning Platform",
       "composition": {
         "size": "3 members",
-        "role": "React Native developers and one main tester"
+        "role": "React Native developers and one main QA"
       },
       "collaboration": [
         "Coordinated with the client for design integration and backend connectivity. Worked closely with the other developer to ensure timely delivery and quality of the application"
@@ -99,13 +120,14 @@
     },
     {
       "image": "assets/om.png",
-      "title": "Work Management | Projects Management",
+      "title": "Work Management",
+      "subtitle": "Projects Management",
       "description": [
         "Management of project lifecycle(s), including overseeing tasks and processes of team members, among other responsibilities."
       ],
       "composition": {
-        "size": "3-4 members",
-        "role": "A backend developer, mobile and frontend developers, and tester team "
+        "size": "3+ members",
+        "role": "One backend developer, mobile and frontend developers (me), and QA team"
       },
       "role": [
         "Involved frontend and mobile development while also providing assistance to the backend developer as needed."
@@ -114,13 +136,14 @@
     },
     {
       "image": "assets/iconist.png",
-      "title": "The Iconist | Media Social",
+      "title": "The Iconist",
+      "subtitle": "Media Social",
       "description": [
         "A social platform designed for sharing random images curated by moderators."
       ],
       "composition": {
         "size": "2 members",
-        "role": "A full-stack developer, and a frontend intern"
+        "role": "One full-stack developer (me), and one intern frontend developer"
       },
       "role": [
         "Implemented both the backend infrastructure using Firebase and the frontend components.",
@@ -132,9 +155,10 @@
       "image": "assets/eheart.png",
       "url": "https://eheart.se/",
       "title": "E-Heart",
+      "subtitle": "Medical Booking",
       "composition": {
         "size": "2 members",
-        "role": ".NET Core developers"
+        "role": "Both were backend developers"
       },
       "role": [
         "Researched and implemented the Orchard framework meticulously, ensuring alignment with customer requirements throughout the development process."
@@ -147,18 +171,36 @@
     {
       "image": "assets/base23.png",
       "url": "https://play.google.com/store/apps/details?id=se.ekokardiografi.BASE23",
-      "title": "Dance School | School Management",
+      "title": "Dance School",
+      "subtitle": "School Management",
       "description": [
         "A comprehensive school management system designed to efficiently manage classrooms, students, and class schedules, including reminder functionalities."
+      ],
+      "composition": {
+        "size": "4 members",
+        "role": "One full-stack developer (me), mobile and frontend developers, and QA team"
+      },
+      "role": [
+        "Created APIs to facilitate communication between the frontend and backend components of the school management system.",
+        "Supported frontend developers as needed, assisting with any frontend-related issues or tasks."
       ],
       "tech": ["React", "React Native", ".NET Core"]
     },
     {
       "image": "assets/mas.png",
       "url": "https://www.milesatsea.com",
-      "title": "Miles at sea",
+      "title": "Miles At Sea",
+      "subtitle": "Travel Tracking",
       "description": [
         "An application for tracking and logging distance traveled, with rewards earned based on completing quests along the route."
+      ],
+      "composition": {
+        "size": "2 members",
+        "role": "Both were full-stack developer"
+      },
+      "role": [
+        "Integrated Google Maps API to enable distance tracking functionality within the application.",
+        "Developed and implemented the mobile user interface to ensure a seamless and intuitive user experience."
       ],
       "tech": ["React Native", "Firebase", "Google Map APIs"]
     },
@@ -168,11 +210,32 @@
       "description": [
         "The concept aims to provide students with real-time information about current and upcoming events in their vicinity."
       ],
+      "composition": {
+        "size": "6 members",
+        "role": "One project manager, one designer, two backend developers, and two frontend developers (me)"
+      },
+      "role": [
+        "Created the user interface to ensure an intuitive and engaging experience for students.",
+        "Managed frontend tasks, including task allocation and progress tracking."
+      ],
+      "collaboration": [
+        "Cooperated closely with backend developers to ensure seamless integration of frontend and backend components.",
+        "Collaborated with the designer to define design concepts into functional and visually appealing user interfaces."
+      ],
       "tech": ["React", "Django"]
     },
     {
       "image": "assets/osouji.png",
-      "title": "Osouji | Cleaner booking",
+      "title": "Osouji",
+      "subtitle": "Cleaner booking",
+      "composition": {
+        "size": "7+ members",
+        "role": "One project manager, one designer, two backend developers, two frontend developer (me), and QA team"
+      },
+      "role": [
+        "My primary focus was on developing and implementing the mobile user interface for the job marketplace application.",
+        "Collaborated with other team members to ensure seamless integration of the mobile UI with backend functionalities and payment systems."
+      ],
       "description": [
         "The concept revolves around creating a job marketplace focused on services related to house cleaning and hotels, integrating payment systems and providing directions for seamless transactions."
       ],
