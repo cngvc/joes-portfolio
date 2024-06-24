@@ -37,10 +37,13 @@ const Project: React.FC<{
           {image ? (
             <img
               src={image}
-              className="w-full h-auto object-contain bg-secondary/20 rounded-md"
+              className="w-full h-auto object-contain bg-primary/20 rounded-md"
             />
           ) : (
-            <FaFileCode fill="#ECAA4320" className="w-3/5 h-auto" />
+            <FaFileCode
+              fill="rgb(var(--primary-color))"
+              className="w-3/5 h-auto"
+            />
           )}
         </div>
         <div className="col-span-full md:col-span-9 mt-0.5">
@@ -48,7 +51,7 @@ const Project: React.FC<{
             <a
               target="_blank"
               href={url ?? "#"}
-              className="t4 leading-7 font-semibold mb-2 group-hover:text-secondary flex items-center gap-2"
+              className="t4 leading-7 font-semibold mb-2 group-hover:text-primary flex items-center gap-2"
             >
               {title}{" "}
               {subtitle && (
@@ -109,7 +112,7 @@ const Project: React.FC<{
               {tech.map((e, index) => (
                 <div
                   key={index}
-                  className="t6 py-1 px-2 text-secondary bg-secondary/20 rounded-full"
+                  className="t6 py-1 px-2 text-primary-light bg-primary-dark rounded-full"
                 >
                   {e}
                 </div>

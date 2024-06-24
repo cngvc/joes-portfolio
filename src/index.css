@@ -6,6 +6,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --background-color: 27 38 44;
+  --primary-color: 50 130 184;
+  --primary-color-dark: 15 76 117;
+  --primary-color-light: 187 225 250;
+}
+
 @layer base {
   * {
     @apply text-white;
@@ -14,7 +21,7 @@
     @apply scroll-smooth-thin;
   }
   body {
-    @apply bg-primary;
+    @apply bg-background;
   }
   h1 {
     @apply font-secondary text-4xl lg:text-5xl text-white font-bold;
@@ -38,7 +45,7 @@
 
 @layer components {
   .scroll-smooth-thin {
-    @apply scroll-smooth scrollbar-thin scrollbar-thumb-secondary/60 scrollbar-track-primary;
+    @apply scroll-smooth scrollbar-thin scrollbar-thumb-primary/60 scrollbar-track-background;
   }
 
   .t1 {
@@ -60,18 +67,30 @@
     @apply font-primary text-sm text-white font-light;
   }
   .c1 {
-    @apply font-code text-sm lg:text-base text-secondary font-normal;
+    @apply font-code text-sm lg:text-base text-primary font-normal;
   }
 
   .hero {
-    background: linear-gradient(to right, #ecaa43 1px, transparent 1px) 0 0,
-      linear-gradient(to right, #ecaa43 1px, transparent 1px) 0 100%,
-      linear-gradient(to left, #ecaa43 1px, transparent 1px) 100% 0,
-      linear-gradient(to left, #ecaa43 1px, transparent 1px) 100% 100%,
-      linear-gradient(to bottom, #ecaa43 1px, transparent 1px) 0 0,
-      linear-gradient(to bottom, #ecaa43 1px, transparent 1px) 100% 0,
-      linear-gradient(to top, #ecaa43 1px, transparent 1px) 0 100%,
-      linear-gradient(to top, #ecaa43 1px, transparent 1px) 100% 100%;
+    background: linear-gradient(
+          to right,
+          rgb(var(--primary-color)) 1px,
+          transparent 1px
+        )
+        0 0,
+      linear-gradient(to right, rgb(var(--primary-color)) 1px, transparent 1px)
+        0 100%,
+      linear-gradient(to left, rgb(var(--primary-color)) 1px, transparent 1px)
+        100% 0,
+      linear-gradient(to left, rgb(var(--primary-color)) 1px, transparent 1px)
+        100% 100%,
+      linear-gradient(to bottom, rgb(var(--primary-color)) 1px, transparent 1px)
+        0 0,
+      linear-gradient(to bottom, rgb(var(--primary-color)) 1px, transparent 1px)
+        100% 0,
+      linear-gradient(to top, rgb(var(--primary-color)) 1px, transparent 1px) 0
+        100%,
+      linear-gradient(to top, rgb(var(--primary-color)) 1px, transparent 1px)
+        100% 100%;
     @apply bg-no-repeat;
     @apply bg-[length:20px_20px];
   }

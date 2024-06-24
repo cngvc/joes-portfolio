@@ -14,7 +14,7 @@ const NotFound = () => {
               src={"/assets/not-found.png"}
               className="max-w-[12rem] w-full h-auto object-contain rounded-md absolute -translate-y-full z-50"
             />
-            <div className="border border-secondary flex flex-col p-6 items-center justify-center w-full gap-4 bg-secondary/5">
+            <div className="border border-primary flex flex-col p-6 items-center justify-center w-full gap-4 bg-primary/5">
               <h1 className="text-center">404</h1>
               <p className="t3 text-center">
                 Oops ... sorry I can't find the page you're looking for.
@@ -22,7 +22,7 @@ const NotFound = () => {
               <Link
                 to={internal.home}
                 replace
-                className="t3 text-center text-secondary"
+                className="t3 font-medium text-center text-primary"
               >
                 Back to Home
               </Link>

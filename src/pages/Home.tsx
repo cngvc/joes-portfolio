@@ -77,16 +77,16 @@ function Home() {
                 project.current?.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              <span className="c1">03.</span> 💻 projects
+              <span className="c1">03.</span> 💻 participated projects
             </p>
           </div>
           <div className="flex items-center mb-3">
             <a
               href="/assets/congs-resume.pdf"
               target="_blank"
-              className="relative inline-flex items-center justify-center p-0.5 overflow-hidden rounded-lg group bg-gradient-to-r from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 text-white focus:ring-0 focus:outline-none duration-100 shadow-lg shadow-pink-400/50"
+              className="relative inline-flex items-center justify-center p-0.5 overflow-hidden rounded-lg group bg-gradient-to-r from-pink-400 to-orange-400 group-hover:from-pink-400 group-hover:to-orange-400 text-white focus:ring-0 focus:outline-none duration-100 shadow-lg shadow-pink-400/50"
             >
-              <span className="t5 font-normal relative px-4 py-2 transition-all ease-in bg-primary rounded-md group-hover:bg-opacity-0 duration-100">
+              <span className="t5 font-normal relative px-4 py-2 transition-all ease-in rounded-md duration-100">
                 My Resume
               </span>
             </a>
@@ -139,7 +139,7 @@ function Home() {
                 </div>
               </div>
 
-              <div className="border border-secondary grid grid-cols-12 p-3 md:p-6 items-center rounded-md">
+              <div className="border border-primary grid grid-cols-12 p-3 md:p-6 items-center rounded-md">
                 <div
                   className="t5 text-white/80 col-span-12"
                   dangerouslySetInnerHTML={{ __html: content.about }}

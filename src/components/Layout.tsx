@@ -26,7 +26,7 @@ const Layout: React.FC<{ children: ReactNode }> = ({ children }) => {
       <main className="relative bg-pane">
         <div className="bg-pane-html">
           <LoadingBar
-            color="#ECAA43"
+            color="rgb(var(--primary-color))"
             progress={pagePercent}
             shadow={false}
             waitingTime={10000000}

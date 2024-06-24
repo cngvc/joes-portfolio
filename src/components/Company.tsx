@@ -24,7 +24,7 @@ const Company: React.FC<{
               className="t4 leading-7 font-medium mb-2 w-auto"
             >
               {role ? `${role}, ` : ""}{" "}
-              <span className="text-secondary font-semibold">{company}</span>
+              <span className="text-primary font-semibold">{company}</span>
             </a>
 
             <div
@@ -43,7 +43,7 @@ const Company: React.FC<{
               {tech.map((e, index) => (
                 <div
                   key={index}
-                  className="t6 py-1 px-2 text-secondary bg-secondary/20 rounded-full"
+                  className="t6 py-1 px-2 text-primary-light bg-primary-dark rounded-full"
                 >
                   {e}
                 </div>

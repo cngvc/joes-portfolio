@@ -1,9 +1,9 @@
 {
-  "name": "Cong <span class='text-secondary'>\"Joe\"</span> Vu",
-  "role": "<span class='text-secondary'>Full-Stack</span> Developer",
+  "name": "Cong <span class='text-primary'>\"Joe\"</span> Vu",
+  "role": "<span class='text-primary'>Full-Stack</span> Developer",
   "skills": "React, Node, React Native",
   "bio": "As a Full-Stack Developer, I bring over five years of experience in building and deploying scalable web and mobile applications. Additionally, I have more than one year of expertise in the blockchain field.",
-  "about": "Hello, my name is Cong, but you can call me <span class='text-secondary font-semibold'>Joe</span>.<br/>I started my career as a mobile developer using React Native, gradually evolving to build systems from scratch and ensuring their continuous maintenance and updates. Furthermore, I've gained experience in blockchain projects, involving the development and interaction of smart contracts within a React environment, although specifics cannot be disclosed due to privacy policies.",
+  "about": "Hello, my name is Cong, but you can call me <span class='text-primary font-semibold'>Joe</span>.<br/>I started my career as a mobile developer using React Native, gradually evolving to build systems from scratch and ensuring their continuous maintenance and updates. Furthermore, I've gained experience in blockchain projects, involving the development and interaction of smart contracts within a React environment, although specifics cannot be disclosed due to privacy policies.",
   "companies": [
     {
       "time": "Feb 2023 - Apr 2024",
