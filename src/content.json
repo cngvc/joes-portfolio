@@ -2,17 +2,17 @@
   "name": "Cong <span class='text-primary'>\"Joe\"</span> Vu",
   "role": "<span class='text-primary'>Full-Stack</span> Developer",
   "skills": "React, Node, React Native",
-  "bio": "As a Full-Stack Developer, I bring over five years of experience in building and deploying scalable web and mobile applications. Additionally, I have more than one year of expertise in the blockchain field.",
+  "bio": "Full-Stack Developer with over five years of experience in building scalable web and mobile applications using JavaScript frameworks like React and Node.js. Skilled in collaborating with teams to deliver high-quality solutions and optimize user experience.",
   "about": "Hello, my name is Cong, but you can call me <span class='text-primary font-semibold'>Joe</span>.<br/>I started my career as a mobile developer using React Native, gradually evolving to build systems from scratch and ensuring their continuous maintenance and updates. Furthermore, I've gained experience in blockchain projects, involving the development and interaction of smart contracts within a React environment, although specifics cannot be disclosed due to privacy policies.",
   "companies": [
     {
-      "time": "Feb 2023 - Apr 2024",
+      "time": "Feb 2023 - May 2024",
       "company": "GK-Team",
       "role": "Full-Stack Developer",
       "description": "As a member of a freelance full-stack developer team, I collaborated with clients from Vietnam and the United States, continuously pursuing avenues for professional advancement.",
       "job": [
-        "Proficient in time-tracking software (e.g., HubStaff) with activity levels consistently exceeding 75%. Skilled in blockchain system development and smart contract management across testnet and mainnet environments. Demonstrated initiative in building presale websites and admin dashboards.",
-        "Experienced in projects involving smart contract-based purchases and integration of third-party services. Proficient in managing user tokens utilizing a Node.js server. Successfully led teams of 2-3 members while managing multiple projects concurrently."
+        "Proficient in time-tracking software with activity levels consistently exceeding 75%. Experienced in developing projects involving smart contract-based purchases. Built presale pages according to design specifications, and supervisor and end-user dashboards using React, Next.js, Node.js.",
+        "Participated in the development of multiple web and mobile applications."
       ],
       "tech": ["Node", "Solidity", "React", "Next", "Vercel", ".Net Core"]
     },
@@ -24,12 +24,20 @@
       "description": "At Bright Software Solution, I collaborated with clients from Sweden, India, and diverse European countries, prioritizing new technologies and adaptability in work. Key responsibilities and achievements include:",
       "job": [
         "Developed and maintained a mobile application for teachers to manage students, classes, and a CMS to manage employees and sessions.",
-        "Created web and mobile applications in the education sector to facilitate interaction between students and teachers through video calls and real-time features.",
+        "Created web and mobile app in the education sector to facilitate interaction between students and teachers through real-time features.",
         "Participated in the code review process, providing feedback to ensure code quality and consistency.",
         "Collaborated with client-side design teams to craft clean, responsive UI designs. Managed a web application dedicated to promoting events for schools and communities. Actively engaged in code reviews, providing constructive feedback to uphold code quality and coherence.",
-        "Sent to work onsite at partner companies for about six months, which yielded good results."
+        "Worked onsite at partner companies for six months, contributing to successful project execution."
       ],
-      "tech": ["Grails", ".NET Core", "React Native", "React", "Vue"]
+      "tech": [
+        "React",
+        "React Native",
+        ".NET Core",
+        "WebRTC",
+        "Firebase",
+        "MsSQL",
+        "AWS"
+      ]
     },
     {
       "time": "Mar 2018 - May 2019",
@@ -38,11 +46,10 @@
       "role": "Mobile Developer",
       "description": "During my tenure at Rabiloo, I served Japanese clients and undertook the following responsibilities:",
       "job": [
-        "Developed a mobile application facilitating cleaner bookings, incorporating features such as payments, chat functionality, and map integration.",
-        "Worked closely with the test and design teams daily to ensure high-quality deliverables.",
-        "Received recognition as one of the Top 5 new employees of the year in 2018."
+        "Developed a mobile app for cleaner bookings with payment processing, real-time chat, and map integration for location-based services.",
+        "Worked closely with the test and design teams daily to ensure high-quality deliverables."
       ],
-      "tech": ["Node", "React Native"]
+      "tech": ["React Native"]
     },
     {
       "time": "Aug 2017 - Mar 2018",
@@ -51,11 +58,11 @@
       "role": "Internship Mobile Developer",
       "description": "During my time at my first company, I developed internal projects, contributing significantly to my learning and growth. Specifically, I:",
       "job": [
-        "Built and maintained a mobile application designed for managing employees, classes, sessions, check-ins, and check-outs utilizing Wi-Fi connections.",
-        "Actively participated in the process of releasing the application to the store, gaining valuable experience in the deployment and distribution of mobile applications.",
-        "Participated in the company's design and design mindset courses to improve my knowledge of user experience."
+        "Built and maintained a mobile app for managing employees, classes, sessions, and check-ins/outs via Wi-Fi.",
+        "Participated in the application release process, gaining valuable experience in mobile app deployment and distribution.",
+        "Engaged in the company’s design courses and workshops to enhance my understanding of user experience and design thinking."
       ],
-      "tech": ["React Native", "Adobe Xd"]
+      "tech": ["React Native"]
     }
   ],
   "projects": [

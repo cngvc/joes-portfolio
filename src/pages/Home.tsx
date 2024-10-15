@@ -1,20 +1,17 @@
-import {
-  FaLinkedinIn,
-  FaGithubAlt,
-  FaEnvelope,
-  FaTelegramPlane,
-  FaTwitter,
-} from "react-icons/fa";
+import { FaLinkedinIn, FaGithubAlt, FaEnvelope } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import Layout from "../components/Layout";
 import { externals } from "../urls";
 import Company from "../components/Company";
 import content from "../content.json";
 import Social from "../components/Social";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 import Project from "../components/Project";
 import Surface from "../components/Surface";
+import FsLightbox from "fslightbox-react";
+
+const images = content.projects.map((e) => e.image);
 
 function Home() {
   const about = useRef<HTMLDivElement | null>(null);
@@ -25,9 +22,19 @@ function Home() {
   const { ref: expRef, inView: experiencePoint } = useInView();
   const { ref: projectRef, inView: projectPoint } = useInView();
 
+  const [isOpenLightBox, $isOpenLightBox] = useState(false);
+  const [selectedImageIndex, $selectedImage] = useState(0);
+
   return (
     <Layout>
       <Surface />
+
+      <FsLightbox
+        toggler={isOpenLightBox}
+        sources={images}
+        sourceIndex={selectedImageIndex}
+      />
+
       <div className="grid grid-cols-1 lg:grid-cols-12">
         <div className="lg:col-span-5 p-4 lg:h-screen lg:sticky top-0 flex flex-col gap-4 lg:w-11/12 lg:pt-12 lg:pb-6 overflow-y-auto scroll-smooth-thin">
           <div className="flex flex-col gap-4 mb-3">
@@ -100,14 +107,6 @@ function Home() {
             <Social
               url={externals.github}
               icon={<FaGithubAlt className="w-5 h-5" />}
-            />
-            <Social
-              url={externals.telegram}
-              icon={<FaTelegramPlane className="w-5 h-5" />}
-            />
-            <Social
-              url={externals.twitter}
-              icon={<FaTwitter className="w-5 h-5" />}
             />
             <Social
               url={externals.email}
@@ -189,6 +188,10 @@ function Home() {
                   subtitle={e.subtitle}
                   collaboration={e.collaboration}
                   role={e.role}
+                  onOpenPhotoLightBox={() => {
+                    $isOpenLightBox((cur) => !cur);
+                    $selectedImage(index);
+                  }}
                 />
               ))}
             </div>

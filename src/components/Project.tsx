@@ -18,6 +18,7 @@ const Project: React.FC<{
   role: string[] | undefined;
   job?: string;
   tech: string[];
+  onOpenPhotoLightBox?: () => void;
 }> = ({
   url,
   image,
@@ -29,6 +30,7 @@ const Project: React.FC<{
   composition,
   collaboration,
   role,
+  onOpenPhotoLightBox,
 }) => {
   return (
     <Card>
@@ -38,6 +40,10 @@ const Project: React.FC<{
             <img
               src={image}
               className="w-full h-auto object-contain bg-primary/20 rounded-md"
+              onClick={(e) => {
+                e.preventDefault();
+                onOpenPhotoLightBox?.();
+              }}
             />
           ) : (
             <FaFileCode
