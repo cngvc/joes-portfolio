@@ -1,8 +1,8 @@
 {
   "name": "Cong <span class='text-primary'>\"Joe\"</span> Vu",
   "role": "<span class='text-primary'>Full-Stack</span> Developer",
-  "skills": "React, NodeJS, React Native",
-  "bio": "Full-Stack Developer with over five years of experience in building scalable web and mobile applications using JavaScript frameworks like React and NodeJS.js. Skilled in collaborating with teams to deliver high-quality solutions and optimize user experience.",
+  "skills": "React, Node.js, React Native",
+  "bio": "Full-Stack Developer with over five years of experience in building scalable web and mobile applications using JavaScript frameworks like React and Node.js. Skilled in collaborating with teams to deliver high-quality solutions and optimize user experience.",
   "about": "Hello, my name is Cong, but you can call me <span class='text-primary font-semibold'>Joe</span>.<br/>I started my career as a mobile developer using React Native, gradually evolving to build systems from scratch and ensuring their continuous maintenance and updates. Furthermore, I've gained experience in blockchain projects, involving the development and interaction of smart contracts within a React environment, although specifics cannot be disclosed due to privacy policies.",
   "companies": [
     {
@@ -11,10 +11,10 @@
       "role": "Full-Stack Developer",
       "description": "As a member of a freelance full-stack developer team, I collaborated with clients from Vietnam and the United States, continuously pursuing avenues for professional advancement.",
       "job": [
-        "Proficient in time-tracking software with activity levels consistently exceeding 75%. Experienced in developing projects involving smart contract-based purchases. Built presale pages according to design specifications, and supervisor and end-user dashboards using React, Next.js, NodeJS.js.",
+        "Proficient in time-tracking software with activity levels consistently exceeding 75%. Experienced in developing projects involving smart contract-based purchases. Built presale pages according to design specifications, and supervisor and end-user dashboards using React, Next.js, Node.js.",
         "Participated in the development of multiple web and mobile applications."
       ],
-      "tech": ["NodeJS", "Solidity", "React", "Next", "Vercel", ".Net Core"]
+      "tech": ["Node.js", "Solidity", "React", "Next.js", "Vercel", ".Net Core"]
     },
     {
       "time": "Jul 2019 - Feb 2023",
@@ -75,14 +75,14 @@
         "role": "Comprised myself as the main developer and one main designer"
       },
       "role": [
-        "Developed essential project components, including a landing page, client dashboard, and admin dashboard using React. Additionally, a NodeJS.js server managed backend operations."
+        "Developed essential project components, including a landing page, client dashboard, and admin dashboard using React. Additionally, a Node.js server managed backend operations."
       ],
       "description": [
         "Phase 1 - Smart Contract Integration for Presale Purchases: Led the implementation of smart contracts to facilitate presale token purchases.",
         "Phase 2 - Transition to Third-Party Service: Implemented third-party services for automating token transactions, enhancing efficiency, scalability, and user experience. Enabled automatic asset transfers to client wallets, streamlining processes and ensuring seamless digital asset management.",
         "In summary, we employed smart contracts and third-party services to enable user participation in the presale while efficiently managing their assets, addresses, and accounts"
       ],
-      "tech": ["React", "NodeJS", "Solidity"]
+      "tech": ["React", "Node.js", "Solidity"]
     },
     {
       "image": "assets/fitness.jpg",
@@ -313,6 +313,29 @@
       "tech": ["React", "Tailwind CSS", "Hardhat", "Rainbow", "Ethers.js"],
       "goal": "Develop a full-stack web3 application integrating React with smart contracts using Hardhat and wallet connectivity.",
       "repo": "https://github.com/cngvc/simple-token-presale"
+    },
+    {
+      "url": "https://imageai.congvc.com/",
+      "title": "ImageAI",
+      "subtitle": "AI Image Generator and Chat with Gemini",
+      "description": [
+        "An AI-powered tool that generates images from text prompts, integrates Gemini for conversational interactions, and stores generated images in Cloudinary."
+      ],
+      "features": [
+        "Image Generation: Creates unique visuals based on user-provided text.",
+        "Chat Integration: Allows users to engage with Google Gemini for good conversational experience.",
+        "Cloud Storage: Uses Cloudinary to store and manage generated images efficiently."
+      ],
+      "tech": [
+        "Next.js",
+        "Tailwind CSS",
+        "Replicate (Generate Images)",
+        "Gemini",
+        "Cloudinary",
+        "MongoDB Atlas"
+      ],
+      "goal": "Explore AI and prompt concept through building an image generator with chat integration.",
+      "repo": "https://github.com/cngvc/imageai"
     }
   ]
 }
