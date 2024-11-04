@@ -10,7 +10,9 @@ const SideProject: React.FC<{
   features: string[];
   tech: string[];
   repo: string;
-}> = ({ url, title, description, tech, repo, features }) => {
+  subtitle?: string;
+  goal?: string;
+}> = ({ url, title, description, tech, repo, features, subtitle, goal }) => {
   return (
     <Card>
       <div className="group grid grid-cols-12 p-3 md:p-6">
@@ -19,12 +21,15 @@ const SideProject: React.FC<{
             <a
               target="_blank"
               href={url ?? "#"}
-              className="t4 leading-7 font-semibold mb-2 group-hover:text-primary flex items-center gap-2"
+              className="t4 leading-7 font-semibold mb-2 group-hover:text-primary flex flex-wrap items-center gap-2"
             >
               {title}
               <a target="_blank" href={repo ?? "#"}>
                 <FaGithub />
               </a>
+              {subtitle && (
+                <span className="t5 font-light opacity-60">({subtitle})</span>
+              )}
             </a>
 
             {description.map((e, index) => (
@@ -42,6 +47,13 @@ const SideProject: React.FC<{
                   </li>
                 ))}
               </ul>
+            )}
+
+            {goal && (
+              <div className="mb-4 t5 text-white/60">
+                <div className="text-white/60"></div>
+                <p className="text-white/60">Goal: {goal}</p>
+              </div>
             )}
 
             <div className="flex flex-wrap gap-2">

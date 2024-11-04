@@ -251,6 +251,20 @@
   ],
   "side-projects": [
     {
+      "url": "https://www.congvc.com",
+      "title": "Personal Portfolio Website",
+      "description": [
+        "A responsive portfolio website built with React and Tailwind CSS, showcasing my projects and skills. Designed to deliver a smooth user experience on both desktop and mobile devices."
+      ],
+      "features": [
+        "Responsive Design: Optimized for all screen sizes with Tailwind CSS, providing an engaging experience on both desktop and mobile.",
+        "Deployed with Vercel: Hosted on Vercel and automatic updates with every Git commit."
+      ],
+      "tech": ["React", "Tailwind CSS"],
+      "goal": "Create a responsive and visually appealing website to showcase my projects, skills, and experience.",
+      "repo": "https://github.com/cngvc/joes-portfolio"
+    },
+    {
       "url": "",
       "title": "Shop API Backend",
       "description": [
@@ -263,20 +277,42 @@
         "Error Handling: Custom filters handle errors gracefully to provide a good UX."
       ],
       "tech": ["NestJS", "TypeORM", "PostgresDB"],
+      "goal": "Build a project to learn NestJS concepts, including modules, decorators, middleware, guards, and TypeORM integration.",
       "repo": "https://github.com/cngvc/nestjs-shop-be"
     },
     {
-      "url": "https://www.congvc.com",
-      "title": "Personal Portfolio Website",
+      "url": "https://invoicify.congvc.com/",
+      "title": "Invoicify",
+      "subtitle": "Invoice creation and payment system",
       "description": [
-        "A responsive portfolio website built with React and Tailwind CSS, showcasing my projects and skills. Designed to deliver a smooth user experience on both desktop and mobile devices."
+        "A simple application built with Next.js, allowing users to create invoices and process payments securely. The project integrates tools for user management, data storage, payments, and email notifications."
       ],
       "features": [
-        "Responsive Design: Optimized for all screen sizes with Tailwind CSS, providing an engaging experience on both desktop and mobile.",
-        "Deployed with Vercel: Hosted on Vercel and automatic updates with every Git commit."
+        "Invoice Creation: Users can generate and manage invoices with ease.",
+        "Payment Integration: Stripe is integrated for secure payment processing.",
+        "User Management: Clerk handles user authentication and management.",
+        "Database: Utilizes Xata with PostgreSQL for structured data storage.",
+        "Email Notifications: Resend is used to send emails, notifying users about invoice creation."
       ],
-      "tech": ["React", "Tailwind CSS"],
-      "repo": "https://github.com/cngvc/joes-portfolio"
+      "tech": ["Next.js", "Stripe", "Clerk", "Xata", "Resend"],
+      "goal": "Build an invoice and payment solution as a practical exercise in using key SaaS tools (Clerk, Xata, Stripe, and Resend) for easy user management, database storage, payments, and email notifications.",
+      "repo": "https://github.com/cngvc/nextjs-invoicing-app"
+    },
+    {
+      "url": "https://meme-network.congvc.com/",
+      "title": "MEME Network",
+      "subtitle": "Buy $MEME presale token on testnet (Sepolia)",
+      "description": [
+        "A decentralized application (dApp) that combines a React frontend with a smart contract (Hardhat), allowing users to interact with the Ethereum blockchain."
+      ],
+      "features": [
+        "Smart Contract Development: Created using Hardhat, enabling deployment and testing on the Ethereum network.",
+        "Blockchain Interaction: Users can interact with smart contract functions directly from the React frontend.",
+        "Wallet Connection: Integrates Rainbow to connect MetaMask for user authentication and transaction handling."
+      ],
+      "tech": ["React", "Tailwind CSS", "Hardhat", "Rainbow", "Ethers.js"],
+      "goal": "Develop a full-stack web3 application integrating React with smart contracts using Hardhat and wallet connectivity.",
+      "repo": "https://github.com/cngvc/simple-token-presale"
     }
   ]
 }

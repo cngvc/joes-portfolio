@@ -178,7 +178,6 @@ function Home() {
               <span className="italic opacity-40 font-thin">
                 (some projects cannot be disclosed due to privacy policies)
               </span>
-              :
             </div>
             <div className="flex flex-col gap-2 overflow-hidden">
               {content.projects.map((e, index) => (
@@ -205,7 +204,7 @@ function Home() {
           {/* side projects */}
           <div ref={sideProjectRef} className="">
             <div className="p-3 md:p-6" ref={sideProject}>
-              <span className="c1">04.</span> Personal projects :
+              <span className="c1">04.</span> Side Projects I’ve Built
             </div>
             <div className="flex flex-col gap-2 overflow-hidden">
               {content["side-projects"].map((e, index) => (
@@ -217,6 +216,8 @@ function Home() {
                   tech={e.tech}
                   repo={e.repo}
                   features={e.features}
+                  subtitle={e.subtitle}
+                  goal={e.goal}
                 />
               ))}
             </div>
