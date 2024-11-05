@@ -22,6 +22,7 @@ const Company: React.FC<{
               target="_blank"
               href={url ?? "#"}
               className="t4 leading-7 font-medium mb-2 w-auto"
+              aria-label="Home"
             >
               {role ? `${role}, ` : ""}{" "}
               <span className="text-primary font-semibold">{company}</span>
@@ -34,8 +35,8 @@ const Company: React.FC<{
 
             <ul className="list-disc list-inside t5 text-white/60">
               {job.map((e, index) => (
-                <li key={index} className="t5 text-white/80 mb-4">
-                  {e}
+                <li key={index} className="mb-4">
+                  <span className="t5 text-white/80">{e}</span>
                 </li>
               ))}
             </ul>

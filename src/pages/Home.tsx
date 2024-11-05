@@ -1,5 +1,6 @@
 import { FaLinkedinIn, FaGithubAlt, FaEnvelope } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import Layout from "../components/Layout";
 import { externals } from "../urls";
 import Company from "../components/Company";
@@ -103,14 +104,17 @@ function Home() {
           <div className="flex flex-wrap gap-2 mb-4">
             <Social
               url={externals.linkedin}
+              type="Linkedin"
               icon={<FaLinkedinIn className="w-5 h-5" />}
             />
             <Social
               url={externals.github}
+              type="Github"
               icon={<FaGithubAlt className="w-5 h-5" />}
             />
             <Social
               url={externals.email}
+              type="Email"
               icon={<FaEnvelope className="w-5 h-5" />}
             />
           </div>
@@ -130,9 +134,10 @@ function Home() {
             <div className="flex flex-col gap-2 relative">
               <div className="group max-w-[10rem] w-full h-auto absolute right-4 -translate-y-full">
                 <div className="w-full h-full relative">
-                  <img
+                  <LazyLoadImage
+                    alt="Avatar"
                     src={"/assets/avatar.png"}
-                    className=" object-contain z-50"
+                    className="object-contain z-50 w-32 md:w-40 h-32 md:h-40"
                   />
                   <div className="opacity-0 group-hover:opacity-100 duration-200 absolute top-4 p-2 rounded-lg bg-[#1C1D20]/60 -translate-x-1/2 t6 backdrop-blur-sm">
                     Hi, Nice to meet you!.

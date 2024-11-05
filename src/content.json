@@ -2,8 +2,8 @@
   "name": "Cong <span class='text-primary'>\"Joe\"</span> Vu",
   "role": "<span class='text-primary'>Full-Stack</span> Developer",
   "skills": "React, Node.js, React Native",
-  "bio": "Full-Stack Developer with over five years of experience in building scalable web and mobile applications using JavaScript frameworks like React and Node.js. Skilled in collaborating with teams to deliver high-quality solutions and optimize user experience.",
-  "about": "Hello, my name is Cong, but you can call me <span class='text-primary font-semibold'>Joe</span>.<br/>I started my career as a mobile developer using React Native, gradually evolving to build systems from scratch and ensuring their continuous maintenance and updates. Furthermore, I've gained experience in blockchain projects, involving the development and interaction of smart contracts within a React environment, although specifics cannot be disclosed due to privacy policies.",
+  "bio": "Full-Stack Developer with 5+ years’ experience building scalable web and mobile apps using React and Node.js. Skilled in team collaboration and enhancing user experience.",
+  "about": "Hello, my name is Cong, but you can call me <span class='text-primary font-semibold'>Joe</span>.<br/>I started as a mobile developer with React Native, then expanded to building and maintaining systems from scratch using React and Node.js, adding experience in blockchain projects and smart contract integration.",
   "companies": [
     {
       "time": "Feb 2023 - May 2024",
@@ -67,7 +67,7 @@
   ],
   "projects": [
     {
-      "image": "assets/ico.jpg",
+      "image": "assets/ico.png",
       "url": "",
       "title": "Blockchain Project (ICO Token)",
       "composition": {
@@ -254,7 +254,8 @@
       "url": "https://www.congvc.com",
       "title": "Personal Portfolio Website",
       "description": [
-        "A responsive portfolio website built with React and Tailwind CSS, showcasing my projects and skills. Designed to deliver a smooth user experience on both desktop and mobile devices."
+        "A responsive portfolio website built with React and Tailwind CSS, showcasing my projects and skills. Designed to deliver a smooth user experience on both desktop and mobile devices.",
+        "Achieved a Performance score of over 90 on Google PageSpeed Insights."
       ],
       "features": [
         "Responsive Design: Optimized for all screen sizes with Tailwind CSS, providing an engaging experience on both desktop and mobile.",

@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFileCode } from "react-icons/fa";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import Card from "./Card";
 
 const Project: React.FC<{
@@ -37,13 +38,14 @@ const Project: React.FC<{
       <div className="group grid grid-cols-12 p-3 md:p-6">
         <div className="col-span-3 py-2 justify-center items-start hidden md:flex mr-4 md:mr-8 ">
           {image ? (
-            <img
+            <LazyLoadImage
               src={image}
               className="w-full h-auto object-contain bg-primary/20 rounded-md"
               onClick={(e) => {
                 e.preventDefault();
                 onOpenPhotoLightBox?.();
               }}
+              alt={title}
             />
           ) : (
             <FaFileCode
@@ -58,6 +60,7 @@ const Project: React.FC<{
               target="_blank"
               href={url ?? "#"}
               className="t4 leading-7 font-semibold mb-2 group-hover:text-primary flex items-center gap-2"
+              aria-label={title}
             >
               {title}{" "}
               {subtitle && (
@@ -83,9 +86,15 @@ const Project: React.FC<{
                 <div className="text-white/60">Team Composition:</div>
                 {composition && (
                   <>
-                    <li className="text-white/60">Size: {composition?.size}</li>
-                    <li className="text-white/60">
-                      Roles: {composition?.role}
+                    <li>
+                      <span className="text-white/60">
+                        Size: {composition?.size}
+                      </span>
+                    </li>
+                    <li>
+                      <span className="text-white/60">
+                        Roles: {composition?.role}
+                      </span>
                     </li>
                   </>
                 )}
@@ -96,8 +105,8 @@ const Project: React.FC<{
               <ul className="list-disc mb-4 list-inside t5 text-white/60">
                 <div className="text-white/60">My Responsibility:</div>
                 {role?.map((e, index) => (
-                  <li className="text-white/60" key={index}>
-                    {e}
+                  <li key={index}>
+                    <span className="text-white/60">{e}</span>
                   </li>
                 ))}
               </ul>
@@ -107,8 +116,8 @@ const Project: React.FC<{
               <ul className="list-disc mb-4 list-inside t5 text-white/60">
                 <div className="text-white/60">Collaboration:</div>
                 {collaboration?.map((e, index) => (
-                  <li className="text-white/60" key={index}>
-                    {e}
+                  <li key={index}>
+                    <span className="text-white/60">{e}</span>
                   </li>
                 ))}
               </ul>

@@ -22,10 +22,12 @@ const SideProject: React.FC<{
               target="_blank"
               href={url ?? "#"}
               className="t4 leading-7 font-semibold mb-2 group-hover:text-primary flex flex-wrap items-center gap-2"
+              aria-label={title}
             >
               {title}
-              <a target="_blank" href={repo ?? "#"}>
-                <FaGithub />
+
+              <a target="_blank" href={repo ?? "#"} aria-label="Github">
+                <FaGithub className="w-5 h-5" />
               </a>
               {subtitle && (
                 <span className="t5 font-light opacity-60">({subtitle})</span>
@@ -42,8 +44,8 @@ const SideProject: React.FC<{
               <ul className="list-disc mb-4 list-inside t5 text-white/60">
                 <div className="text-white/60">Main Features:</div>
                 {features?.map((e, index) => (
-                  <li className="text-white/60" key={index}>
-                    {e}
+                  <li key={index}>
+                    <span className="text-white/60">{e}</span>
                   </li>
                 ))}
               </ul>
