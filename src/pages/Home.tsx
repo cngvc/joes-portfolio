@@ -12,6 +12,7 @@ import Project from "../components/Project";
 import Surface from "../components/Surface";
 import FsLightbox from "fslightbox-react";
 import SideProject from "../components/SideProject";
+import { SiLeetcode } from "react-icons/si";
 
 const images = content.projects.map((e) => e.image);
 
@@ -116,6 +117,11 @@ function Home() {
               url={externals.email}
               type="Email"
               icon={<FaEnvelope className="w-5 h-5" />}
+            />
+            <Social
+              url={externals.leetcode}
+              type="Leetcode"
+              icon={<SiLeetcode className="w-5 h-5" />}
             />
           </div>
 
