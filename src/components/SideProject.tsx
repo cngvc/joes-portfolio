@@ -3,6 +3,7 @@ import Card from "./Card";
 import { FaGithub } from "react-icons/fa";
 import Techs from "./Techs";
 import Lists from "./Lists";
+import { BsArrowUpRight } from "react-icons/bs";
 
 const SideProject: React.FC<{
   url?: string;
@@ -27,14 +28,19 @@ const SideProject: React.FC<{
               aria-label={title}
             >
               {title}
-
               {subtitle && (
                 <span className="t5 font-light opacity-60">({subtitle})</span>
               )}
 
-              <a target="_blank" href={repo ?? "#"} aria-label="Github">
+              <a
+                target="_blank"
+                href={repo ?? "#"}
+                aria-label="Github"
+                className="duration-200 lg:hover:-translate-y-1 ease-in-out"
+              >
                 <FaGithub className="w-5 h-5" />
               </a>
+              <BsArrowUpRight className="w-5 h-5 lg:group-hover:-translate-y-1 lg:group-hover:translate-x-1 duration-200 ease-in-out" />
             </a>
 
             {description.map((e, index) => (

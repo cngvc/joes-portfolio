@@ -2,7 +2,7 @@ import { FaLinkedinIn, FaGithubAlt, FaEnvelope } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Layout from "../components/Layout";
-import { externals } from "../urls";
+import { externals, internal } from "../urls";
 import Company from "../components/Company";
 import content from "../content.json";
 import Social from "../components/Social";
@@ -13,6 +13,8 @@ import Surface from "../components/Surface";
 import FsLightbox from "fslightbox-react";
 import SideProject from "../components/SideProject";
 import { SiLeetcode } from "react-icons/si";
+import { Link } from "react-router-dom";
+import { TbMailShare } from "react-icons/tb";
 
 const images = content.projects.map((e) => e.image);
 
@@ -73,7 +75,6 @@ function Home() {
             <p className="t5 opacity-80 font-mono">{content.skills}</p>
             <p className="t5 opacity-80">{content.bio}</p>
           </div>
-
           <div className="flex flex-col gap-3 mb-3">
             {menu.map((e) => (
               <p
@@ -101,7 +102,6 @@ function Home() {
               </span>
             </a>
           </div>
-
           <div className="flex flex-wrap gap-2 mb-4">
             <Social
               url={externals.linkedin}
@@ -125,7 +125,17 @@ function Home() {
             />
           </div>
 
-          <div className="t5 opacity-20">Designed by Joe</div>
+          <Link
+            to={internal.email}
+            className="group flex items-center flex-wrap gap-2 mb-3"
+          >
+            <span className="t5 text-white/80 lg:group-hover:text-white duration-200 font-medium">
+              Short me an email
+            </span>{" "}
+            <TbMailShare className="w-5 h-5 lg:group-hover:translate-x-1 duration-200 ease-in-out" />
+          </Link>
+
+          <div className="t5 text-white/20">Designed & Developed by Joe</div>
         </div>
 
         <div className="lg:col-span-7 py-20 max-lg:pb-20 overflow-y-auto scroll-smooth-thin">

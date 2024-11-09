@@ -1,8 +1,7 @@
-import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { internal } from "../urls";
 import RootLayout from "../components/RootLayout";
 import Surface from "../components/Surface";
+import BackHome from "../components/BackHome";
 
 const NotFound = () => {
   return (
@@ -18,17 +17,10 @@ const NotFound = () => {
             />
             <div className="border border-primary flex flex-col p-6 items-center justify-center w-full gap-4 bg-primary/5">
               <h1 className="text-center">404</h1>
-              <p className="t3 text-center">
+              <p className="t4 text-center">
                 Oops ... sorry I can't find the page you're looking for.
               </p>
-              <Link
-                to={internal.home}
-                replace
-                className="t3 font-medium text-center text-primary"
-                aria-label="Home"
-              >
-                Back to Home
-              </Link>
+              <BackHome />
             </div>
           </div>
         </div>

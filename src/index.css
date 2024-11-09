@@ -25,18 +25,6 @@
   h2 {
     @apply font-secondary text-3xl lg:text-4xl font-bold;
   }
-  h3 {
-    @apply font-secondary text-2xl lg:text-3xl font-medium;
-  }
-  h4 {
-    @apply font-secondary text-xl lg:text-2xl font-medium;
-  }
-  h5 {
-    @apply font-secondary text-lg lg:text-xl font-medium;
-  }
-  h6 {
-    @apply font-secondary text-base lg:text-lg font-medium;
-  }
 }
 
 @layer components {
