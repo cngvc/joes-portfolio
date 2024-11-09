@@ -94,7 +94,7 @@ function Home() {
             <a
               href="/assets/congs-resume.pdf"
               target="_blank"
-              className="relative inline-flex items-center justify-center p-0.5 overflow-hidden rounded-lg group bg-gradient-to-r from-pink-400 to-orange-400 group-hover:from-pink-400 group-hover:to-orange-400 text-white focus:ring-0 focus:outline-none duration-100 shadow-lg shadow-pink-400/50"
+              className="relative inline-flex items-center justify-center p-0.5 overflow-hidden rounded-lg group bg-gradient-to-r from-pink-400 to-orange-400 lg:group-hover:from-pink-400 lg:group-hover:to-orange-400 text-white focus:ring-0 focus:outline-none duration-100 shadow-lg shadow-pink-400/50"
             >
               <span className="t5 font-normal relative px-4 py-2 transition-all ease-in rounded-md duration-100">
                 My Resume
@@ -145,7 +145,7 @@ function Home() {
                     src={"/assets/avatar.png"}
                     className="object-contain z-50 w-32 md:w-40 h-32 md:h-40"
                   />
-                  <div className="opacity-0 group-hover:opacity-100 duration-200 absolute top-4 p-2 rounded-lg bg-[#1C1D20]/60 -translate-x-1/2 t6 backdrop-blur-sm">
+                  <div className="opacity-0 lg:group-hover:opacity-100 duration-200 absolute top-4 p-2 rounded-lg bg-[#1C1D20]/60 -translate-x-1/2 t6 backdrop-blur-sm">
                     Hi, Nice to meet you!.
                   </div>
                 </div>
@@ -166,50 +166,55 @@ function Home() {
               <span className="c1">02.</span> Where I've worked
             </div>
 
-            <div className="flex flex-col gap-2 overflow-hidden">
+            <ol className="gap-2 overflow-hidden list-none group/list">
               {content.companies.map((e, index) => (
-                <Company
-                  key={index}
-                  time={e.time}
-                  url={e.url}
-                  company={e.company}
-                  role={e.role}
-                  description={e.description}
-                  job={e.job}
-                  tech={e.tech}
-                />
+                <li className="lg:hover:!opacity-100 lg:group-hover/list:opacity-50 duration-200">
+                  <Company
+                    key={index}
+                    time={e.time}
+                    url={e.url}
+                    company={e.company}
+                    role={e.role}
+                    description={e.description}
+                    job={e.job}
+                    techs={e.techs}
+                  />
+                </li>
               ))}
-            </div>
+            </ol>
           </div>
 
           {/* projects */}
-          <div ref={projectRef} className="">
+          <div ref={projectRef}>
             <div className="p-3 md:p-6" ref={project}>
               <span className="c1">03.</span> Projects I've participated in{" "}
               <span className="italic opacity-40 font-thin">
                 (some projects cannot be disclosed due to privacy policies)
               </span>
             </div>
-            <div className="flex flex-col gap-2 overflow-hidden">
+
+            <ol className="gap-2 overflow-hidden list-none group/list">
               {content.projects.map((e, index) => (
-                <Project
-                  key={index}
-                  image={e.image}
-                  url={e.url}
-                  title={e.title}
-                  description={e.description}
-                  tech={e.tech}
-                  composition={e.composition}
-                  subtitle={e.subtitle}
-                  collaboration={e.collaboration}
-                  role={e.role}
-                  onOpenPhotoLightBox={() => {
-                    $isOpenLightBox((cur) => !cur);
-                    $selectedImage(index);
-                  }}
-                />
+                <li className="lg:hover:!opacity-100 lg:group-hover/list:opacity-50 duration-200">
+                  <Project
+                    key={index}
+                    image={e.image}
+                    url={e.url}
+                    title={e.title}
+                    description={e.description}
+                    techs={e.techs}
+                    composition={e.composition}
+                    subtitle={e.subtitle}
+                    collaboration={e.collaboration}
+                    role={e.role}
+                    onOpenPhotoLightBox={() => {
+                      $isOpenLightBox((cur) => !cur);
+                      $selectedImage(index);
+                    }}
+                  />
+                </li>
               ))}
-            </div>
+            </ol>
           </div>
 
           {/* side projects */}
@@ -217,21 +222,23 @@ function Home() {
             <div className="p-3 md:p-6" ref={sideProject}>
               <span className="c1">04.</span> Side Projects I’ve Built
             </div>
-            <div className="flex flex-col gap-2 overflow-hidden">
+            <ol className="gap-2 overflow-hidden list-none group/list">
               {content["side-projects"].map((e, index) => (
-                <SideProject
-                  key={index}
-                  url={e.url}
-                  title={e.title}
-                  description={e.description}
-                  tech={e.tech}
-                  repo={e.repo}
-                  features={e.features}
-                  subtitle={e.subtitle}
-                  goal={e.goal}
-                />
+                <li className="lg:hover:!opacity-100 lg:group-hover/list:opacity-50 duration-200">
+                  <SideProject
+                    key={index}
+                    url={e.url}
+                    title={e.title}
+                    description={e.description}
+                    techs={e.techs}
+                    repo={e.repo}
+                    features={e.features}
+                    subtitle={e.subtitle}
+                    goal={e.goal}
+                  />
+                </li>
               ))}
-            </div>
+            </ol>
           </div>
         </div>
       </div>

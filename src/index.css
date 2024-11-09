@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --background-color: 27 38 44;
-  --primary-color: 50 130 184;
-  --primary-color-dark: 15 76 117;
-  --primary-color-light: 187 225 250;
+  --background-color: 34 40 49;
+  --primary-color: 0 173 181;
+  --primary-color-dark: 0 100 105;
+  --primary-color-light: 2 244 255;
 }
 
 @layer base {

@@ -1,6 +1,6 @@
 {
   "name": "Cong <span class='text-primary'>\"Joe\"</span> Vu",
-  "role": "<span class='text-primary'>Full-Stack</span> Developer",
+  "role": "<span class='text-primary'>Middle Full-Stack</span> Developer",
   "skills": "React, Node.js, React Native",
   "bio": "Full-Stack Developer with 5+ years’ experience building scalable web and mobile apps using React and Node.js. Skilled in team collaboration and enhancing user experience.",
   "about": "Hello, my name is Cong, but you can call me <span class='text-primary font-semibold'>Joe</span>.<br/>I started as a mobile developer with React Native, then expanded to building and maintaining systems from scratch using React and Node.js, adding experience in blockchain projects and smart contract integration.",
@@ -14,14 +14,21 @@
         "Proficient in time-tracking software with activity levels consistently exceeding 75%. Experienced in developing projects involving smart contract-based purchases. Built presale pages according to design specifications, and supervisor and end-user dashboards using React, Next.js, Node.js.",
         "Participated in the development of multiple web and mobile applications."
       ],
-      "tech": ["Node.js", "Solidity", "React", "Next.js", "Vercel", ".Net Core"]
+      "techs": [
+        "Node.js",
+        "Solidity",
+        "React",
+        "Next.js",
+        "Vercel",
+        ".Net Core"
+      ]
     },
     {
       "time": "Jul 2019 - Feb 2023",
       "company": "Bright Software Solution",
       "url": "https://www.brightsoftsolution.com/",
       "role": "Full-Stack Developer",
-      "description": "At Bright Software Solution, I collaborated with clients from Sweden, India, and diverse European countries, prioritizing new technologies and adaptability in work. Key responsibilities and achievements include:",
+      "description": "At Bright Software Solution, I collaborated with clients from Sweden, India, and diverse European countries, prioritizing new techsnologies and adaptability in work. Key responsibilities and achievements include:",
       "job": [
         "Developed and maintained a mobile application for teachers to manage students, classes, and a CMS to manage employees and sessions.",
         "Created web and mobile app in the education sector to facilitate interaction between students and teachers through real-time features.",
@@ -29,7 +36,7 @@
         "Collaborated with client-side design teams to craft clean, responsive UI designs. Managed a web application dedicated to promoting events for schools and communities. Actively engaged in code reviews, providing constructive feedback to uphold code quality and coherence.",
         "Worked onsite at partner companies for six months, contributing to successful project execution."
       ],
-      "tech": [
+      "techs": [
         "React",
         "React Native",
         ".NET Core",
@@ -49,7 +56,7 @@
         "Developed a mobile app for cleaner bookings with payment processing, real-time chat, and map integration for location-based services.",
         "Worked closely with the test and design teams daily to ensure high-quality deliverables."
       ],
-      "tech": ["React Native"]
+      "techs": ["React Native"]
     },
     {
       "time": "Aug 2017 - Mar 2018",
@@ -62,7 +69,7 @@
         "Participated in the application release process, gaining valuable experience in mobile app deployment and distribution.",
         "Engaged in the company’s design courses and workshops to enhance my understanding of user experience and design thinking."
       ],
-      "tech": ["React Native"]
+      "techs": ["React Native"]
     }
   ],
   "projects": [
@@ -82,7 +89,7 @@
         "Phase 2 - Transition to Third-Party Service: Implemented third-party services for automating token transactions, enhancing efficiency, scalability, and user experience. Enabled automatic asset transfers to client wallets, streamlining processes and ensuring seamless digital asset management.",
         "In summary, we employed smart contracts and third-party services to enable user participation in the presale while efficiently managing their assets, addresses, and accounts"
       ],
-      "tech": ["React", "Node.js", "Solidity"]
+      "techs": ["React", "Node.js", "Solidity"]
     },
     {
       "image": "assets/fitness.jpg",
@@ -101,7 +108,7 @@
       "description": [
         "Fitness mobile app was designed to provide users with personalized workout courses focusing on specific muscle groups."
       ],
-      "tech": ["React Native", "Expo", "Azure Portal"]
+      "techs": ["React Native", "Expo", "Azure Portal"]
     },
     {
       "image": "assets/grapeseed.png",
@@ -123,7 +130,7 @@
         "An online English learning application, with a focus on facilitating interaction between students and teachers through streaming platforms.",
         "Used React Native and WebRTC to develop real-time video streaming capabilities, facilitating seamless interaction between students and teachers and significantly improving the online learning experience."
       ],
-      "tech": ["Vue", "React Native", "Agora SDK", "Zoom SDK", ".NET Core"]
+      "techs": ["Vue", "React Native", "Agora SDK", "Zoom SDK", ".NET Core"]
     },
     {
       "image": "assets/om.png",
@@ -139,7 +146,7 @@
       "role": [
         "Involved frontend and mobile development while also providing assistance to the backend developer as needed."
       ],
-      "tech": ["React", "React Native", "Groovy"]
+      "techs": ["React", "React Native", "Groovy"]
     },
     {
       "image": "assets/iconist.png",
@@ -156,7 +163,7 @@
         "Implemented both the backend infrastructure using Firebase and the frontend components.",
         "Supervised and mentored a frontend intern, guiding them in frontend development tasks."
       ],
-      "tech": ["React Native", "React", "Firebase", "Expo"]
+      "techs": ["React Native", "React", "Firebase", "Expo"]
     },
     {
       "image": "assets/eheart.png",
@@ -173,7 +180,7 @@
       "description": [
         "An online platform where patients can conveniently book appointments at clinics located near them."
       ],
-      "tech": [".NET Core"]
+      "techs": [".NET Core"]
     },
     {
       "image": "assets/base23.png",
@@ -191,7 +198,7 @@
         "Created APIs to facilitate communication between the frontend and backend components of the school management system.",
         "Supported frontend developers as needed, assisting with any frontend-related issues or tasks."
       ],
-      "tech": ["React", "React Native", ".NET Core"]
+      "techs": ["React", "React Native", ".NET Core"]
     },
     {
       "image": "assets/mas.png",
@@ -209,7 +216,7 @@
         "Integrated Google Maps API to enable distance tracking functionality within the application.",
         "Developed and implemented the mobile user interface to ensure a seamless and intuitive user experience."
       ],
-      "tech": ["React Native", "Firebase", "Google Map APIs"]
+      "techs": ["React Native", "Firebase", "Google Map APIs"]
     },
     {
       "image": "assets/vio.png",
@@ -229,7 +236,7 @@
         "Cooperated closely with backend developers to ensure seamless integration of frontend and backend components.",
         "Collaborated with the designer to define design concepts into functional and visually appealing user interfaces."
       ],
-      "tech": ["React", "Django"]
+      "techs": ["React", "Django"]
     },
     {
       "image": "assets/osouji.png",
@@ -246,7 +253,7 @@
       "description": [
         "The concept revolves around creating a job marketplace focused on services related to house cleaning and hotels, integrating payment systems and providing directions for seamless transactions."
       ],
-      "tech": ["React Native"]
+      "techs": ["React Native"]
     }
   ],
   "side-projects": [
@@ -261,7 +268,7 @@
         "Responsive Design: Optimized for all screen sizes with Tailwind CSS, providing an engaging experience on both desktop and mobile.",
         "Deployed with Vercel: Hosted on Vercel and automatic updates with every Git commit."
       ],
-      "tech": ["React", "Tailwind CSS"],
+      "techs": ["React", "Tailwind CSS"],
       "goal": "Create a responsive and visually appealing website to showcase my projects, skills, and experience.",
       "repo": "https://github.com/cngvc/joes-portfolio"
     },
@@ -277,7 +284,7 @@
         "Custom Middleware and Guards: Middleware to process requests, and guards to enforce role-based access control.",
         "Error Handling: Custom filters handle errors gracefully to provide a good UX."
       ],
-      "tech": ["NestJS", "TypeORM", "PostgresDB"],
+      "techs": ["NestJS", "TypeORM", "PostgresDB"],
       "goal": "Build a project to learn NestJS concepts, including modules, decorators, middleware, guards, and TypeORM integration.",
       "repo": "https://github.com/cngvc/nestjs-shop-be"
     },
@@ -295,7 +302,7 @@
         "Database: Utilizes Xata with PostgreSQL for structured data storage.",
         "Email Notifications: Resend is used to send emails, notifying users about invoice creation."
       ],
-      "tech": ["Next.js", "Stripe", "Clerk", "Xata", "Resend"],
+      "techs": ["Next.js", "Stripe", "Clerk", "Xata", "Resend"],
       "goal": "Build an invoice and payment solution as a practical exercise in using key SaaS tools (Clerk, Xata, Stripe, and Resend) for easy user management, database storage, payments, and email notifications.",
       "repo": "https://github.com/cngvc/nextjs-invoicing-app"
     },
@@ -311,7 +318,7 @@
         "Blockchain Interaction: Users can interact with smart contract functions directly from the React frontend.",
         "Wallet Connection: Integrates Rainbow to connect MetaMask for user authentication and transaction handling."
       ],
-      "tech": ["React", "Tailwind CSS", "Hardhat", "Rainbow", "Ethers.js"],
+      "techs": ["React", "Tailwind CSS", "Hardhat", "Rainbow", "Ethers.js"],
       "goal": "Develop a full-stack web3 application integrating React with smart contracts using Hardhat and wallet connectivity.",
       "repo": "https://github.com/cngvc/simple-token-presale"
     },
@@ -327,7 +334,7 @@
         "Chat Integration: Allows users to engage with Google Gemini for good conversational experience.",
         "Cloud Storage: Uses Cloudinary to store and manage generated images efficiently."
       ],
-      "tech": [
+      "techs": [
         "Next.js",
         "Tailwind CSS",
         "Replicate (Generate Images)",

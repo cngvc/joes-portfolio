@@ -22,19 +22,6 @@ const RootLayout: React.FC<RootProps> = ({ children }) => {
     };
   }, []);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const surface = document.getElementById("surface");
-      if (surface) {
-        surface.style.background = `transparent`;
-      }
-    };
-    document.addEventListener("scroll", handleScroll);
-    return () => {
-      document.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return <>{children}</>;
 };
 

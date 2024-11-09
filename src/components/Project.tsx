@@ -2,6 +2,8 @@ import React from "react";
 import { FaFileCode } from "react-icons/fa";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Card from "./Card";
+import Techs from "./Techs";
+import Lists from "./Lists";
 
 const Project: React.FC<{
   url?: string;
@@ -18,7 +20,7 @@ const Project: React.FC<{
   collaboration: string[] | undefined;
   role: string[] | undefined;
   job?: string;
-  tech: string[];
+  techs: string[];
   onOpenPhotoLightBox?: () => void;
 }> = ({
   url,
@@ -27,7 +29,7 @@ const Project: React.FC<{
   subtitle,
   description,
   job,
-  tech,
+  techs,
   composition,
   collaboration,
   role,
@@ -35,8 +37,8 @@ const Project: React.FC<{
 }) => {
   return (
     <Card>
-      <div className="group grid grid-cols-12 p-3 md:p-6">
-        <div className="col-span-3 py-2 justify-center items-start hidden md:flex mr-4 md:mr-8 ">
+      <div className="grid grid-cols-12 p-3 md:p-6">
+        <div className="col-span-3 py-2 justify-center items-start hidden md:flex mr-4 md:mr-8">
           {image ? (
             <LazyLoadImage
               src={image}
@@ -59,40 +61,47 @@ const Project: React.FC<{
             <a
               target="_blank"
               href={url ?? "#"}
-              className="t4 leading-7 font-semibold mb-2 group-hover:text-primary flex items-center gap-2"
+              className="t4 leading-7 font-semibold mb-2 lg:group-hover:text-primary duration-200 flex flex-wrap items-center gap-2"
               aria-label={title}
             >
               {title}{" "}
               {subtitle && (
-                <span className="t5 font-light opacity-60">({subtitle})</span>
+                <span className="t5 font-light text-white/60">
+                  ({subtitle})
+                </span>
               )}
             </a>
 
             {description.map((e, index) => (
-              <p key={index} className="t5 text-white/80 mb-4">
+              <p
+                key={index}
+                className="t5 text-white/80 mb-4 lg:group-hover:text-white duration-200"
+              >
                 {e}
               </p>
             ))}
 
             {job && (
               <div
-                className="t5 text-white/80 mb-4"
+                className="t5 text-white/80 mb-4 lg:group-hover:text-white duration-200"
                 dangerouslySetInnerHTML={{ __html: job }}
               />
             )}
 
             {composition && (
               <ul className="list-disc mb-4 list-inside t5">
-                <div className="text-white/60">Team Composition:</div>
+                <div className="text-white/60 lg:group-hover:text-white duration-200">
+                  Team Composition:
+                </div>
                 {composition && (
                   <>
                     <li>
-                      <span className="text-white/60">
+                      <span className="text-white/60 lg:group-hover:text-white duration-200">
                         Size: {composition?.size}
                       </span>
                     </li>
                     <li>
-                      <span className="text-white/60">
+                      <span className="text-white/60 lg:group-hover:text-white duration-200">
                         Roles: {composition?.role}
                       </span>
                     </li>
@@ -101,38 +110,9 @@ const Project: React.FC<{
               </ul>
             )}
 
-            {role && (
-              <ul className="list-disc mb-4 list-inside t5 text-white/60">
-                <div className="text-white/60">My Responsibility:</div>
-                {role?.map((e, index) => (
-                  <li key={index}>
-                    <span className="text-white/60">{e}</span>
-                  </li>
-                ))}
-              </ul>
-            )}
-
-            {collaboration && (
-              <ul className="list-disc mb-4 list-inside t5 text-white/60">
-                <div className="text-white/60">Collaboration:</div>
-                {collaboration?.map((e, index) => (
-                  <li key={index}>
-                    <span className="text-white/60">{e}</span>
-                  </li>
-                ))}
-              </ul>
-            )}
-
-            <div className="flex flex-wrap gap-2">
-              {tech.map((e, index) => (
-                <div
-                  key={index}
-                  className="t6 py-1 px-2 text-primary-light bg-primary-dark rounded-full"
-                >
-                  {e}
-                </div>
-              ))}
-            </div>
+            <Lists label="My Responsibility" data={role} />
+            <Lists label="Collaboration" data={collaboration} />
+            <Techs techs={techs} />
           </div>
         </div>
       </div>
