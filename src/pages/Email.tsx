@@ -97,10 +97,12 @@ const Email = () => {
 
       <Surface />
       <div className="min-h-screen max-w-screen-2xl w-full flex flex-col mx-auto px-6 md:px-12 lg:px-24 py-5">
-        <div className="flex flex-col items-center justify-center h-full max-w-lg m-auto">
+        <div className="flex flex-col items-center justify-center h-full max-w-lg m-auto hero bg-primary/5 p-8">
           <h2 className="text-center mb-5">Send me a message!</h2>
           <p className="t4 text-center mb-5">
-            Got a question or proposal, or just want to say hello? Go ahead.
+            Got a question or proposal, or just want to say hello?
+            <br />
+            Go ahead.
           </p>
           <form
             ref={form}
@@ -115,14 +117,14 @@ const Email = () => {
                 type="text"
                 name="user_name"
                 id="user_name"
-                className="block py-2.5 px-0 w-full t5 bg-transparent border-0 border-b-2 appearance-none text-white border-gray-600 focus:outline-none focus:ring-0 focus:border-primary peer"
+                className="block py-2.5 px-0 w-full t5 bg-transparent border-0 border-b-2 appearance-none text-white border-primary/40 focus:outline-none focus:ring-0 focus:border-primary peer"
                 placeholder=" "
                 required
                 autoComplete="off"
               />
               <label
                 htmlFor="user_name"
-                className="peer-focus:font-medium absolute t5 text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                className="peer-focus:font-medium absolute t5 text-primary/40 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
                 Your Name
               </label>
@@ -133,14 +135,14 @@ const Email = () => {
                 type="email"
                 name="user_email"
                 id="user_email"
-                className="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 appearance-none text-white border-gray-600 focus:outline-none focus:ring-0 focus:border-primary peer"
+                className="block py-2.5 px-0 w-full t5 bg-transparent border-0 border-b-2 appearance-none text-white border-primary/40 focus:outline-none focus:ring-0 focus:border-primary peer"
                 required
                 placeholder=" "
                 autoComplete="off"
               />
               <label
                 htmlFor="user_email"
-                className="peer-focus:font-medium absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                className="peer-focus:font-medium absolute t5 text-primary/40 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
                 Email Address
               </label>
@@ -151,20 +153,20 @@ const Email = () => {
                 name="floating_message"
                 rows={4}
                 id="floating_message"
-                className="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 appearance-none text-white border-gray-600 focus:outline-none focus:ring-0 focus:border-primary peer"
+                className="resize-none scroll-smooth-thin block py-2.5 px-0 w-full t5 bg-transparent border-0 border-b-2 appearance-none text-white border-primary/40 focus:outline-none focus:ring-0 focus:border-primary peer"
                 required
                 placeholder=" "
                 autoComplete="off"
               />
               <label
                 htmlFor="floating_message"
-                className="peer-focus:font-medium absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                className="peer-focus:font-medium absolute t5 text-primary/40 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
                 Your Messages
               </label>
             </div>
 
-            <div className="mb-8">
+            <div className="mb-4">
               <button
                 disabled={isLoading}
                 type="submit"

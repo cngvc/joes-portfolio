@@ -102,7 +102,7 @@ function Home() {
               </span>
             </a>
           </div>
-          <div className="flex flex-wrap gap-2 mb-4">
+          <div className="flex flex-wrap gap-2">
             <Social
               url={externals.linkedin}
               type="Linkedin"
@@ -127,7 +127,7 @@ function Home() {
 
           <Link
             to={internal.email}
-            className="group flex items-center flex-wrap gap-2 mb-3"
+            className="group flex items-center flex-wrap gap-2"
           >
             <span className="t5 text-white/80 lg:group-hover:text-white duration-200 font-medium">
               Short me an email
