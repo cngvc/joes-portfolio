@@ -150,9 +150,9 @@ const Email = () => {
 
             <div className="relative z-0 w-full mb-8 group">
               <textarea
-                name="floating_message"
+                name="message"
                 rows={4}
-                id="floating_message"
+                id="message"
                 className="resize-none scroll-smooth-thin block py-2.5 px-0 w-full t5 bg-transparent border-0 border-b-2 appearance-none text-white border-primary/40 focus:outline-none focus:ring-0 focus:border-primary peer"
                 required
                 placeholder=" "
