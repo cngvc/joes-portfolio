@@ -344,6 +344,22 @@
       ],
       "goal": "Explore AI and prompt concept through building an image generator with chat integration.",
       "repo": "https://github.com/cngvc/imageai"
+    },
+    {
+      "url": "https://docs-rep.congvc.com/",
+      "title": "Docs Clone",
+      "subtitle": "Collaborative Document Editing",
+      "description": [
+        "A real-time collaborative document editing application inspired by Google Docs. Built with Next.js, the app supports user authentication, live collaboration, and seamless document management."
+      ],
+      "features": [
+        "Real-Time Collaboration: Live document editing with synchronization powered by Liveblocks.",
+        "User Management: Integrates Clerk for secure and user-friendly authentication.",
+        "Database Management: Uses Convex to store and manage documents efficiently."
+      ],
+      "techs": ["Next.js", "Clerk", "Convex", "Liveblocks"],
+      "goal": "Create a document collaboration tool to explore real-time web technologies.",
+      "repo": "https://github.com/cngvc/google-docs-clone"
     }
   ]
 }
