@@ -360,6 +360,23 @@
       "techs": ["Next.js", "Clerk", "Convex", "Liveblocks"],
       "goal": "Create a document collaboration tool to explore real-time web technologies.",
       "repo": "https://github.com/cngvc/google-docs-clone"
+    },
+    {
+      "url": "https://finlog.congvc.com/",
+      "title": "Finlog",
+      "subtitle": "Expense Logging and Management",
+      "description": [
+        "A personal finance management tool to log expenses and track financial activity. Finlog integrates modern tools to provide a seamless user experience for managing personal finances."
+      ],
+      "features": [
+        "Subscription Management: Uses LemonSqueezy for managing user subscriptions.",
+        "Banking Integration: Connects with bank accounts using Plaid for real-time financial data.",
+        "User Authentication: Secure and smooth user experience powered by Clerk.",
+        "Database Management: Implements Drizzle ORM for efficient and scalable data handling."
+      ],
+      "techs": ["Next.js", "Clerk", "Drizzle ORM", "LemonSqueezy", "Plaid"],
+      "goal": "Build a modern personal finance tracking app.",
+      "repo": "https://github.com/cngvc/finlog"
     }
   ]
 }
