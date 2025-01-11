@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-color: 34 40 49;
+  --primary-color: 0 173 181;
+  --primary-color-dark: 0 100 105;
+  --primary-color-light: 2 244 255;
+}
+
+@layer base {
+  * {
+    @apply text-white;
+  }
+  html {
+    @apply scroll-smooth-thin;
+  }
+  body {
+    @apply bg-background;
+  }
+  h1 {
+    @apply font-secondary text-4xl lg:text-5xl text-white font-bold;
+  }
+  h2 {
+    @apply font-secondary text-3xl lg:text-4xl font-bold;
+  }
+}
+
+@layer components {
+  .scroll-smooth-thin {
+    @apply scroll-smooth scrollbar-thin scrollbar-thumb-primary/60 scrollbar-track-background;
+  }
+
+  .t1 {
+    @apply font-primary text-2xl lg:text-3xl text-white font-bold;
+  }
+  .t2 {
+    @apply font-primary text-xl lg:text-2xl text-white font-semibold;
+  }
+  .t3 {
+    @apply font-primary text-lg lg:text-xl text-white font-light;
+  }
+  .t4 {
+    @apply font-primary text-base lg:text-lg text-white font-light;
+  }
+  .t5 {
+    @apply font-primary text-sm lg:text-base text-white font-light;
+  }
+  .t6 {
+    @apply font-primary text-sm text-white font-light;
+  }
+  .c1 {
+    @apply font-code text-sm lg:text-base text-primary font-normal;
+  }
+
+  .hero {
+    background: linear-gradient(
+          to right,
+          rgb(var(--primary-color)) 1px,
+          transparent 1px
+        )
+        0 0,
+      linear-gradient(to right, rgb(var(--primary-color)) 1px, transparent 1px)
+        0 100%,
+      linear-gradient(to left, rgb(var(--primary-color)) 1px, transparent 1px)
+        100% 0,
+      linear-gradient(to left, rgb(var(--primary-color)) 1px, transparent 1px)
+        100% 100%,
+      linear-gradient(to bottom, rgb(var(--primary-color)) 1px, transparent 1px)
+        0 0,
+      linear-gradient(to bottom, rgb(var(--primary-color)) 1px, transparent 1px)
+        100% 0,
+      linear-gradient(to top, rgb(var(--primary-color)) 1px, transparent 1px) 0
+        100%,
+      linear-gradient(to top, rgb(var(--primary-color)) 1px, transparent 1px)
+        100% 100%;
+    @apply bg-no-repeat;
+    @apply bg-[length:20px_20px];
+  }
+
+  .bg_header {
+    @apply bg-[#1C1D20]/60 backdrop-blur-md;
+  }
+}
