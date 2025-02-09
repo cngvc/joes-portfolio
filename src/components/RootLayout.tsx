@@ -13,7 +13,7 @@ const RootLayout: React.FC<RootProps> = ({ children }) => {
           event.clientX
         }px ${
           event.clientY + window.scrollY
-        }px, rgba(15, 76, 117, 0.2), transparent 80%)`;
+        }px, rgba(227, 135, 79, 0.1), transparent 80%)`;
       }
     };
     document.addEventListener("mousemove", handleMouseMove);

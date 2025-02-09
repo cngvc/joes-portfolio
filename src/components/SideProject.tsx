@@ -1,9 +1,9 @@
 import React from "react";
-import Card from "./Card";
-import { FaGithub } from "react-icons/fa";
-import Techs from "./Techs";
-import Lists from "./Lists";
 import { BsArrowUpRight } from "react-icons/bs";
+import { FaGithub } from "react-icons/fa";
+import Card from "./Card";
+import Lists from "./Lists";
+import Techs from "./Techs";
 
 const SideProject: React.FC<{
   url?: string;

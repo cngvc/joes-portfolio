@@ -1,17 +1,18 @@
-import RootLayout from "../components/RootLayout";
-import Surface from "../components/Surface";
-import BackHome from "../components/BackHome";
-import { FormEvent, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { useNavigate } from "react-router-dom";
-import { internal } from "../urls";
 import {
   Dialog,
   DialogBackdrop,
   DialogPanel,
   DialogTitle,
 } from "@headlessui/react";
+import { FormEvent, useRef, useState } from "react";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { useNavigate } from "react-router-dom";
+import BackHome from "../components/BackHome";
+import Layout from "../components/Layout";
+import Surface from "../components/Surface";
+import { internal } from "../urls";
 
 const Email = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -34,7 +35,7 @@ const Email = () => {
         form.current,
         {
           publicKey: `${import.meta.env.VITE_EMAIL_PUBLIC_KEY}`,
-        }
+        },
       );
       $alert({
         label: "Thank You!",
@@ -52,8 +53,11 @@ const Email = () => {
       $isLoading(false);
     }
   };
+
   return (
-    <RootLayout>
+    <Layout hideProgress>
+      <Surface />
+
       <Dialog open={open} onClose={$open} className="relative z-10">
         <DialogBackdrop
           transition
@@ -85,7 +89,7 @@ const Email = () => {
                     $open(false);
                     navigate(internal.home);
                   }}
-                  className="inline-flex w-full justify-center rounded-md bg-primary px-3 py-2 t5 font-normal text-white shadow-sm hover:bg-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-dark"
+                  className="inline-flex w-full justify-center rounded-md bg-primary px-3 py-2 t5 font-normal text-white shadow-sm hover:bg-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary/80"
                 >
                   Go back to home
                 </button>
@@ -95,11 +99,17 @@ const Email = () => {
         </div>
       </Dialog>
 
-      <Surface />
       <div className="min-h-screen max-w-screen-2xl w-full flex flex-col mx-auto px-6 md:px-12 lg:px-24 py-5">
-        <div className="flex flex-col items-center justify-center h-full max-w-lg m-auto hero bg-primary/5 p-8">
-          <h2 className="text-center mb-5">Send me a message!</h2>
-          <p className="t4 text-center mb-5">
+        <div className="flex flex-col items-center justify-center h-full max-w-lg m-auto hero bg-primary/5 p-8 relative">
+          <LazyLoadImage
+            alt="Call Me"
+            src={"/assets/call-me.png"}
+            className="max-w-[11rem] w-full h-auto object-contain absolute bottom-0 right-0 z-10 hidden lg:block pointer-events-none"
+          />
+          <h2 className="text-center mb-4">
+            Send me a <span className="text-primary">message</span>!
+          </h2>
+          <p className="t4 text-center mb-4">
             Got a question or proposal, or just want to say hello?
             <br />
             Go ahead.
@@ -120,6 +130,12 @@ const Email = () => {
                 className="block py-2.5 px-0 w-full t5 bg-transparent border-0 border-b-2 appearance-none text-white border-primary/40 focus:outline-none focus:ring-0 focus:border-primary peer"
                 placeholder=" "
                 required
+                onFocus={(event) => {
+                  event.target.setAttribute("autocomplete", "whatever");
+                }}
+                onBlur={(event) => {
+                  event.target.setAttribute("autocomplete", "off");
+                }}
                 autoComplete="off"
               />
               <label
@@ -138,6 +154,12 @@ const Email = () => {
                 className="block py-2.5 px-0 w-full t5 bg-transparent border-0 border-b-2 appearance-none text-white border-primary/40 focus:outline-none focus:ring-0 focus:border-primary peer"
                 required
                 placeholder=" "
+                onFocus={(event) => {
+                  event.target.setAttribute("autocomplete", "whatever");
+                }}
+                onBlur={(event) => {
+                  event.target.setAttribute("autocomplete", "off");
+                }}
                 autoComplete="off"
               />
               <label
@@ -156,6 +178,12 @@ const Email = () => {
                 className="resize-none scroll-smooth-thin block py-2.5 px-0 w-full t5 bg-transparent border-0 border-b-2 appearance-none text-white border-primary/40 focus:outline-none focus:ring-0 focus:border-primary peer"
                 required
                 placeholder=" "
+                onFocus={(event) => {
+                  event.target.setAttribute("autocomplete", "whatever");
+                }}
+                onBlur={(event) => {
+                  event.target.setAttribute("autocomplete", "off");
+                }}
                 autoComplete="off"
               />
               <label
@@ -166,11 +194,11 @@ const Email = () => {
               </label>
             </div>
 
-            <div className="mb-4">
+            <div className="mb-4 relative">
               <button
                 disabled={isLoading}
                 type="submit"
-                className="block gap-2 w-full rounded-md bg-primary px-3.5 py-2.5 text-center t4 font-medium text-white hover:bg-primary-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-dark duration-200"
+                className="block gap-2 w-full rounded-md bg-primary px-3.5 py-2.5 text-center t4 font-medium text-white hover:bg-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary/80 duration-200"
               >
                 <div className="flex items-center w-full h-full justify-center gap-2">
                   {isLoading && (
@@ -187,7 +215,7 @@ const Email = () => {
           </form>
         </div>
       </div>
-    </RootLayout>
+    </Layout>
   );
 };
 

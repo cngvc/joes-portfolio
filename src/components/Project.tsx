@@ -2,8 +2,8 @@ import React from "react";
 import { FaFileCode } from "react-icons/fa";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Card from "./Card";
-import Techs from "./Techs";
 import Lists from "./Lists";
+import Techs from "./Techs";
 
 const Project: React.FC<{
   url?: string;

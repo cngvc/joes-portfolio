@@ -3,10 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background-color: 34 40 49;
-  --primary-color: 0 173 181;
-  --primary-color-dark: 0 100 105;
-  --primary-color-light: 2 244 255;
+  --background-color: 29 29 30;
+  --primary-color: 227 135 79;
 }
 
 @layer base {
@@ -55,11 +53,8 @@
   }
 
   .hero {
-    background: linear-gradient(
-          to right,
-          rgb(var(--primary-color)) 1px,
-          transparent 1px
-        )
+    background:
+      linear-gradient(to right, rgb(var(--primary-color)) 1px, transparent 1px)
         0 0,
       linear-gradient(to right, rgb(var(--primary-color)) 1px, transparent 1px)
         0 100%,
@@ -77,9 +72,5 @@
         100% 100%;
     @apply bg-no-repeat;
     @apply bg-[length:20px_20px];
-  }
-
-  .bg_header {
-    @apply bg-[#1C1D20]/60 backdrop-blur-md;
   }
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+import Techs from "./Techs";
 
 const Company: React.FC<{
   time: string;
@@ -8,8 +9,9 @@ const Company: React.FC<{
   role?: string;
   job: string[];
   description: string;
+  domains?: string;
   techs: string[];
-}> = ({ time, company, url, role, description, job, techs }) => {
+}> = ({ time, company, url, role, description, job, domains, techs }) => {
   return (
     <Card>
       <div className="group grid grid-cols-12 p-3 md:p-6 duration-700">
@@ -31,6 +33,9 @@ const Company: React.FC<{
             <div className="t5 text-white/80 mb-2 lg:group-hover:text-white duration-200">
               {description}
             </div>
+            <div className="t5 text-white/80 mb-2 lg:group-hover:text-white duration-200">
+              Domains: {domains}
+            </div>
 
             <ul className="list-disc list-outside t5 pl-[18px]">
               {job.map((e, index) => (
@@ -41,17 +46,7 @@ const Company: React.FC<{
                 </li>
               ))}
             </ul>
-
-            <div className="flex flex-wrap gap-2">
-              {techs.map((e, index) => (
-                <div
-                  key={index}
-                  className="t6 py-1 px-2 text-primary-light bg-primary-dark rounded-full"
-                >
-                  {e}
-                </div>
-              ))}
-            </div>
+            <Techs techs={techs} />
           </div>
         </div>
       </div>

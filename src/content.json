@@ -1,5 +1,5 @@
 {
-  "name": "Cong <span class='text-primary'>\"Joe\"</span> Vu",
+  "name": "Cong <span class='text-primary'>(Joe)</span> Vu",
   "role": "<span class='text-primary'>Middle Full-Stack</span> Developer",
   "skills": "React, Node.js",
   "bio": "Full-Stack Developer with 5+ years of experience in building scalable web and mobile apps using React and Node.js. Skilled in optimizing UX and working with cross-functional teams.",
@@ -10,12 +10,13 @@
       "company": "GK-Team (Freelancer Team)",
       "role": "Full-Stack Developer",
       "description": "Collaborated with clients in Vietnam and the United States to deliver scalable web and mobile applications.",
+      "domains": "Blockchain (ICO), Fitness.",
       "job": [
-        "Developed smart contract-based purchase systems using Solidity, leading to the successful deployment of 3+ projects.",
-        "Created responsive and visually appealing landing pages from Figma designs, focusing on mobile-first design and aligning closely with client requirements.",
-        "Achieved >78% productivity in a remote environment, and participated in 10+ projects.",
+        "Achieved >78% productivity in a fully remote environment, and contributed to the successful delivery of 5+ projects.",
+        "Delivered smart contract-based purchase systems using Solidity, leading to the successful deployment of 3+ projects.",
+        "Developed responsive, mobile-first landing pages from Figma designs, focusing on mobile-first design and aligning closely with client requirements.",
         "Provided client support to ensure system reliability and timely issue resolution, quickly addressing concerns.",
-        "Authored technical documentation, researched Azure APIs, and implemented CI/CD pipelines on Azure, improving deployment efficiency and system reliability."
+        "Authored technical documentation, implemented CI/CD pipelines on Azure, improving deployment efficiency and system reliability."
       ],
       "techs": [
         "Node.js",
@@ -32,12 +33,13 @@
       "url": "https://www.brightsoftsolution.com/",
       "role": "Full-Stack Developer",
       "description": "Collaborated with clients across Sweden, India, and Europe to deliver innovative web and mobile solutions.",
+      "domains": "Education, Project Management.",
       "job": [
-        "Developed and maintained a mobile app for teachers to manage students and classes and a CMS for employee and session management, with 15+ teachers actively using the apps.",
-        "Built real-time web and mobile apps in the education sector, enhancing student-teacher interaction, and used for daily team meetings during the development phase.",
         "Conducted code reviews, built foundations for 5+ projects, mentored interns during development, and participated in 10+ projects.",
-        "Worked on .NET Core for various backend tasks, contributing to developing 3+ projects before transitioning to Node.js, where I expanded my backend development skills.",
-        "Contributed to project success through a six-month onsite partnership with client companies, contributing to 2 major app deployments."
+        "Designed and maintained a mobile app for teachers to manage students and classes, along with a custom CMS for employee and session management, with 15+ teachers actively using the apps.",
+        "Developed real-time web and mobile apps to enhance student-teacher interaction, which were also utilized for daily team meetings during the development phase.",
+        "Worked on .NET Core for various backend tasks and contributed to developing 3+ projects before transitioning to Node.js, where I expanded my backend development skills.",
+        "Partnered onsite with client companies for six months and contributed to 2 major app deployments."
       ],
       "techs": [
         "React",
@@ -54,10 +56,11 @@
       "url": "https://rabiloo.com/en",
       "role": "Fresher Mobile Developer",
       "description": "Collaborated with Japanese clients to deliver high-quality mobile solutions.",
+      "domains": "Service Industry.",
       "job": [
         "Developed a cleaner booking app featuring payment processing, real-time chat, and location-based services with map integration.",
-        "Collaborated daily with test and design teams to ensure seamless functionality and optimal user experience.",
-        "Gained backend experience by working on a few small tasks, contributing to the backend development alongside the team."
+        "Worked closely with design and testing teams to ensure seamless functionality and an optimal user experience.",
+        "Gained backend experience by contributing to small backend tasks, supporting the backend development alongside the team."
       ],
       "techs": ["React Native"]
     }
@@ -139,7 +142,7 @@
         "Collaboration: Worked closely with backend developers and QA teams, providing support where necessary to maintain quality and meet deadlines."
       ],
       "achievements": [
-        "In this project, I learned how to bring together different areas of development, often working on my own to handle tasks across frontend, backend, and QA. I made sure the project was delivered efficiently."
+        "In this project, I learned to manage different parts of development, working mostly on my own to handle frontend, backend, and mobile tasks, which helped me gain a big-picture view of the entire development process."
       ],
       "techs": ["React", "React Native", "Groovy"]
     },
@@ -158,6 +161,9 @@
         "API Development: Covered core functionalities such as user authentication, data management using Entity Framework",
         "Frontend Support: Assisted frontend developers as needed, helping with frontend-related tasks and resolving any issues."
       ],
+      "achievements": [
+        "In this project, I started as a frontend developer and became a full-stack developer, taking on key responsibilities. I gained valuable experience and learned a lot from it."
+      ],
       "techs": ["React", "React Native", ".NET Core"]
     },
     {
@@ -175,6 +181,9 @@
         "Google Maps Integration: Integrated the Google Maps API to enable distance tracking functionality within the application.",
         "Mobile UI Development: Developed and implemented the mobile UI to ensure a functional user experience."
       ],
+      "achievements": [
+        "In this project, we integrated the distance tracking API and developed the mobile UI. I learned the importance of testing and using mocks."
+      ],
       "techs": ["React Native", "Firebase", "Google Map APIs"]
     },
     {
@@ -189,6 +198,9 @@
       "role": [
         "Frontend Development: Created the frontend web application following Figma designs, ensuring a functional and responsive user experience.",
         "Frontend Management: Managed frontend tasks, including task allocation and progress tracking."
+      ],
+      "achievements": [
+        "In this project, I worked closely with the client to define the solution, collaborated with the freelancer team, and managed the frontend development team to meet project deadlines."
       ],
       "techs": ["React", "Django"]
     },
@@ -205,6 +217,9 @@
       ],
       "description": [
         "A job marketplace focused on services related to house cleaning and hotels, integrating payment systems and providing directions for seamless transactions."
+      ],
+      "achievements": [
+        "In this project, I worked on mobile development, following Figma designs to build the UI, and collaborated with backend developers to ensure core functionality. It was my first project as a mobile developer, and I learned a lot from my mentor."
       ],
       "techs": ["React Native"]
     }
@@ -241,39 +256,6 @@
       "techs": ["React", "Tailwind CSS", "Hardhat", "Rainbow", "Ethers.js"],
       "goal": "Develop a full-stack web3 application integrating React with smart contracts using Hardhat and wallet connectivity.",
       "repo": "https://github.com/cngvc/simple-token-presale"
-    },
-    {
-      "url": "https://docs-rep.congvc.com/",
-      "title": "Docs Clone",
-      "subtitle": "Collaborative Document Editing",
-      "description": [
-        "A real-time collaborative document editing application inspired by Google Docs. Built with Next.js, the app supports user authentication, live collaboration, and seamless document management."
-      ],
-      "features": [
-        "Real-Time Collaboration: Live document editing with synchronization powered by Liveblocks.",
-        "User Management: Integrates Clerk for secure and user-friendly authentication.",
-        "Database Management: Uses Convex to store and manage documents efficiently."
-      ],
-      "techs": ["Next.js", "Clerk", "Convex", "Liveblocks"],
-      "goal": "Create a document collaboration tool to explore real-time web technologies.",
-      "repo": "https://github.com/cngvc/google-docs-clone"
-    },
-    {
-      "url": "https://finlog.congvc.com/",
-      "title": "Finlog",
-      "subtitle": "Expense Logging and Management",
-      "description": [
-        "A personal finance management tool to log expenses and track financial activity. Finlog integrates modern tools to provide a seamless user experience for managing personal finances."
-      ],
-      "features": [
-        "Subscription Management: Uses LemonSqueezy for managing user subscriptions.",
-        "Banking Integration: Connects with bank accounts using Plaid for real-time financial data.",
-        "User Authentication: Secure and smooth user experience powered by Clerk.",
-        "Database Management: Implements Drizzle ORM for efficient and scalable data handling."
-      ],
-      "techs": ["Next.js", "Clerk", "Drizzle ORM", "LemonSqueezy", "Plaid"],
-      "goal": "Build a modern personal finance tracking app.",
-      "repo": "https://github.com/cngvc/finlog"
     }
   ]
 }

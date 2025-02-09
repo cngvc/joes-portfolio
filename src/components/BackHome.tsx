@@ -6,7 +6,7 @@ const BackHome = () => {
     <Link
       to={internal.home}
       replace
-      className="t4 font-medium text-center text-primary lg:hover:text-primary-light duration-200 mx-auto"
+      className="t4 font-medium text-center text-primary lg:hover:text-primary/80 duration-200 mx-auto"
       aria-label="Home"
     >
       Back to Home

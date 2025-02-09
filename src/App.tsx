@@ -2,9 +2,9 @@ import RootLayout from "./components/RootLayout";
 import Home from "./pages/Home";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { internal } from "./urls";
 import NotFound from "./pages/404";
 import Email from "./pages/Email";
+import { internal } from "./urls";
 
 const router = createBrowserRouter([
   {

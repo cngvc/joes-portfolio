@@ -1,20 +1,20 @@
-import { FaLinkedinIn, FaGithubAlt, FaEnvelope } from "react-icons/fa";
+import FsLightbox from "fslightbox-react";
+import { useMemo, useRef, useState } from "react";
+import { FaEnvelope, FaGithubAlt, FaLinkedinIn } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+import { TbMailShare } from "react-icons/tb";
 import { useInView } from "react-intersection-observer";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import Layout from "../components/Layout";
-import { externals, internal } from "../urls";
-import Company from "../components/Company";
-import content from "../content.json";
-import Social from "../components/Social";
-import { useMemo, useRef, useState } from "react";
-import { twMerge } from "tailwind-merge";
-import Project from "../components/Project";
-import Surface from "../components/Surface";
-import FsLightbox from "fslightbox-react";
-import SideProject from "../components/SideProject";
-import { SiLeetcode } from "react-icons/si";
 import { Link } from "react-router-dom";
-import { TbMailShare } from "react-icons/tb";
+import { twMerge } from "tailwind-merge";
+import Company from "../components/Company";
+import Layout from "../components/Layout";
+import Project from "../components/Project";
+import SideProject from "../components/SideProject";
+import Social from "../components/Social";
+import Surface from "../components/Surface";
+import content from "../content.json";
+import { externals, internal } from "../urls";
 
 const images = content.projects.map((e) => e.image);
 
@@ -80,7 +80,7 @@ function Home() {
               <p
                 className={twMerge(
                   "t4 opacity-40 transition-all duration-200 cursor-pointer hover:opacity-100",
-                  e.point && "opacity-100"
+                  e.point && "opacity-100",
                 )}
                 onClick={() => {
                   console.log(e.ref);
@@ -95,13 +95,14 @@ function Home() {
             <a
               href="/assets/congs-resume.pdf"
               target="_blank"
-              className="relative inline-flex items-center justify-center p-0.5 overflow-hidden rounded-lg group bg-gradient-to-r from-pink-400 to-orange-400 lg:group-hover:from-pink-400 lg:group-hover:to-orange-400 text-white focus:ring-0 focus:outline-none duration-100 shadow-lg shadow-pink-400/50"
+              className="relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-r from-orange-400 to-orange-600 text-white focus:ring-0 focus:outline-none shadow-lg shadow-orange-500/50"
             >
-              <span className="t5 font-normal relative px-4 py-2 transition-all ease-in rounded-md duration-100">
+              <span className="t5 font-normal relative px-6 py-3">
                 My Resume
               </span>
             </a>
           </div>
+
           <div className="flex flex-wrap gap-2">
             <Social
               url={externals.linkedin}
@@ -188,6 +189,7 @@ function Home() {
                     description={e.description}
                     job={e.job}
                     techs={e.techs}
+                    domains={e.domains}
                   />
                 </li>
               ))}
