@@ -9,4 +9,5 @@ export const externals = {
 export const internal = {
   home: "/",
   email: "/email",
+  cv: "/cv",
 };
