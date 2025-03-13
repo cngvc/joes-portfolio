@@ -73,6 +73,13 @@ function Home() {
     [content.about],
   );
 
+  const sanitizedBio = useMemo(
+    () => ({
+      __html: DOMPurify.sanitize(content.bio || ""),
+    }),
+    [content.bio],
+  );
+
   return (
     <Layout>
       <Surface />
@@ -92,7 +99,10 @@ function Home() {
             </div>
             <p className="t3" dangerouslySetInnerHTML={sanitizedRole} />
             <p className="t5 opacity-80 font-mono">{content.skills}</p>
-            <p className="t5 opacity-80">{content.bio}</p>
+            <p
+              className="t5 opacity-80"
+              dangerouslySetInnerHTML={sanitizedBio}
+            />
           </div>
           <div className="flex flex-col gap-3 mb-3">
             {menu.map((e) => (

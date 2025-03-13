@@ -2,8 +2,8 @@
   "name": "Cong <span class='text-primary'>(Joe)</span> Vu",
   "role": "<span class='text-primary'>Middle Full-Stack</span> Developer",
   "skills": "React, Next.js, Node.js",
-  "bio": "Full-Stack Developer with 5+ years of experience in building scalable web and mobile apps using React and Node.js. Skilled in optimizing UX and working with cross-functional teams.",
-  "about": "Hello, my name is Cong, but you can call me <span class='text-primary font-semibold'>Joe</span>.<br/>I started as a mobile developer with React Native, then expanded to building and maintaining systems from scratch using React and Node.js, adding experience in blockchain projects and smart contract integration.",
+  "bio": "Full-Stack Developer with 5+ years of experience in building large-scale projects using <span class='text-normal-primary'>React, Next.js</span> and <span class='text-normal-primary'>Node.js</span>. Skilled in optimizing UX and working with cross-functional teams, ability to handle both Backend and Frontend tasks.",
+  "about": "Hello, my name is Cong, but you can call me <span class='text-normal-primary'>Joe</span>.<br/>I started as a mobile developer with React Native, then expanded to building and maintaining systems from scratch using React and Node.js, adding experience in blockchain projects and smart contract integration.",
   "companies": [
     {
       "time": "Feb 2023 - Dec 2024",
@@ -13,10 +13,10 @@
       "domains": "Blockchain (ICO), Fitness.",
       "job": [
         "Achieved >78% productivity in a fully remote environment, and contributed to the successful delivery of 5+ projects.",
-        "Delivered smart contract-based purchase systems using Solidity, leading to the successful deployment of 3+ projects.",
+        "Delivered smart contract-based purchase systems using <span class='text-normal-primary'>Solidity</span>, leading to the successful deployment of 3+ projects.",
         "Developed responsive, mobile-first landing pages from Figma designs, focusing on mobile-first design and aligning closely with client requirements.",
         "Provided client support to ensure system reliability and timely issue resolution, quickly addressing concerns.",
-        "Authored technical documentation, implemented CI/CD pipelines on Azure, improving deployment efficiency and system reliability."
+        "Authored technical documentation, implemented <span class='text-normal-primary'>CI/CD pipelines</span> on Azure, improving deployment efficiency and system reliability."
       ],
       "techs": [
         "Node.js",
@@ -38,7 +38,7 @@
         "Conducted code reviews, built foundations for 5+ projects, mentored interns during development, and participated in 10+ projects.",
         "Designed and maintained a mobile app for teachers to manage students and classes, along with a custom CMS for employee and session management, with 15+ teachers actively using the apps.",
         "Developed real-time web and mobile apps to enhance student-teacher interaction, which were also utilized for daily team meetings during the development phase.",
-        "Worked on .NET Core for various backend tasks and contributed to developing 3+ projects before transitioning to Node.js, where I expanded my backend development skills.",
+        "Worked on <span class='text-normal-primary'>.NET Core</span> for various backend tasks and contributed to developing 3+ projects before transitioning to <span class='text-normal-primary'>Node.js</span>, where I expanded my backend development skills.",
         "Partnered onsite with client companies for six months and contributed to 2 major app deployments."
       ],
       "techs": [

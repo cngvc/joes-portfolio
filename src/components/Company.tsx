@@ -1,3 +1,4 @@
+import DOMPurify from "dompurify";
 import React from "react";
 import Card from "./Card";
 import Techs from "./Techs";
@@ -27,7 +28,7 @@ const Company: React.FC<{
               aria-label="Home"
             >
               {role ? `${role}, ` : ""}{" "}
-              <span className="text-primary font-semibold">{company}</span>
+              <span className="text-normal-primary">{company}</span>
             </a>
 
             <div className="t5 text-white/80 mb-2 lg:group-hover:text-white duration-200">
@@ -40,9 +41,12 @@ const Company: React.FC<{
             <ul className="list-disc list-outside t5 pl-[18px]">
               {job.map((e, index) => (
                 <li key={index} className="mb-2">
-                  <span className="t5 text-white/80 lg:group-hover:text-white duration-200">
-                    {e}
-                  </span>
+                  <div
+                    className="t5 text-white/80 lg:group-hover:text-white duration-200"
+                    dangerouslySetInnerHTML={{
+                      __html: DOMPurify.sanitize(e),
+                    }}
+                  ></div>
                 </li>
               ))}
             </ul>

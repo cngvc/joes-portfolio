@@ -29,7 +29,9 @@
   .scroll-smooth-thin {
     @apply scroll-smooth scrollbar-thin scrollbar-thumb-primary/60 scrollbar-track-background;
   }
-
+  .text-normal-primary {
+    @apply text-primary font-normal;
+  }
   .t1 {
     @apply font-primary text-2xl lg:text-3xl text-white font-bold;
   }
