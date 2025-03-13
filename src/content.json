@@ -1,7 +1,7 @@
 {
   "name": "Cong <span class='text-primary'>(Joe)</span> Vu",
   "role": "<span class='text-primary'>Middle Full-Stack</span> Developer",
-  "skills": "React, Node.js",
+  "skills": "React, Next.js, Node.js",
   "bio": "Full-Stack Developer with 5+ years of experience in building scalable web and mobile apps using React and Node.js. Skilled in optimizing UX and working with cross-functional teams.",
   "about": "Hello, my name is Cong, but you can call me <span class='text-primary font-semibold'>Joe</span>.<br/>I started as a mobile developer with React Native, then expanded to building and maintaining systems from scratch using React and Node.js, adding experience in blockchain projects and smart contract integration.",
   "companies": [

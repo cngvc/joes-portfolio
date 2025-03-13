@@ -1,3 +1,4 @@
+import DOMPurify from "dompurify";
 import FsLightbox from "fslightbox-react";
 import { useMemo, useRef, useState } from "react";
 import { FaEnvelope, FaGithubAlt, FaLinkedinIn } from "react-icons/fa";
@@ -51,6 +52,27 @@ function Home() {
     ];
   }, [aboutPoint, experiencePoint, projectPoint, sideProjectPoint]);
 
+  const sanitizedContent = useMemo(
+    () => ({
+      __html: DOMPurify.sanitize(content.name),
+    }),
+    [content.name],
+  );
+
+  const sanitizedRole = useMemo(
+    () => ({
+      __html: DOMPurify.sanitize(content.role),
+    }),
+    [content.role],
+  );
+
+  const sanitizedAbout = useMemo(
+    () => ({
+      __html: DOMPurify.sanitize(content.about),
+    }),
+    [content.about],
+  );
+
   return (
     <Layout>
       <Surface />
@@ -66,12 +88,9 @@ function Home() {
           <div className="flex flex-col gap-4 mb-3">
             <p className="c1">Hi, I am</p>
             <div className="marker-variation">
-              <h2 dangerouslySetInnerHTML={{ __html: content.name }}></h2>
+              <h2 dangerouslySetInnerHTML={sanitizedContent}></h2>
             </div>
-            <p
-              className="t3"
-              dangerouslySetInnerHTML={{ __html: content.role }}
-            />
+            <p className="t3" dangerouslySetInnerHTML={sanitizedRole} />
             <p className="t5 opacity-80 font-mono">{content.skills}</p>
             <p className="t5 opacity-80">{content.bio}</p>
           </div>
@@ -165,7 +184,7 @@ function Home() {
               <div className="border border-primary grid grid-cols-12 p-3 md:p-6 items-center rounded-md">
                 <div
                   className="t5 text-white/80 col-span-12"
-                  dangerouslySetInnerHTML={{ __html: content.about }}
+                  dangerouslySetInnerHTML={sanitizedAbout}
                 />
               </div>
             </div>

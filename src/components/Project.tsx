@@ -1,4 +1,5 @@
-import React from "react";
+import DOMPurify from "dompurify";
+import React, { useMemo } from "react";
 import { FaFileCode } from "react-icons/fa";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Card from "./Card";
@@ -34,6 +35,13 @@ const Project: React.FC<{
   achievements,
   onOpenPhotoLightBox,
 }) => {
+  const sanitizedContent = useMemo(
+    () => ({
+      __html: DOMPurify.sanitize(job || ""),
+    }),
+    [job],
+  );
+
   return (
     <Card>
       <div className="grid grid-cols-12 p-3 md:p-6">
@@ -83,7 +91,7 @@ const Project: React.FC<{
             {job && (
               <div
                 className="t5 text-white/80 mb-2 lg:group-hover:text-white duration-200"
-                dangerouslySetInnerHTML={{ __html: job }}
+                dangerouslySetInnerHTML={sanitizedContent!}
               />
             )}
 
