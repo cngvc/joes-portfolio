@@ -187,24 +187,6 @@
       "techs": ["React Native", "Firebase", "Google Map APIs"]
     },
     {
-      "image": "assets/vio.png",
-      "title": "Vio Studio",
-      "description": [
-        "A platform aimed at providing students with real-time information about current and upcoming events in their vicinity."
-      ],
-      "composition": {
-        "size": "6 members (project manager, designer, two backend developers, and two frontend developers)."
-      },
-      "role": [
-        "Frontend Development: Created the frontend web application following Figma designs, ensuring a functional and responsive user experience.",
-        "Frontend Management: Managed frontend tasks, including task allocation and progress tracking."
-      ],
-      "achievements": [
-        "In this project, I worked closely with the client to define the solution, collaborated with the freelancer team, and managed the frontend development team to meet project deadlines."
-      ],
-      "techs": ["React", "Django"]
-    },
-    {
       "image": "assets/osouji.png",
       "title": "Osouji",
       "subtitle": "Cleaner booking",
@@ -222,6 +204,24 @@
         "In this project, I worked on mobile development, following Figma designs to build the UI, and collaborated with backend developers to ensure core functionality. It was my first project as a mobile developer, and I learned a lot from my mentor."
       ],
       "techs": ["React Native"]
+    },
+    {
+      "image": "",
+      "title": "Vio Studio",
+      "description": [
+        "A platform aimed at providing students with real-time information about current and upcoming events in their vicinity."
+      ],
+      "composition": {
+        "size": "6 members (project manager, designer, two backend developers, and two frontend developers)."
+      },
+      "role": [
+        "Frontend Development: Created the frontend web application following Figma designs, ensuring a functional and responsive user experience.",
+        "Frontend Management: Managed frontend tasks, including task allocation and progress tracking."
+      ],
+      "achievements": [
+        "In this project, I worked closely with the client to define the solution, collaborated with the freelancer team, and managed the frontend development team to meet project deadlines."
+      ],
+      "techs": ["React", "Django"]
     }
   ],
   "side-projects": [
