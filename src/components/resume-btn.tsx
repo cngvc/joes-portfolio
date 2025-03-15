@@ -79,13 +79,15 @@ const SparklesText: React.FC<SparklesTextProps> = ({
   return (
     <div className="relative" {...props}>
       <span className="relative inline-block">
-        {sparkles.map((sparkle) => (
-          <Sparkle
-            key={sparkle.id}
-            {...sparkle}
-            animationSpeed={animationSpeed}
-          />
-        ))}
+        <div className="hidden lg:block">
+          {sparkles.map((sparkle) => (
+            <Sparkle
+              key={sparkle.id}
+              {...sparkle}
+              animationSpeed={animationSpeed}
+            />
+          ))}
+        </div>
         <ResumeBtn />
       </span>
     </div>
