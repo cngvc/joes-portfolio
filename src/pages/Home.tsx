@@ -1,16 +1,14 @@
-import { Button } from "@headlessui/react";
 import DOMPurify from "dompurify";
 import FsLightbox from "fslightbox-react";
-import { useTheme } from "next-themes";
 import { useMemo, useRef, useState } from "react";
 import { FaEnvelope, FaGithubAlt, FaLinkedinIn } from "react-icons/fa";
-import { IoMoonSharp, IoSunnySharp } from "react-icons/io5";
 import { SiLeetcode } from "react-icons/si";
 import { TbMailShare } from "react-icons/tb";
 import { useInView } from "react-intersection-observer";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import { twMerge } from "tailwind-merge";
+import ChangeThemeBtn from "../components/ChangeThemeBtn";
 import Company from "../components/Company";
 import Layout from "../components/Layout";
 import Project from "../components/Project";
@@ -27,7 +25,6 @@ function Home() {
   const exp = useRef<HTMLDivElement | null>(null);
   const project = useRef<HTMLDivElement | null>(null);
   const sideProject = useRef<HTMLDivElement | null>(null);
-  const { theme, setTheme } = useTheme();
 
   const { ref: aboutRef, inView: aboutPoint } = useInView();
   const { ref: expRef, inView: experiencePoint } = useInView();
@@ -84,39 +81,6 @@ function Home() {
     [content.bio],
   );
 
-  const changeThemeBtn = useMemo(() => {
-    return (
-      <div className="t5 text-muted-foreground flex items-center drop-shadow-xl gap-2">
-        <span>Theme:</span>
-        <Button
-          onClick={() => setTheme("light")}
-          className={twMerge(
-            "relative p-1 cursor-pointer group hover:-translate-y-1 hover:opacity-100 duration-200",
-            theme === "dark" && "opacity-50",
-          )}
-        >
-          <IoSunnySharp className={twMerge("text-sun")} size={20} />
-          <div className="absolute inset-0 w-7 h-7 rounded-full bg-sun opacity-0 blur-md duration-200 group-hover:opacity-50"></div>
-        </Button>
-        <Button
-          onClick={() => setTheme("dark")}
-          className={twMerge(
-            "relative p-1 cursor-pointer group hover:-translate-y-1 hover:opacity-100 duration-200",
-            theme === "light" && "opacity-50",
-          )}
-        >
-          <IoMoonSharp
-            className={twMerge(
-              theme === "dark" ? "text-moon" : "text-muted-foreground",
-            )}
-            size={20}
-          />
-          <div className="absolute inset-0 w-7 h-7 rounded-full bg-moon opacity-0 blur-md duration-200 group-hover:opacity-50"></div>
-        </Button>
-      </div>
-    );
-  }, [theme]);
-
   return (
     <Layout>
       <Surface />
@@ -135,11 +99,10 @@ function Home() {
               <h2 dangerouslySetInnerHTML={sanitizedContent}></h2>
             </div>
             <p className="t3" dangerouslySetInnerHTML={sanitizedRole} />
-            <p className="t5 opacity-80 font-mono">{content.skills}</p>
-            <p
-              className="t5 opacity-80"
-              dangerouslySetInnerHTML={sanitizedBio}
-            />
+            <p className="t5 text-muted-foreground font-mono">
+              {content.skills}
+            </p>
+            <p className="t5" dangerouslySetInnerHTML={sanitizedBio} />
           </div>
           <div className="flex flex-col gap-3 mb-3">
             {menu.map((e) => (
@@ -163,7 +126,7 @@ function Home() {
               target="_blank"
               className="relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-linear-to-r from-orange-400 to-orange-600 text-foreground focus:ring-0 focus:outline-hidden shadow-lg shadow-orange-500/50"
             >
-              <span className="t5 font-normal relative px-6 py-3">
+              <span className="t5 font-normal text-white px-6 py-3">
                 My Resume
               </span>
             </a>
@@ -202,11 +165,11 @@ function Home() {
             <TbMailShare className="w-5 h-5 lg:group-hover:translate-x-1 duration-200 ease-in-out" />
           </Link>
 
+          <ChangeThemeBtn />
+
           <div className="t5 text-muted-foreground">
             Designed & Developed by Joe
           </div>
-
-          {changeThemeBtn}
         </div>
 
         <div className="lg:col-span-7 py-20 max-lg:pb-20 overflow-y-auto scroll-smooth-thin">
@@ -218,7 +181,7 @@ function Home() {
                 👋
               </div>
             </div>
-            <div className="flex flex-col gap-2 relative">
+            <div className="flex flex-col gap-2 relative bg-background">
               <div className="group max-w-[10rem] w-full h-auto absolute right-4 -translate-y-full">
                 <div className="w-full h-full relative">
                   <LazyLoadImage
@@ -234,7 +197,7 @@ function Home() {
 
               <div className="border border-primary grid grid-cols-12 p-3 md:p-6 items-center rounded-md">
                 <div
-                  className="t5 text-muted-foreground col-span-12"
+                  className="t5 col-span-12"
                   dangerouslySetInnerHTML={sanitizedAbout}
                 />
               </div>
@@ -270,7 +233,7 @@ function Home() {
           <div ref={projectRef}>
             <div className="p-3 md:p-6" ref={project}>
               <span className="c1">03.</span> Projects I've participated in{" "}
-              <span className="italic opacity-40 font-thin">
+              <span className="italic text-muted-foreground font-thin">
                 (some projects cannot be disclosed due to privacy policies)
               </span>
             </div>

@@ -57,10 +57,7 @@ const Project: React.FC<{
               alt={title}
             />
           ) : (
-            <FaFileCode
-              fill="rgb(var(--primary-color))"
-              className="w-3/5 h-auto"
-            />
+            <FaFileCode className="w-3/5 h-auto text-primary" />
           )}
         </div>
         <div className="col-span-full md:col-span-9 mt-0.5">
@@ -68,7 +65,7 @@ const Project: React.FC<{
             <a
               target="_blank"
               href={url ?? "#"}
-              className="t4 leading-7 font-semibold mb-2 lg:group-hover:text-primary duration-200 flex flex-wrap items-center gap-2"
+              className="t4 leading-7 font-medium mb-2 lg:group-hover:text-primary duration-200 flex flex-wrap items-center gap-2"
               aria-label={title}
             >
               {title}{" "}

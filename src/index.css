@@ -5,20 +5,42 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@layer utilities {
+  :root {
+    --background: oklch(1 0 0);
+    --primary: oklch(0.7 0.2 45);
+    --foreground: oklch(0.145 0 0);
+    --muted: oklch(0.97 0 0);
+    --muted-foreground: oklch(0.556 0 0);
+    --pane-border: oklch(0.95 0 0);
+    --moon: oklch(95.51% 0 0);
+    --sun: oklch(84.63% 0.1594 84.98);
+  }
+}
+
+.dark {
+  /* Dark Mode */
+  --background: oklch(0.2 0 0);
+  --primary: oklch(0.7 0.2 45);
+  --foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --pane-border: oklch(0.225 0 0);
+}
+
 @theme {
   --font-primary: Work Sans, sans-serif;
   --font-secondary: Poppins, sans-serif;
   --font-code: Source Code Pro, monospace;
 
   --background-image-pane:
-    linear-gradient(90deg, var(--muted) 1px, #0000 0),
-    linear-gradient(180deg, var(--muted) 1px, #0000 0);
+    linear-gradient(90deg, var(--pane-border) 1px, #0000 0),
+    linear-gradient(180deg, var(--pane-border) 1px, #0000 0);
   --background-image-pane-html: linear-gradient(
     to bottom,
     transparent,
     var(--background-color)
   );
-  --drop-shadow-3xl: 0 35px 35px red;
 }
 
 @theme inline {
@@ -89,27 +111,6 @@
     linear-gradient(to top, var(--primary) 1px, transparent 1px) 100% 100%;
   @apply bg-no-repeat;
   @apply bg-[length:20px_20px];
-}
-
-@layer utilities {
-  :root {
-    --background: oklch(1 0 0);
-    --primary: oklch(0.7 0.2 45);
-    --foreground: oklch(0.145 0 0);
-    --muted: oklch(0.97 0 0);
-    --muted-foreground: oklch(0.556 0 0);
-    --moon: oklch(95.51% 0 0);
-    --sun: oklch(84.63% 0.1594 84.98);
-  }
-}
-
-.dark {
-  /* Dark Mode */
-  --background: oklch(0.2 0 0);
-  --primary: oklch(0.7 0.2 45);
-  --foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
 }
 
 @layer base {

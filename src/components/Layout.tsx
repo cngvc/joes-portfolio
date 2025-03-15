@@ -31,9 +31,9 @@ const Layout: React.FC<{ children: ReactNode; hideProgress?: boolean }> = ({
         style={{ backgroundSize: "55px 45px" }}
       >
         <div className="bg-pane-html">
-          {hideProgress && (
+          {!hideProgress && (
             <LoadingBar
-              color="rgb(var(--primary-color))"
+              color="var(--primary)"
               progress={pagePercent}
               shadow={false}
               waitingTime={10000000}
