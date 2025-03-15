@@ -89,7 +89,7 @@ const Email = () => {
                     $open(false);
                     navigate(internal.home);
                   }}
-                  className="inline-flex w-full justify-center rounded-md bg-primary px-3 py-2 t5 font-normal text-white shadow-xs hover:bg-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary/80"
+                  className="inline-flex w-full justify-center rounded-md bg-primary px-3 py-2 t5 font-normal text-foreground shadow-xs hover:bg-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary/80"
                 >
                   Go back to home
                 </button>
@@ -100,7 +100,7 @@ const Email = () => {
       </Dialog>
 
       <div className="min-h-screen max-w-(--breakpoint-2xl) w-full flex flex-col mx-auto px-6 md:px-12 lg:px-24 py-5">
-        <div className="flex flex-col items-center justify-center h-full max-w-lg m-auto hero bg-primary/5 p-8 relative">
+        <div className="flex flex-col items-center justify-center h-full max-w-lg m-auto hero !bg-primary/5 p-8 relative">
           <LazyLoadImage
             alt="Call Me"
             src={"/assets/call-me.png"}
@@ -127,7 +127,7 @@ const Email = () => {
                 type="text"
                 name="user_name"
                 id="user_name"
-                className="block py-2.5 px-0 w-full t5 bg-transparent border-0 border-b-2 appearance-none text-white border-primary/40 focus:outline-hidden focus:ring-0 focus:border-primary peer"
+                className="block py-2.5 px-0 w-full t5 bg-transparent border-0 border-b-2 appearance-none text-foreground border-primary/40 focus:outline-hidden focus:ring-0 focus:border-primary peer"
                 placeholder=" "
                 required
                 onFocus={(event) => {
@@ -151,7 +151,7 @@ const Email = () => {
                 type="email"
                 name="user_email"
                 id="user_email"
-                className="block py-2.5 px-0 w-full t5 bg-transparent border-0 border-b-2 appearance-none text-white border-primary/40 focus:outline-hidden focus:ring-0 focus:border-primary peer"
+                className="block py-2.5 px-0 w-full t5 bg-transparent border-0 border-b-2 appearance-none text-foreground border-primary/40 focus:outline-hidden focus:ring-0 focus:border-primary peer"
                 required
                 placeholder=" "
                 onFocus={(event) => {
@@ -175,7 +175,7 @@ const Email = () => {
                 name="message"
                 rows={4}
                 id="message"
-                className="resize-none scroll-smooth-thin block py-2.5 px-0 w-full t5 bg-transparent border-0 border-b-2 appearance-none text-white border-primary/40 focus:outline-hidden focus:ring-0 focus:border-primary peer"
+                className="resize-none scroll-smooth-thin block py-2.5 px-0 w-full t5 bg-transparent border-0 border-b-2 appearance-none text-foreground border-primary/40 focus:outline-hidden focus:ring-0 focus:border-primary peer"
                 required
                 placeholder=" "
                 onFocus={(event) => {
@@ -198,7 +198,7 @@ const Email = () => {
               <button
                 disabled={isLoading}
                 type="submit"
-                className="block gap-2 w-full rounded-md bg-primary px-3.5 py-2.5 text-center t4 font-medium text-white hover:bg-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary/80 duration-200"
+                className="block gap-2 w-full rounded-md bg-primary px-3.5 py-2.5 text-center t4 font-medium text-foreground hover:bg-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary/80 duration-200"
               >
                 <div className="flex items-center w-full h-full justify-center gap-2">
                   {isLoading && (

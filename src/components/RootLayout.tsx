@@ -1,3 +1,4 @@
+import { ThemeProvider } from "next-themes";
 import React, { useEffect } from "react";
 
 type RootProps = {
@@ -22,7 +23,11 @@ const RootLayout: React.FC<RootProps> = ({ children }) => {
     };
   }, []);
 
-  return <>{children}</>;
+  return (
+    <ThemeProvider attribute={"class"} defaultTheme="dark">
+      {children}
+    </ThemeProvider>
+  );
 };
 
 export default RootLayout;

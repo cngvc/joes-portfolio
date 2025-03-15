@@ -1,7 +1,10 @@
+import { Button } from "@headlessui/react";
 import DOMPurify from "dompurify";
 import FsLightbox from "fslightbox-react";
+import { useTheme } from "next-themes";
 import { useMemo, useRef, useState } from "react";
 import { FaEnvelope, FaGithubAlt, FaLinkedinIn } from "react-icons/fa";
+import { IoMoonSharp, IoSunnySharp } from "react-icons/io5";
 import { SiLeetcode } from "react-icons/si";
 import { TbMailShare } from "react-icons/tb";
 import { useInView } from "react-intersection-observer";
@@ -24,6 +27,7 @@ function Home() {
   const exp = useRef<HTMLDivElement | null>(null);
   const project = useRef<HTMLDivElement | null>(null);
   const sideProject = useRef<HTMLDivElement | null>(null);
+  const { theme, setTheme } = useTheme();
 
   const { ref: aboutRef, inView: aboutPoint } = useInView();
   const { ref: expRef, inView: experiencePoint } = useInView();
@@ -80,6 +84,39 @@ function Home() {
     [content.bio],
   );
 
+  const changeThemeBtn = useMemo(() => {
+    return (
+      <div className="t5 text-muted-foreground flex items-center drop-shadow-xl gap-2">
+        <span>Theme:</span>
+        <Button
+          onClick={() => setTheme("light")}
+          className={twMerge(
+            "relative p-1 cursor-pointer group hover:-translate-y-1 hover:opacity-100 duration-200",
+            theme === "dark" && "opacity-50",
+          )}
+        >
+          <IoSunnySharp className={twMerge("text-sun")} size={20} />
+          <div className="absolute inset-0 w-7 h-7 rounded-full bg-sun opacity-0 blur-md duration-200 group-hover:opacity-50"></div>
+        </Button>
+        <Button
+          onClick={() => setTheme("dark")}
+          className={twMerge(
+            "relative p-1 cursor-pointer group hover:-translate-y-1 hover:opacity-100 duration-200",
+            theme === "light" && "opacity-50",
+          )}
+        >
+          <IoMoonSharp
+            className={twMerge(
+              theme === "dark" ? "text-moon" : "text-muted-foreground",
+            )}
+            size={20}
+          />
+          <div className="absolute inset-0 w-7 h-7 rounded-full bg-moon opacity-0 blur-md duration-200 group-hover:opacity-50"></div>
+        </Button>
+      </div>
+    );
+  }, [theme]);
+
   return (
     <Layout>
       <Surface />
@@ -124,7 +161,7 @@ function Home() {
             <a
               href="/assets/congs-resume.pdf"
               target="_blank"
-              className="relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-linear-to-r from-orange-400 to-orange-600 text-white focus:ring-0 focus:outline-hidden shadow-lg shadow-orange-500/50"
+              className="relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-linear-to-r from-orange-400 to-orange-600 text-foreground focus:ring-0 focus:outline-hidden shadow-lg shadow-orange-500/50"
             >
               <span className="t5 font-normal relative px-6 py-3">
                 My Resume
@@ -159,13 +196,17 @@ function Home() {
             to={internal.email}
             className="group flex items-center flex-wrap gap-2"
           >
-            <span className="t5 text-white/80 lg:group-hover:text-white duration-200 font-medium">
+            <span className="t5 text-muted-foreground lg:group-hover:text-foreground duration-200 font-medium">
               Short me an email
             </span>{" "}
             <TbMailShare className="w-5 h-5 lg:group-hover:translate-x-1 duration-200 ease-in-out" />
           </Link>
 
-          <div className="t5 text-white/20">Designed & Developed by Joe</div>
+          <div className="t5 text-muted-foreground">
+            Designed & Developed by Joe
+          </div>
+
+          {changeThemeBtn}
         </div>
 
         <div className="lg:col-span-7 py-20 max-lg:pb-20 overflow-y-auto scroll-smooth-thin">
@@ -193,7 +234,7 @@ function Home() {
 
               <div className="border border-primary grid grid-cols-12 p-3 md:p-6 items-center rounded-md">
                 <div
-                  className="t5 text-white/80 col-span-12"
+                  className="t5 text-muted-foreground col-span-12"
                   dangerouslySetInnerHTML={sanitizedAbout}
                 />
               </div>

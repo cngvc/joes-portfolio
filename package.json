@@ -17,6 +17,7 @@
     "fslightbox-react": "^1.7.6",
     "localforage": "^1.10.0",
     "match-sorter": "^8.0.0",
+    "next-themes": "^0.4.6",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -26,7 +27,7 @@
     "react-router-dom": "^6.30.0",
     "react-top-loading-bar": "^2.3.1",
     "sort-by": "^1.2.0",
-    "tailwind-merge": "^2.6.0",
+    "tailwind-merge": "^3.0.2",
     "tailwindcss-animated": "^2.0.0"
   },
   "devDependencies": {

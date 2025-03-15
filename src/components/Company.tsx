@@ -17,7 +17,7 @@ const Company: React.FC<{
     <Card>
       <div className="group grid grid-cols-12 p-3 md:p-6 duration-700">
         <div className="col-span-12 md:col-span-3">
-          <p className="t6 text-white/60 md:mt-1">{time}</p>
+          <p className="t6 text-muted-foreground md:mt-1">{time}</p>
         </div>
         <div className="col-span-12 md:col-span-9 md:ml-4">
           <div className="flex flex-col">
@@ -31,10 +31,10 @@ const Company: React.FC<{
               <span className="text-normal-primary">{company}</span>
             </a>
 
-            <div className="t5 text-white/80 mb-2 lg:group-hover:text-white duration-200">
+            <div className="t5 text-muted-foreground mb-2 lg:group-hover:text-foreground duration-200">
               {description}
             </div>
-            <div className="t5 text-white/80 mb-2 lg:group-hover:text-white duration-200">
+            <div className="t5 text-muted-foreground mb-2 lg:group-hover:text-foreground duration-200">
               Domains: {domains}
             </div>
 
@@ -42,7 +42,7 @@ const Company: React.FC<{
               {job.map((e, index) => (
                 <li key={index} className="mb-2">
                   <div
-                    className="t5 text-white/80 lg:group-hover:text-white duration-200"
+                    className="t5 text-muted-foreground lg:group-hover:text-foreground duration-200"
                     dangerouslySetInnerHTML={{
                       __html: DOMPurify.sanitize(e),
                     }}

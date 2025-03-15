@@ -46,7 +46,7 @@ const SideProject: React.FC<{
             {description.map((e, index) => (
               <p
                 key={index}
-                className="t5 text-white/80 mb-2 lg:group-hover:text-white duration-200"
+                className="t5 text-muted-foreground mb-2 lg:group-hover:text-foreground duration-200"
               >
                 {e}
               </p>
@@ -56,7 +56,7 @@ const SideProject: React.FC<{
 
             {goal && (
               <div className="mb-2 t5">
-                <p className="text-white/60 lg:group-hover:text-white duration-200">
+                <p className="text-muted-foreground lg:group-hover:text-foreground duration-200">
                   Goal: {goal}
                 </p>
               </div>

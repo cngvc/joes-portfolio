@@ -26,8 +26,11 @@ const Layout: React.FC<{ children: ReactNode; hideProgress?: boolean }> = ({
 
   return (
     <RootLayout>
-      <main className="relative bg-pane">
-        <div className="pane-html">
+      <main
+        className="relative bg-pane"
+        style={{ backgroundSize: "55px 45px" }}
+      >
+        <div className="bg-pane-html">
           {hideProgress && (
             <LoadingBar
               color="rgb(var(--primary-color))"

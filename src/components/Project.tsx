@@ -49,7 +49,7 @@ const Project: React.FC<{
           {image ? (
             <LazyLoadImage
               src={image}
-              className="w-full h-auto object-contain bg-primary/20 rounded-md"
+              className="w-full h-auto object-contain rounded-md"
               onClick={(e) => {
                 e.preventDefault();
                 onOpenPhotoLightBox?.();
@@ -73,7 +73,7 @@ const Project: React.FC<{
             >
               {title}{" "}
               {subtitle && (
-                <span className="t5 font-light text-white/60">
+                <span className="t5 font-light text-muted-foreground">
                   ({subtitle})
                 </span>
               )}
@@ -82,7 +82,7 @@ const Project: React.FC<{
             {description.map((e, index) => (
               <p
                 key={index}
-                className="t5 text-white/80 mb-2 lg:group-hover:text-white duration-200"
+                className="t5 text-muted-foreground mb-2 lg:group-hover:text-foreground duration-200"
               >
                 {e}
               </p>
@@ -90,12 +90,12 @@ const Project: React.FC<{
 
             {job && (
               <div
-                className="t5 text-white/80 mb-2 lg:group-hover:text-white duration-200"
+                className="t5 text-muted-foreground mb-2 lg:group-hover:text-foreground duration-200"
                 dangerouslySetInnerHTML={sanitizedContent!}
               />
             )}
 
-            <div className="text-white/60 lg:group-hover:text-white duration-200 t5">
+            <div className="text-muted-foreground lg:group-hover:text-foreground duration-200 t5">
               Team Composition:
             </div>
             {composition && (
@@ -103,7 +103,7 @@ const Project: React.FC<{
                 {composition && (
                   <>
                     <li>
-                      <span className="text-white/60 lg:group-hover:text-white duration-200">
+                      <span className="text-muted-foreground lg:group-hover:text-foreground duration-200">
                         Size: {composition?.size}
                       </span>
                     </li>
