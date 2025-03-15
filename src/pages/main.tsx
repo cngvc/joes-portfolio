@@ -7,7 +7,7 @@ import ChangeThemeBtn from "../components/change-theme-btn";
 import Companies from "../components/companies";
 import MainLayout from "../components/main-layout";
 import Projects from "../components/projects";
-import ResumeBtn from "../components/resume-btn";
+import SparklesText from "../components/resume-btn";
 import ShortAnEmailBtn from "../components/short-an-email-btn";
 import SideProjects from "../components/side-projects";
 import SocialList from "../components/social-list";
@@ -99,7 +99,7 @@ function Main() {
             ))}
           </div>
 
-          <ResumeBtn />
+          <SparklesText />
 
           <SocialList />
 

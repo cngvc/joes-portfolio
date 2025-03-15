@@ -1,6 +1,5 @@
 import Prism from "prismjs";
 import "prismjs/components/prism-javascript.min.js";
-import "prismjs/components/prism-typescript";
 import "prismjs/themes/prism-okaidia.min.css";
 
 import { useEffect, useState } from "react";
@@ -51,8 +50,9 @@ const Window = () => {
             <div className="w-3 h-3 rounded-full hover:scale-125 duration-200 animate-ease-out bg-yellow-500"></div>
             <div className="w-3 h-3 rounded-full hover:scale-125 duration-200 animate-ease-out bg-green-500"></div>
           </div>
+
           <div className="flex items-center gap-1">
-            <span className="text-sm leading-normal text-foreground flex items-center font-code p-2 bg-primary/10 rounded-md">
+            <span className="text-sm leading-normal text-foreground flex items-center font-code p-2 bg-primary/40 rounded-md">
               <span className="text-blue-400">{`{{gateway}}`}</span>/auth/me
             </span>
             <a
