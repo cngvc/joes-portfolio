@@ -3,7 +3,6 @@
   "role": "<span class='text-primary'>Middle Full-Stack</span> Developer",
   "skills": "React, Next.js, Node.js",
   "bio": "Full-Stack Developer with 5+ years of experience in building large-scale projects using <span class='text-normal-primary'>React, Next.js</span> and <span class='text-normal-primary'>Node.js</span>. Skilled in optimizing UX and working with cross-functional teams, ability to handle both Backend and Frontend tasks.",
-  "about": "Hello, my name is Cong, but you can call me <span class='text-normal-primary'>Joe</span>.<br/>I started as a mobile developer with React Native, then expanded to building and maintaining systems from scratch using React and Node.js, adding experience in blockchain projects and smart contract integration.",
   "companies": [
     {
       "time": "Feb 2023 - Dec 2024",
@@ -224,7 +223,7 @@
       "techs": ["React", "Django"]
     }
   ],
-  "side-projects": [
+  "sides": [
     {
       "url": "https://www.congvc.com",
       "title": "Personal Portfolio Website",

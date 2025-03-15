@@ -1,16 +1,16 @@
-import RootLayout from "./components/RootLayout";
-import Home from "./pages/Home";
+import RootLayout from "./components/root-layout";
+import Main from "./pages/main";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import NotFound from "./pages/404";
-import CVRedirect from "./pages/CV";
-import Email from "./pages/Email";
+import CVRedirect from "./pages/cv";
+import Email from "./pages/send-email";
 import { internal } from "./urls";
 
 const router = createBrowserRouter([
   {
     path: internal.home,
-    element: <Home />,
+    element: <Main />,
     errorElement: <NotFound />,
   },
   {

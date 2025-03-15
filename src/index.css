@@ -99,6 +99,10 @@
   @apply font-code text-sm lg:text-base text-primary font-normal;
 }
 
+@utility item-desc {
+  @apply t5 text-foreground lg:text-muted-foreground lg:group-hover:text-foreground duration-200;
+}
+
 @utility hero {
   background:
     linear-gradient(to right, var(--primary) 1px, transparent 1px) 0 0,

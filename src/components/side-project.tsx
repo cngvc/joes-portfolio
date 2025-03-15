@@ -1,9 +1,9 @@
 import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
-import Card from "./Card";
-import Lists from "./Lists";
-import Techs from "./Techs";
+import Card from "./card";
+import Lists from "./lists-item";
+import Techs from "./techs";
 
 const SideProject: React.FC<{
   url?: string;
@@ -24,7 +24,7 @@ const SideProject: React.FC<{
             <a
               target="_blank"
               href={url ?? "#"}
-              className="t4 leading-7 font-medium mb-2 lg:group-hover:text-primary duration-200 flex flex-wrap items-center gap-2"
+              className="t4 leading-7 font-medium mb-2 item-desc flex flex-wrap items-center gap-2"
               aria-label={title}
             >
               {title}
@@ -46,23 +46,14 @@ const SideProject: React.FC<{
             </a>
 
             {description.map((e, index) => (
-              <p
-                key={index}
-                className="t5 text-muted-foreground mb-2 lg:group-hover:text-foreground duration-200"
-              >
+              <p key={index} className="item-desc mb-2">
                 {e}
               </p>
             ))}
 
             <Lists label="Main Features" data={features} />
 
-            {goal && (
-              <div className="mb-2 t5">
-                <p className="text-muted-foreground lg:group-hover:text-foreground duration-200">
-                  Goal: {goal}
-                </p>
-              </div>
-            )}
+            {goal && <div className="item-desc mb-2">Goal: {goal}</div>}
 
             <Techs techs={techs} />
           </div>

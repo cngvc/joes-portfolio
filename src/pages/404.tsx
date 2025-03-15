@@ -1,7 +1,7 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import BackHome from "../components/BackHome";
-import Layout from "../components/Layout";
-import Surface from "../components/Surface";
+import BackHome from "../components/back-home";
+import Layout from "../components/main-layout";
+import Surface from "../components/surface";
 
 const NotFound = () => {
   return (

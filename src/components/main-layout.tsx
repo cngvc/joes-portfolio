@@ -1,8 +1,8 @@
 import { ReactNode, useEffect, useState } from "react";
 import LoadingBar from "react-top-loading-bar";
-import RootLayout from "./RootLayout";
+import RootLayout from "./root-layout";
 
-const Layout: React.FC<{ children: ReactNode; hideProgress?: boolean }> = ({
+const MainLayout: React.FC<{ children: ReactNode; hideProgress?: boolean }> = ({
   children,
   hideProgress = false,
 }) => {
@@ -50,4 +50,4 @@ const Layout: React.FC<{ children: ReactNode; hideProgress?: boolean }> = ({
   );
 };
 
-export default Layout;
+export default MainLayout;

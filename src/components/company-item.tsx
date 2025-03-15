@@ -1,7 +1,7 @@
 import DOMPurify from "dompurify";
 import React from "react";
-import Card from "./Card";
-import Techs from "./Techs";
+import Card from "./card";
+import Techs from "./techs";
 
 const Company: React.FC<{
   time: string;
@@ -31,18 +31,14 @@ const Company: React.FC<{
               <span className="text-normal-primary">{company}</span>
             </a>
 
-            <div className="t5 text-muted-foreground mb-2 lg:group-hover:text-foreground duration-200">
-              {description}
-            </div>
-            <div className="t5 text-muted-foreground mb-2 lg:group-hover:text-foreground duration-200">
-              Domains: {domains}
-            </div>
+            <div className="item-desc mb-2">{description}</div>
+            <div className="item-desc mb-2">Domains: {domains}</div>
 
             <ul className="list-disc list-outside t5 pl-[18px]">
               {job.map((e, index) => (
                 <li key={index} className="mb-2">
                   <div
-                    className="t5 text-muted-foreground lg:group-hover:text-foreground duration-200"
+                    className="item-desc"
                     dangerouslySetInnerHTML={{
                       __html: DOMPurify.sanitize(e),
                     }}

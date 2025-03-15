@@ -1,10 +1,9 @@
-import DOMPurify from "dompurify";
-import React, { useMemo } from "react";
+import React from "react";
 import { FaFileCode } from "react-icons/fa";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import Card from "./Card";
-import Lists from "./Lists";
-import Techs from "./Techs";
+import Card from "./card";
+import Lists from "./lists-item";
+import Techs from "./techs";
 
 const Project: React.FC<{
   url?: string;
@@ -19,7 +18,7 @@ const Project: React.FC<{
     | undefined;
   role: string[] | undefined;
   achievements?: string[] | undefined;
-  job?: string;
+
   techs: string[];
   onOpenPhotoLightBox?: () => void;
 }> = ({
@@ -28,20 +27,13 @@ const Project: React.FC<{
   title,
   subtitle,
   description,
-  job,
+
   techs,
   composition,
   role,
   achievements,
   onOpenPhotoLightBox,
 }) => {
-  const sanitizedContent = useMemo(
-    () => ({
-      __html: DOMPurify.sanitize(job || ""),
-    }),
-    [job],
-  );
-
   return (
     <Card>
       <div className="grid grid-cols-12 p-3 md:p-6">
@@ -77,30 +69,18 @@ const Project: React.FC<{
             </a>
 
             {description.map((e, index) => (
-              <p
-                key={index}
-                className="t5 text-muted-foreground mb-2 lg:group-hover:text-foreground duration-200"
-              >
+              <p key={index} className="item-desc ">
                 {e}
               </p>
             ))}
 
-            {job && (
-              <div
-                className="t5 text-muted-foreground mb-2 lg:group-hover:text-foreground duration-200"
-                dangerouslySetInnerHTML={sanitizedContent!}
-              />
-            )}
-
-            <div className="text-muted-foreground lg:group-hover:text-foreground duration-200 t5">
-              Team Composition:
-            </div>
+            <div className="item-desc">Team Composition:</div>
             {composition && (
               <ul className="list-disc mb-2 list-outside pl-[18px] t5">
                 {composition && (
                   <>
                     <li>
-                      <span className="text-muted-foreground lg:group-hover:text-foreground duration-200">
+                      <span className="item-desc">
                         Size: {composition?.size}
                       </span>
                     </li>
