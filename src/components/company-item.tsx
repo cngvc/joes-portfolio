@@ -1,6 +1,7 @@
 import DOMPurify from "dompurify";
 import React from "react";
 import Card from "./card";
+
 import Techs from "./techs";
 
 const Company: React.FC<{
