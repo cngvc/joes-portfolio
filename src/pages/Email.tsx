@@ -61,14 +61,14 @@ const Email = () => {
       <Dialog open={open} onClose={$open} className="relative z-10">
         <DialogBackdrop
           transition
-          className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in"
+          className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-leave:duration-200 data-enter:ease-out data-leave:ease-in"
         />
 
         <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
           <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
             <DialogPanel
               transition
-              className="relative transform overflow-hidden rounded-lg bg-background px-4 pb-4 pt-5 text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in sm:my-8 sm:w-full sm:max-w-sm sm:p-6 data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
+              className="relative transform overflow-hidden rounded-lg bg-background px-4 pb-4 pt-5 text-left shadow-xl transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-leave:duration-200 data-enter:ease-out data-leave:ease-in sm:my-8 sm:w-full sm:max-w-sm sm:p-6 sm:data-closed:translate-y-0 sm:data-closed:scale-95"
             >
               <div>
                 <div className="mt-3 text-center sm:mt-5">
@@ -89,7 +89,7 @@ const Email = () => {
                     $open(false);
                     navigate(internal.home);
                   }}
-                  className="inline-flex w-full justify-center rounded-md bg-primary px-3 py-2 t5 font-normal text-white shadow-sm hover:bg-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary/80"
+                  className="inline-flex w-full justify-center rounded-md bg-primary px-3 py-2 t5 font-normal text-white shadow-xs hover:bg-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary/80"
                 >
                   Go back to home
                 </button>
@@ -99,7 +99,7 @@ const Email = () => {
         </div>
       </Dialog>
 
-      <div className="min-h-screen max-w-screen-2xl w-full flex flex-col mx-auto px-6 md:px-12 lg:px-24 py-5">
+      <div className="min-h-screen max-w-(--breakpoint-2xl) w-full flex flex-col mx-auto px-6 md:px-12 lg:px-24 py-5">
         <div className="flex flex-col items-center justify-center h-full max-w-lg m-auto hero bg-primary/5 p-8 relative">
           <LazyLoadImage
             alt="Call Me"
@@ -127,7 +127,7 @@ const Email = () => {
                 type="text"
                 name="user_name"
                 id="user_name"
-                className="block py-2.5 px-0 w-full t5 bg-transparent border-0 border-b-2 appearance-none text-white border-primary/40 focus:outline-none focus:ring-0 focus:border-primary peer"
+                className="block py-2.5 px-0 w-full t5 bg-transparent border-0 border-b-2 appearance-none text-white border-primary/40 focus:outline-hidden focus:ring-0 focus:border-primary peer"
                 placeholder=" "
                 required
                 onFocus={(event) => {
@@ -140,7 +140,7 @@ const Email = () => {
               />
               <label
                 htmlFor="user_name"
-                className="peer-focus:font-medium absolute t5 text-primary/40 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                className="peer-focus:font-medium absolute t5 text-primary/40 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:rtl:translate-x-1/4 peer-focus:rtl:left-auto peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
                 Your Name
               </label>
@@ -151,7 +151,7 @@ const Email = () => {
                 type="email"
                 name="user_email"
                 id="user_email"
-                className="block py-2.5 px-0 w-full t5 bg-transparent border-0 border-b-2 appearance-none text-white border-primary/40 focus:outline-none focus:ring-0 focus:border-primary peer"
+                className="block py-2.5 px-0 w-full t5 bg-transparent border-0 border-b-2 appearance-none text-white border-primary/40 focus:outline-hidden focus:ring-0 focus:border-primary peer"
                 required
                 placeholder=" "
                 onFocus={(event) => {
@@ -164,7 +164,7 @@ const Email = () => {
               />
               <label
                 htmlFor="user_email"
-                className="peer-focus:font-medium absolute t5 text-primary/40 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                className="peer-focus:font-medium absolute t5 text-primary/40 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:rtl:translate-x-1/4 peer-focus:rtl:left-auto peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
                 Email Address
               </label>
@@ -175,7 +175,7 @@ const Email = () => {
                 name="message"
                 rows={4}
                 id="message"
-                className="resize-none scroll-smooth-thin block py-2.5 px-0 w-full t5 bg-transparent border-0 border-b-2 appearance-none text-white border-primary/40 focus:outline-none focus:ring-0 focus:border-primary peer"
+                className="resize-none scroll-smooth-thin block py-2.5 px-0 w-full t5 bg-transparent border-0 border-b-2 appearance-none text-white border-primary/40 focus:outline-hidden focus:ring-0 focus:border-primary peer"
                 required
                 placeholder=" "
                 onFocus={(event) => {
@@ -188,7 +188,7 @@ const Email = () => {
               />
               <label
                 htmlFor="floating_message"
-                className="peer-focus:font-medium absolute t5 text-primary/40 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                className="peer-focus:font-medium absolute t5 text-primary/40 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:rtl:translate-x-1/4 peer-focus:rtl:left-auto peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
                 Your Messages
               </label>

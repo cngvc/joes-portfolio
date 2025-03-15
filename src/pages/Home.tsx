@@ -124,7 +124,7 @@ function Home() {
             <a
               href="/assets/congs-resume.pdf"
               target="_blank"
-              className="relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-r from-orange-400 to-orange-600 text-white focus:ring-0 focus:outline-none shadow-lg shadow-orange-500/50"
+              className="relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-linear-to-r from-orange-400 to-orange-600 text-white focus:ring-0 focus:outline-hidden shadow-lg shadow-orange-500/50"
             >
               <span className="t5 font-normal relative px-6 py-3">
                 My Resume
@@ -185,7 +185,7 @@ function Home() {
                     src={"/assets/avatar.png"}
                     className="object-contain z-50 w-32 md:w-40 h-32 md:h-40"
                   />
-                  <div className="opacity-0 lg:group-hover:opacity-100 duration-200 absolute top-4 p-2 rounded-lg bg-[#1C1D20]/60 -translate-x-1/2 t6 backdrop-blur-sm">
+                  <div className="opacity-0 lg:group-hover:opacity-100 duration-200 absolute top-4 p-2 rounded-lg bg-[#1C1D20]/60 -translate-x-1/2 t6 backdrop-blur-xs">
                     Hi, Nice to meet you!.
                   </div>
                 </div>
@@ -208,7 +208,7 @@ function Home() {
 
             <ol className="gap-2 overflow-hidden list-none group/list">
               {content.companies.map((e, index) => (
-                <li className="lg:hover:!opacity-100 lg:group-hover/list:opacity-50 duration-200">
+                <li className="lg:hover:opacity-100! lg:group-hover/list:opacity-50 duration-200">
                   <Company
                     key={index}
                     time={e.time}
@@ -236,7 +236,7 @@ function Home() {
 
             <ol className="gap-2 overflow-hidden list-none group/list">
               {content.projects.map((e, index) => (
-                <li className="lg:hover:!opacity-100 lg:group-hover/list:opacity-50 duration-200">
+                <li className="lg:hover:opacity-100! lg:group-hover/list:opacity-50 duration-200">
                   <Project
                     key={index}
                     image={e.image}
@@ -265,7 +265,7 @@ function Home() {
             </div>
             <ol className="gap-2 overflow-hidden list-none group/list">
               {content["side-projects"].map((e, index) => (
-                <li className="lg:hover:!opacity-100 lg:group-hover/list:opacity-50 duration-200">
+                <li className="lg:hover:opacity-100! lg:group-hover/list:opacity-50 duration-200">
                   <SideProject
                     key={index}
                     url={e.url}
