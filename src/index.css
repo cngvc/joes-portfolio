@@ -13,6 +13,8 @@
     --muted: oklch(0.97 0 0);
     --muted-foreground: oklch(0.556 0 0);
     --pane-border: oklch(0.95 0 0);
+    --code-editor-value: oklch(0.6 0.25 150);
+
     --moon: oklch(95.51% 0 0);
     --sun: oklch(84.63% 0.1594 84.98);
   }
@@ -26,6 +28,7 @@
   --muted: oklch(0.269 0 0);
   --muted-foreground: oklch(0.708 0 0);
   --pane-border: oklch(0.225 0 0);
+  --code-editor-value: oklch(0.75 0.3 150);
 }
 
 @theme {
@@ -51,6 +54,7 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-moon: var(--moon);
   --color-sun: var(--sun);
+  --color-code-editor-value: var(--code-editor-value);
 }
 
 @layer base {
@@ -103,6 +107,11 @@
   @apply t5 text-foreground lg:text-muted-foreground lg:group-hover:text-foreground duration-200;
 }
 
+@utility code-editor {
+  @apply !px-0 !pt-0 !my-0 !bg-background !rounded-none !text-xs lg:!text-sm scroll-smooth-thin;
+  text-shadow: none !important;
+}
+
 @utility hero {
   background:
     linear-gradient(to right, var(--primary) 1px, transparent 1px) 0 0,
@@ -130,4 +139,22 @@
   h2 {
     @apply font-secondary text-3xl lg:text-4xl font-bold;
   }
+}
+
+.token.entity,
+.token.operator,
+.token.url {
+  color: var(--foreground);
+}
+
+.token.punctuation {
+  color: var(--foreground);
+}
+
+.token.attr-value,
+.token.char,
+.token.regex,
+.token.string,
+.token.variable {
+  color: var(--code-editor-value);
 }

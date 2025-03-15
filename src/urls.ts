@@ -3,7 +3,6 @@ export const externals = {
   github: "https://github.com/cngvc",
   email: "mailto:joevu.work@gmail.com",
   leetcode: "https://leetcode.com/u/cngvc/",
-  cv: "https://cngvc.github.io/cv",
 };
 
 export const internal = {

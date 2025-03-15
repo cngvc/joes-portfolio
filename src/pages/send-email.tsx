@@ -1,14 +1,15 @@
 import emailjs from "@emailjs/browser";
 import {
+  Button,
   Dialog,
   DialogBackdrop,
   DialogPanel,
   DialogTitle,
 } from "@headlessui/react";
-import { FormEvent, useRef, useState } from "react";
+import { FormEvent, useEffect, useRef, useState } from "react";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import BackHome from "../components/back-home";
 import Layout from "../components/main-layout";
 import Surface from "../components/surface";
@@ -22,7 +23,12 @@ const Email = () => {
     { label: string; message: string } | undefined
   >(undefined);
 
-  let navigate = useNavigate();
+  useEffect(() => {
+    return () => {
+      $open(false);
+      $isLoading(false);
+    };
+  }, []);
 
   const sendEmail = async (e: FormEvent) => {
     e.preventDefault();
@@ -83,16 +89,13 @@ const Email = () => {
                 </div>
               </div>
               <div className="mt-5 sm:mt-6">
-                <button
+                <Link
+                  to={internal.home}
                   type="button"
-                  onClick={() => {
-                    $open(false);
-                    navigate(internal.home);
-                  }}
                   className="inline-flex w-full justify-center rounded-md bg-primary px-3 py-2 t5 font-normal text-foreground shadow-xs hover:bg-primary focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-primary/80"
                 >
                   Go back to home
-                </button>
+                </Link>
               </div>
             </DialogPanel>
           </div>
@@ -141,7 +144,7 @@ const Email = () => {
                 />
                 <label
                   htmlFor="user_name"
-                  className="peer-focus:font-medium absolute t5 text-primary/40 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:rtl:translate-x-1/4 peer-focus:rtl:left-auto peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="peer-focus:font-medium absolute t5 text-primary/60 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:rtl:translate-x-1/4 peer-focus:rtl:left-auto peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Your Name
                 </label>
@@ -165,7 +168,7 @@ const Email = () => {
                 />
                 <label
                   htmlFor="user_email"
-                  className="peer-focus:font-medium absolute t5 text-primary/40 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:rtl:translate-x-1/4 peer-focus:rtl:left-auto peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="peer-focus:font-medium absolute t5 text-primary/60 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:rtl:translate-x-1/4 peer-focus:rtl:left-auto peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Email Address
                 </label>
@@ -189,14 +192,14 @@ const Email = () => {
                 />
                 <label
                   htmlFor="floating_message"
-                  className="peer-focus:font-medium absolute t5 text-primary/40 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:rtl:translate-x-1/4 peer-focus:rtl:left-auto peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="peer-focus:font-medium absolute t5 text-primary/60 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:rtl:translate-x-1/4 peer-focus:rtl:left-auto peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Your Messages
                 </label>
               </div>
 
               <div className="mb-4 relative">
-                <button
+                <Button
                   disabled={isLoading}
                   type="submit"
                   className="block gap-2 w-full rounded-md bg-primary px-3.5 py-2.5 text-center t4 font-medium text-foreground hover:bg-primary/80 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-primary/80 duration-200"
@@ -207,7 +210,7 @@ const Email = () => {
                     )}
                     {isLoading ? "Sending..." : "Let's talk"}
                   </div>
-                </button>
+                </Button>
               </div>
 
               <div className="flex flex-col justify-center">
