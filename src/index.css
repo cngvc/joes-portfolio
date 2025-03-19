@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+@plugin 'tailwind-scrollbar';
+@plugin 'tailwindcss-animated';
+
+@custom-variant dark (&:is(.dark *));
+
+@layer utilities {
+  :root {
+    --background: oklch(1 0 0);
+    --primary: oklch(0.7 0.2 45);
+    --foreground: oklch(0.145 0 0);
+    --muted: oklch(0.97 0 0);
+    --muted-foreground: oklch(0.556 0 0);
+    --pane-border: oklch(0.95 0 0);
+    --code-editor-value: oklch(0.6 0.25 150);
+
+    --moon: oklch(95.51% 0 0);
+    --sun: oklch(84.63% 0.1594 84.98);
+  }
+}
+
+.dark {
+  /* Dark Mode */
+  --background: oklch(0.2 0 0);
+  --primary: oklch(0.7 0.2 45);
+  --foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --pane-border: oklch(0.225 0 0);
+  --code-editor-value: oklch(0.75 0.3 150);
+}
+
+@theme {
+  --font-primary: Work Sans, sans-serif;
+  --font-secondary: Poppins, sans-serif;
+  --font-code: Source Code Pro, monospace;
+
+  --background-image-pane:
+    linear-gradient(90deg, var(--pane-border) 1px, #0000 0),
+    linear-gradient(180deg, var(--pane-border) 1px, #0000 0);
+  --background-image-pane-html: linear-gradient(
+    to bottom,
+    transparent,
+    var(--background-color)
+  );
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-moon: var(--moon);
+  --color-sun: var(--sun);
+  --color-code-editor-value: var(--code-editor-value);
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+@utility scroll-smooth-thin {
+  @apply scroll-smooth scrollbar-thin scrollbar-thumb-primary/60 scrollbar-track-background;
+}
+
+@utility text-normal-primary {
+  @apply text-primary font-normal;
+}
+
+@utility t1 {
+  @apply font-primary text-2xl lg:text-3xl text-foreground font-bold;
+}
+
+@utility t2 {
+  @apply font-primary text-xl lg:text-2xl text-foreground font-semibold;
+}
+
+@utility t3 {
+  @apply font-primary text-lg lg:text-xl text-foreground font-light;
+}
+
+@utility t4 {
+  @apply font-primary text-base lg:text-lg text-foreground font-light;
+}
+
+@utility t5 {
+  @apply font-primary text-sm lg:text-base text-foreground font-light;
+}
+
+@utility t6 {
+  @apply font-primary text-sm text-foreground font-light;
+}
+
+@utility c1 {
+  @apply font-code text-sm lg:text-base text-primary font-normal;
+}
+
+@utility item-desc {
+  @apply t5 text-foreground lg:text-muted-foreground lg:group-hover:text-foreground duration-200;
+}
+
+@utility code-editor {
+  @apply !px-0 !pt-0 !my-0 !bg-background !rounded-none !text-xs lg:!text-sm scroll-smooth-thin;
+  text-shadow: none !important;
+}
+
+@utility hero {
+  background:
+    linear-gradient(to right, var(--primary) 1px, transparent 1px) 0 0,
+    linear-gradient(to right, var(--primary) 1px, transparent 1px) 0 100%,
+    linear-gradient(to left, var(--primary) 1px, transparent 1px) 100% 0,
+    linear-gradient(to left, var(--primary) 1px, transparent 1px) 100% 100%,
+    linear-gradient(to bottom, var(--primary) 1px, transparent 1px) 0 0,
+    linear-gradient(to bottom, var(--primary) 1px, transparent 1px) 100% 0,
+    linear-gradient(to top, var(--primary) 1px, transparent 1px) 0 100%,
+    linear-gradient(to top, var(--primary) 1px, transparent 1px) 100% 100%;
+  @apply bg-no-repeat;
+  @apply bg-[length:20px_20px];
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth-thin text-foreground;
+  }
+  body {
+    @apply bg-background;
+  }
+  h1 {
+    @apply font-secondary text-4xl lg:text-5xl text-foreground font-bold;
+  }
+  h2 {
+    @apply font-secondary text-3xl lg:text-4xl font-bold;
+  }
+}
+
+.token.entity,
+.token.operator,
+.token.url {
+  color: var(--foreground);
+}
+
+.token.punctuation {
+  color: var(--foreground);
+}
+
+.token.attr-value,
+.token.char,
+.token.regex,
+.token.string,
+.token.variable {
+  color: var(--code-editor-value);
+}
