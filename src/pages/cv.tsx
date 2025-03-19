@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 const CVRedirect = () => {
   useEffect(() => {
-    window.location.href = "/assets/congs-resume.pdf";
+    window.location.href = "/assets/congvus-resume.pdf";
   }, []);
 
   return null;

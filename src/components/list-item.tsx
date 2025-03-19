@@ -1,9 +1,9 @@
-const Lists = ({ data, label }: { label: string; data?: string[] }) => {
+const List = ({ data, label }: { label: string; data?: string[] }) => {
   return (
     data && (
       <>
         <div className="item-desc">{label}:</div>
-        <ul className="list-disc mb-4 list-outside pl-[18px] item-desc">
+        <ul className="list-disc mb-2 list-outside pl-[18px]">
           {data?.map((e, index) => (
             <li key={index}>
               <span className="item-desc">{e}</span>
@@ -15,4 +15,4 @@ const Lists = ({ data, label }: { label: string; data?: string[] }) => {
   );
 };
 
-export default Lists;
+export default List;

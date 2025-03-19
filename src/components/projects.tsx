@@ -21,18 +21,12 @@ const Projects = () => {
 
       <ol className="gap-2 overflow-hidden list-none group/list">
         {projects.map((e, index) => (
-          <li className="lg:hover:opacity-100! lg:group-hover/list:opacity-50 duration-200">
+          <li
+            key={index}
+            className="lg:hover:opacity-100! lg:group-hover/list:opacity-60 duration-100"
+          >
             <Project
-              key={index}
-              image={e.image}
-              url={e.url}
-              title={e.title}
-              description={e.description}
-              techs={e.techs}
-              composition={e.composition}
-              subtitle={e.subtitle}
-              achievements={e.achievements}
-              role={e.role}
+              {...e}
               onOpenPhotoLightBox={() => {
                 $isOpenLightBox((cur) => !cur);
                 $selectedImage(index);

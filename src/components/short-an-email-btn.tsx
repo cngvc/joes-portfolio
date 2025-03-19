@@ -1,16 +1,22 @@
-import { TbMailShare } from "react-icons/tb";
-import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { LuMailPlus } from "react-icons/lu";
+import { Link as RLink } from "react-router-dom";
 import { internal } from "../urls";
+
+const Link = motion.create(RLink);
 
 const ShortAnEmailBtn = () => {
   return (
-    <Link
-      to={internal.email}
-      className="group flex items-center flex-wrap gap-2"
-    >
-      <span className="item-desc font-medium">Short me an email</span>{" "}
-      <TbMailShare className="w-5 h-5 lg:group-hover:translate-x-1 duration-200 ease-in-out" />
-    </Link>
+    <div className="group">
+      <Link
+        to={internal.email}
+        whileHover={{ scale: 1.025, opacity: 1 }}
+        aria-label="Send me an email"
+        className="item-desc flex items-center gap-2 w-max "
+      >
+        <LuMailPlus /> Shoot me an email!
+      </Link>
+    </div>
   );
 };
 

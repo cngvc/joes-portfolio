@@ -1,4 +1,11 @@
+import { motion } from "framer-motion";
 import React, { ReactNode } from "react";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "./ui/tooltip";
 
 const Social: React.FC<{ url: string; type: string; icon: ReactNode }> = ({
   url,
@@ -6,14 +13,23 @@ const Social: React.FC<{ url: string; type: string; icon: ReactNode }> = ({
   icon,
 }) => {
   return (
-    <a
-      href={url}
-      target="_blank"
-      aria-label={type}
-      className="p-1.5 rounded-full w-10 h-10 bg-primary/20 hover:bg-primary/40 flex items-center justify-center duration-200 hover:-translate-y-1"
-    >
-      {icon}
-    </a>
+    <TooltipProvider>
+      <Tooltip>
+        <TooltipTrigger>
+          <motion.a
+            href={url}
+            target="_blank"
+            aria-label={type}
+            whileHover={{ translateY: -4, scale: 1.15 }}
+            transition={{ duration: 0.1 }}
+            className="flex items-center justify-center rounded-full w-8 h-8 bg-primary/20 hover:bg-primary/40"
+          >
+            {icon}
+          </motion.a>
+        </TooltipTrigger>
+        <TooltipContent>{type}</TooltipContent>
+      </Tooltip>
+    </TooltipProvider>
   );
 };
 

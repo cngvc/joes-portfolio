@@ -1,8 +1,8 @@
 import React from "react";
-import { FaFileCode } from "react-icons/fa";
+import { PiImageSquare } from "react-icons/pi";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Card from "./card";
-import Lists from "./lists-item";
+import List from "./list-item";
 import Techs from "./techs";
 
 const Project: React.FC<{
@@ -11,11 +11,6 @@ const Project: React.FC<{
   title: string;
   subtitle?: string;
   description: string[];
-  composition:
-    | {
-        size: string;
-      }
-    | undefined;
   role: string[] | undefined;
   achievements?: string[] | undefined;
 
@@ -29,7 +24,6 @@ const Project: React.FC<{
   description,
 
   techs,
-  composition,
   role,
   achievements,
   onOpenPhotoLightBox,
@@ -49,7 +43,9 @@ const Project: React.FC<{
               alt={title}
             />
           ) : (
-            <FaFileCode className="w-3/5 h-auto text-primary" />
+            <div className="w-full aspect-square flex items-center justify-center bg-primary/20 rounded-md">
+              <PiImageSquare className="w-5/12 h-auto text-primary" />
+            </div>
           )}
         </div>
         <div className="col-span-full md:col-span-9 mt-0.5">
@@ -57,7 +53,7 @@ const Project: React.FC<{
             <a
               target="_blank"
               href={url ?? "#"}
-              className="t4 leading-7 font-medium mb-2 lg:group-hover:text-primary duration-200 flex flex-wrap items-center gap-2"
+              className="t4 leading-7 font-medium mb-2 lg:group-hover:text-primary duration-100 flex flex-wrap items-center gap-2"
               aria-label={title}
             >
               {title}{" "}
@@ -69,28 +65,13 @@ const Project: React.FC<{
             </a>
 
             {description.map((e, index) => (
-              <p key={index} className="item-desc ">
+              <p key={index} className="item-desc">
                 {e}
               </p>
             ))}
 
-            <div className="item-desc">Team Composition:</div>
-            {composition && (
-              <ul className="list-disc mb-2 list-outside pl-[18px] t5">
-                {composition && (
-                  <>
-                    <li>
-                      <span className="item-desc">
-                        Size: {composition?.size}
-                      </span>
-                    </li>
-                  </>
-                )}
-              </ul>
-            )}
-
-            <Lists label="My Responsibility" data={role} />
-            <Lists label="Achievements" data={achievements} />
+            <List label="My Responsibility" data={role} />
+            <List label="Achievements" data={achievements} />
             <Techs techs={techs} />
           </div>
         </div>
