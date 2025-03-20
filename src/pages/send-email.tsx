@@ -72,24 +72,26 @@ const Email = () => {
           <p className="text-muted-foreground t5">
             {alert?.message || "Message"}
           </p>
-          <Button asChild className="px-3 py-2 t5 font-normal">
-            <Link to={internal.home}>Go back to home</Link>
+          <Button asChild size="lg">
+            <Link to={internal.home} className="py-5">
+              Back to Home
+            </Link>
           </Button>
         </DialogContent>
       </Dialog>
 
       <div className="max-w-(--breakpoint-2xl) w-full flex flex-col mx-auto my-auto px-6 md:px-12 lg:px-24 py-5">
         <div className="flex flex-col items-center justify-center h-full max-w-lg m-auto hero !bg-background relative">
-          <div className="flex-1 bg-primary/5 p-8">
+          <div className="flex flex-col flex-1 bg-primary/5 p-8 gap-4">
             <LazyLoadImage
               alt="Call Me"
               src={"/assets/call-me.png"}
               className="max-w-[11rem] w-full h-auto object-contain absolute bottom-0 right-0 z-10 hidden lg:block pointer-events-none"
             />
-            <h2 className="text-center mb-4">
+            <h2 className="text-center">
               Send me a <span className="text-primary">message</span>!
             </h2>
-            <p className="t4 text-center mb-4">
+            <p className="t4 text-center">
               Got a question or proposal, or just want to say hello?
               <br />
               Go ahead.
@@ -178,9 +180,10 @@ const Email = () => {
                 <Button
                   disabled={isLoading}
                   type="submit"
-                  className="flex w-full rounded-md bg-primary h-max"
+                  size="lg"
+                  className="flex w-full"
                 >
-                  <div className="flex items-center justify-center w-full gap-2 py-1">
+                  <div className="flex items-center justify-center gap-2">
                     {isLoading && (
                       <AiOutlineLoading3Quarters className="ease-in-out animate-spin" />
                     )}
@@ -189,9 +192,7 @@ const Email = () => {
                 </Button>
               </div>
 
-              <div className="flex flex-col justify-center">
-                <BackHome />
-              </div>
+              <BackHome />
             </form>
           </div>
         </div>

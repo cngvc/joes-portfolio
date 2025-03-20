@@ -1,9 +1,9 @@
+import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
 import { memo } from "react";
 import { FaCloudMoon } from "react-icons/fa";
 import { MdSunny } from "react-icons/md";
-import { twMerge } from "tailwind-merge";
 import { Button } from "./ui/button";
 
 const ChangeThemeBtn = memo(() => {
@@ -17,12 +17,12 @@ const ChangeThemeBtn = memo(() => {
       <Button
         variant="blank"
         onClick={() => setTheme("light")}
-        className={twMerge(
+        className={cn(
           "relative p-1.5 cursor-pointer group hover:-translate-y-1 hover:opacity-100 duration-100",
           theme === "light" ? "-translate-y-1" : "opacity-50",
         )}
       >
-        <MdSunny className={twMerge("text-sun")} size={20} />
+        <MdSunny className="text-sun size-5" />
 
         {theme === "light" && (
           <motion.div
@@ -45,17 +45,19 @@ const ChangeThemeBtn = memo(() => {
       <Button
         variant="blank"
         onClick={() => setTheme("dark")}
-        className={twMerge(
+        className={cn(
           "relative p-1.5 cursor-pointer group hover:-translate-y-1 hover:opacity-100 duration-100",
           theme === "dark" ? "-translate-y-1" : "opacity-50",
         )}
       >
         <FaCloudMoon
-          className={theme === "dark" ? "text-moon" : "text-muted-foreground"}
-          size={20}
+          className={cn(
+            "size-5",
+            theme === "dark" ? "text-moon" : "text-muted-foreground",
+          )}
         />
         <div
-          className={twMerge(
+          className={cn(
             "absolute inset-0 w-10 h-10 rounded-full bg-moon opacity-0 blur-md duration-100 group-hover:opacity-50",
             theme === "dark" && "opacity-50",
           )}
