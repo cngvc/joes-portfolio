@@ -11,15 +11,13 @@ import { Link } from "react-router-dom";
 import { externals, internal } from "../urls";
 
 const content = `/*
-  author: Vu Chi Cong
+  author: Vu Chi Cong (Joe)
   description: My profile as a Full-Stack Developer
-  version: 1.0.0
   homepage: https://congvc.com
   repository: https://github.com/cngvc/joes-portfolio
 */
 const my_profile: IGoodDeveloper = {
-  fullname: 'Vu Chi Cong',
-  nickname: 'Joe', 
+  fullname: 'Vu Chi Cong (Joe)',
   title: 'Mid-Level Full-Stack Developer',
   yoe: '5+',
   skills: {
@@ -63,30 +61,39 @@ const Window = () => {
             <span className="text-sm leading-normal text-foreground flex items-center font-code p-2 bg-primary/40 rounded-md">
               <span className="text-blue-400">{`{{gateway}}`}</span>/auth/me
             </span>
-            <a
-              href={externals.linkedin}
-              target="_blank"
-              className="text-sm leading-normal text-foreground flex items-center font-code p-2 bg-primary/10 hover:bg-primary/40 duration-100 rounded-md"
-            >
-              <FaLinkedinIn className="w-4 h-4 text-foreground" />
-              <span className="hidden lg:block">/@jv98</span>
-            </a>
-            <a
-              href={externals.github}
-              target="_blank"
-              className="text-sm leading-normal text-foreground flex items-center font-code p-2 bg-primary/10 hover:bg-primary/40 duration-100 rounded-md"
-            >
-              <FaGithub className="w-4 h-4 text-foreground" />
-              <span className="hidden lg:block">/@cngvc</span>
-            </a>
-            <Link
-              to={internal.cv}
-              target="_blank"
-              className="text-sm leading-normal text-foreground flex items-center font-code p-2 bg-primary/10 hover:bg-primary/40 duration-100 rounded-md"
-            >
-              <FaUserCircle className="w-4 h-4 text-foreground" />
-              <span className="hidden lg:block">/resume</span>
-            </Link>
+
+            <div className="p-2 bg-primary/10 hover:bg-primary/40 duration-100 rounded-md">
+              <a
+                href={externals.linkedin}
+                target="_blank"
+                className="text-sm leading-normal text-foreground flex items-center font-code"
+              >
+                <FaLinkedinIn className="w-4 h-4 text-foreground" />
+                <span className="hidden lg:block">/@jv98</span>
+              </a>
+            </div>
+
+            <div className="p-2 bg-primary/10 hover:bg-primary/40 duration-100 rounded-md">
+              <a
+                href={externals.github}
+                target="_blank"
+                className="text-sm leading-normal text-foreground flex items-center font-code"
+              >
+                <FaGithub className="w-4 h-4 text-foreground" />
+                <span className="hidden lg:block">/@cngvc</span>
+              </a>
+            </div>
+
+            <div className="p-2 bg-primary/10 hover:bg-primary/40 duration-100 rounded-md">
+              <Link
+                to={internal.cv}
+                target="_blank"
+                className="text-sm leading-normal text-foreground flex items-center font-code"
+              >
+                <FaUserCircle className="w-4 h-4 text-foreground" />
+                <span className="hidden lg:block">/resume</span>
+              </Link>
+            </div>
           </div>
         </div>
         <pre className="line-numbers code-editor" data-language="JavaScript">

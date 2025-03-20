@@ -1,7 +1,7 @@
 import DOMPurify from "dompurify";
+import { motion } from "framer-motion";
 import { useMemo, useRef } from "react";
 import { useInView } from "react-intersection-observer";
-import { twMerge } from "tailwind-merge";
 import About from "../components/about";
 import ChangeThemeBtn from "../components/change-theme-btn";
 import Companies from "../components/companies";
@@ -64,35 +64,37 @@ function Main() {
     }),
     [bio],
   );
-
   return (
     <MainLayout>
       <Surface />
       <div className="grid grid-cols-1 lg:grid-cols-12">
-        <div className="lg:col-span-5 p-4 lg:h-screen lg:sticky top-0 flex flex-col gap-4 lg:w-11/12 lg:pt-12 lg:pb-6 overflow-y-auto scroll-smooth-thin">
+        <div className="lg:col-span-5 p-4 lg:h-screen lg:sticky top-0 flex flex-col gap-4 lg:w-11/12 lg:pt-10 lg:pb-5 overflow-y-auto scroll-smooth-thin">
           <div className="flex flex-col gap-2.5">
             <p className="c1">Hi, I am</p>
             <div className="marker-variation">
               <h2 dangerouslySetInnerHTML={sanitizedContent}></h2>
             </div>
             <p className="t3" dangerouslySetInnerHTML={sanitizedRole} />
-            <p className="t5 text-muted-foreground font-mono">{skills}</p>
             <p className="t5" dangerouslySetInnerHTML={sanitizedBio} />
+            <p className="t5 text-primary font-bold font-code">{`/* ${skills} */`}</p>
           </div>
 
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 w-max">
             {menu.map((e) => (
-              <p
-                className={twMerge(
-                  "t4 opacity-40 transition-all duration-100 cursor-pointer hover:opacity-100",
-                  e.point && "opacity-100",
-                )}
+              <div
+                key={e.index}
+                className="t4 cursor-pointer"
                 onClick={() => {
                   e.ref.current?.scrollIntoView({ behavior: "smooth" });
                 }}
               >
-                <span className="c1">{e.index}</span> {e.label}
-              </p>
+                <motion.div
+                  whileHover={{ scale: 1.025 }}
+                  animate={{ opacity: e.point ? 1 : 0.5 }}
+                >
+                  <span className="c1">{e.index}</span> {e.label}
+                </motion.div>
+              </div>
             ))}
           </div>
           <SparklesButton />
@@ -100,7 +102,7 @@ function Main() {
           <ShortAnEmailBtn />
           <ChangeThemeBtn />
 
-          <div className="t6 text-muted-foreground/40">
+          <div className="t5 text-muted-foreground/40">
             Designed & Developed by Joe
           </div>
         </div>
@@ -110,9 +112,16 @@ function Main() {
           <div ref={aboutRef} className="mb-10">
             <div className="p-6 flex gap-2 items-center" ref={about}>
               <span className="c1">01.</span> About me{" "}
-              <div className="animate-wiggle duration-100 animate-infinite">
+              <motion.div
+                animate={{ rotate: [0, 10, -10, 0] }}
+                transition={{
+                  repeat: Infinity,
+                  duration: 2,
+                  ease: "easeInOut",
+                }}
+              >
                 👋
-              </div>
+              </motion.div>
             </div>
             <About />
           </div>

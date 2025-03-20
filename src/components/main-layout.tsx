@@ -41,7 +41,7 @@ const MainLayout: React.FC<{ children: ReactNode; hideProgress?: boolean }> = ({
             />
           )}
 
-          <div className="min-h-screen max-w-(--breakpoint-2xl) w-full flex flex-col mx-auto px-4 sm:px-8 md:px-12 lg:px-12 xl:px-24 py-12 md:py-20 lg:py-0">
+          <div className="min-h-screen max-w-(--breakpoint-2xl) w-full flex flex-col mx-auto px-4 sm:px-8 md:px-12 lg:px-12 xl:px-24 py-0">
             {children}
           </div>
         </div>

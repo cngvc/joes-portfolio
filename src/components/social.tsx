@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React, { ReactNode } from "react";
 
 const Social: React.FC<{ url: string; type: string; icon: ReactNode }> = ({
@@ -6,14 +7,16 @@ const Social: React.FC<{ url: string; type: string; icon: ReactNode }> = ({
   icon,
 }) => {
   return (
-    <a
+    <motion.a
       href={url}
       target="_blank"
       aria-label={type}
-      className="flex items-center justify-center rounded-full w-8 h-8 bg-primary/20 hover:bg-primary/40 duration-100 hover:-translate-y-1"
+      whileHover={{ translateY: -4, scale: 1.15 }}
+      transition={{ duration: 0.1 }}
+      className="flex items-center justify-center rounded-full w-8 h-8 bg-primary/20 hover:bg-primary/40"
     >
       {icon}
-    </a>
+    </motion.a>
   );
 };
 

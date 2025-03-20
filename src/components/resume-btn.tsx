@@ -22,17 +22,17 @@ interface SparkleProps {
 
 const ResumeBtn = () => {
   return (
-    <div className="flex items-center">
+    <motion.div whileHover={{ scale: 1.05 }} className="flex items-center">
       <Link
         to={internal.cv}
         target="_blank"
-        className="relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-linear-to-r from-orange-400 to-orange-600 text-foreground focus:ring-0 focus:outline-hidden shadow-lg shadow-primary/40"
+        className="relative inline-flex items-center justify-center overflow-hidden rounded-xl bg-linear-to-r from-orange-400 to-orange-600 text-foreground focus:ring-0 focus:outline-hidden shadow-lg shadow-primary/40"
       >
         <span className="t5 font-normal text-white px-6 py-3 z-30">
           My Resume
         </span>
       </Link>
-    </div>
+    </motion.div>
   );
 };
 
