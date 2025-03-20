@@ -38,11 +38,11 @@ const SideProject: React.FC<{
                 target="_blank"
                 href={repo ?? "#"}
                 aria-label="Github"
-                className="duration-200 lg:hover:-translate-y-1 ease-in-out"
+                className="duration-100 lg:hover:-translate-y-1 ease-in-out"
               >
                 <FaGithub className="w-5 h-5" />
               </a>
-              <BsArrowUpRight className="w-5 h-5 lg:group-hover:-translate-y-1 lg:group-hover:translate-x-1 duration-200 ease-in-out" />
+              <BsArrowUpRight className="w-5 h-5 lg:group-hover:-translate-y-1 lg:group-hover:translate-x-1 duration-100 ease-in-out" />
             </a>
 
             {description.map((e, index) => (

@@ -16,7 +16,7 @@ const Company: React.FC<{
 }> = ({ time, company, url, role, description, job, domains, techs }) => {
   return (
     <Card>
-      <div className="group grid grid-cols-12 p-3 md:p-6 duration-700">
+      <div className="group grid grid-cols-12 p-3 md:p-6">
         <div className="col-span-12 md:col-span-3">
           <p className="t6 text-muted-foreground md:mt-1">{time}</p>
         </div>

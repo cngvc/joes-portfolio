@@ -10,7 +10,7 @@ const Social: React.FC<{ url: string; type: string; icon: ReactNode }> = ({
       href={url}
       target="_blank"
       aria-label={type}
-      className="p-1.5 rounded-full w-10 h-10 bg-primary/20 hover:bg-primary/40 flex items-center justify-center duration-200 hover:-translate-y-1"
+      className="flex items-center justify-center rounded-full w-8 h-8 bg-primary/20 hover:bg-primary/40 duration-100 hover:-translate-y-1"
     >
       {icon}
     </a>

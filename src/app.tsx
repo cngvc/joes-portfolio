@@ -1,5 +1,5 @@
 import RootLayout from "./components/root-layout";
-import Main from "./pages/main";
+import Home from "./pages/home";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import NotFound from "./pages/404";
@@ -11,7 +11,7 @@ const resumePaths = ["/resume", "/cv"];
 const router = createBrowserRouter([
   {
     path: internal.home,
-    element: <Main />,
+    element: <Home />,
     errorElement: <NotFound />,
   },
   {
@@ -22,6 +22,7 @@ const router = createBrowserRouter([
   ...resumePaths.map((path) => ({
     path: path,
     element: <CVRedirect />,
+    errorElement: <NotFound />,
   })),
 ]);
 

@@ -57,7 +57,7 @@ const Project: React.FC<{
             <a
               target="_blank"
               href={url ?? "#"}
-              className="t4 leading-7 font-medium mb-2 lg:group-hover:text-primary duration-200 flex flex-wrap items-center gap-2"
+              className="t4 leading-7 font-medium mb-2 lg:group-hover:text-primary duration-100 flex flex-wrap items-center gap-2"
               aria-label={title}
             >
               {title}{" "}

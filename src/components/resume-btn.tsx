@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { internal } from "../urls";
 
-interface SparklesTextProps extends React.HTMLAttributes<HTMLDivElement> {
+interface SparklesButtonProps extends React.HTMLAttributes<HTMLDivElement> {
   colors?: { first: string; second: string };
   sparklesCount?: number;
   animationSpeed?: number;
@@ -36,7 +36,7 @@ const ResumeBtn = () => {
   );
 };
 
-const SparklesText: React.FC<SparklesTextProps> = ({
+const SparklesButton: React.FC<SparklesButtonProps> = ({
   colors = { first: "oklch(0.85 0.25 45)", second: "oklch(0.8 0.18 30)" },
   className,
   sparklesCount = 10,
@@ -124,4 +124,4 @@ const Sparkle: React.FC<SparkleProps> = ({
   );
 };
 
-export default SparklesText;
+export default SparklesButton;

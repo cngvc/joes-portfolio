@@ -7,12 +7,12 @@ import ChangeThemeBtn from "../components/change-theme-btn";
 import Companies from "../components/companies";
 import MainLayout from "../components/main-layout";
 import Projects from "../components/projects";
-import SparklesText from "../components/resume-btn";
+import SparklesButton from "../components/resume-btn";
 import ShortAnEmailBtn from "../components/short-an-email-btn";
 import SideProjects from "../components/side-projects";
 import SocialList from "../components/social-list";
 import Surface from "../components/surface";
-import content from "../content.json";
+import { bio, name, role, skills } from "../content.json";
 
 function Main() {
   const about = useRef<HTMLDivElement | null>(null);
@@ -46,48 +46,45 @@ function Main() {
 
   const sanitizedContent = useMemo(
     () => ({
-      __html: DOMPurify.sanitize(content.name),
+      __html: DOMPurify.sanitize(name),
     }),
-    [content.name],
+    [name],
   );
 
   const sanitizedRole = useMemo(
     () => ({
-      __html: DOMPurify.sanitize(content.role),
+      __html: DOMPurify.sanitize(role),
     }),
-    [content.role],
+    [role],
   );
 
   const sanitizedBio = useMemo(
     () => ({
-      __html: DOMPurify.sanitize(content.bio || ""),
+      __html: DOMPurify.sanitize(bio || ""),
     }),
-    [content.bio],
+    [bio],
   );
 
   return (
     <MainLayout>
       <Surface />
-
       <div className="grid grid-cols-1 lg:grid-cols-12">
         <div className="lg:col-span-5 p-4 lg:h-screen lg:sticky top-0 flex flex-col gap-4 lg:w-11/12 lg:pt-12 lg:pb-6 overflow-y-auto scroll-smooth-thin">
-          <div className="flex flex-col gap-4 mb-3">
+          <div className="flex flex-col gap-2.5">
             <p className="c1">Hi, I am</p>
             <div className="marker-variation">
               <h2 dangerouslySetInnerHTML={sanitizedContent}></h2>
             </div>
             <p className="t3" dangerouslySetInnerHTML={sanitizedRole} />
-            <p className="t5 text-muted-foreground font-mono">
-              {content.skills}
-            </p>
+            <p className="t5 text-muted-foreground font-mono">{skills}</p>
             <p className="t5" dangerouslySetInnerHTML={sanitizedBio} />
           </div>
 
-          <div className="flex flex-col gap-3 mb-3">
+          <div className="flex flex-col gap-2">
             {menu.map((e) => (
               <p
                 className={twMerge(
-                  "t4 opacity-40 transition-all duration-200 cursor-pointer hover:opacity-100",
+                  "t4 opacity-40 transition-all duration-100 cursor-pointer hover:opacity-100",
                   e.point && "opacity-100",
                 )}
                 onClick={() => {
@@ -98,16 +95,12 @@ function Main() {
               </p>
             ))}
           </div>
-
-          <SparklesText />
-
+          <SparklesButton />
           <SocialList />
-
           <ShortAnEmailBtn />
-
           <ChangeThemeBtn />
 
-          <div className="t5 text-muted-foreground">
+          <div className="t6 text-muted-foreground/40">
             Designed & Developed by Joe
           </div>
         </div>
@@ -117,7 +110,7 @@ function Main() {
           <div ref={aboutRef} className="mb-10">
             <div className="p-6 flex gap-2 items-center" ref={about}>
               <span className="c1">01.</span> About me{" "}
-              <div className="animate-wiggle duration-200 animate-infinite">
+              <div className="animate-wiggle duration-100 animate-infinite">
                 👋
               </div>
             </div>

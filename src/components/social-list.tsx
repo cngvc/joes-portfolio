@@ -9,22 +9,22 @@ const SocialList = () => {
       <Social
         url={externals.linkedin}
         type="Linkedin"
-        icon={<FaLinkedinIn className="w-5 h-5" />}
+        icon={<FaLinkedinIn className="w-4 h-4" />}
       />
       <Social
         url={externals.github}
         type="Github"
-        icon={<FaGithubAlt className="w-5 h-5" />}
+        icon={<FaGithubAlt className="w-4 h-4" />}
       />
       <Social
         url={externals.email}
         type="Email"
-        icon={<FaEnvelope className="w-5 h-5" />}
+        icon={<FaEnvelope className="w-4 h-4" />}
       />
       <Social
         url={externals.leetcode}
         type="Leetcode"
-        icon={<SiLeetcode className="w-5 h-5" />}
+        icon={<SiLeetcode className="w-4 h-4" />}
       />
     </div>
   );

@@ -11,7 +11,7 @@ const About = () => {
             src={"/assets/avatar.png"}
             className="object-contain z-50 w-32 md:w-40 h-32 md:h-40"
           />
-          <div className="opacity-0 lg:group-hover:opacity-100 duration-200 absolute top-4 p-2 rounded-lg bg-[#1C1D20]/60 -translate-x-1/2 t6 backdrop-blur-xs">
+          <div className="opacity-0 lg:group-hover:opacity-100 duration-100 absolute top-4 p-2 rounded-lg bg-[#1C1D20]/60 -translate-x-1/2 t6 backdrop-blur-xs">
             Hi, Nice to meet you!.
           </div>
         </div>

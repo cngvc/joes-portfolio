@@ -67,14 +67,14 @@ const Email = () => {
       <Dialog open={open} onClose={$open} className="relative z-10">
         <DialogBackdrop
           transition
-          className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-leave:duration-200 data-enter:ease-out data-leave:ease-in"
+          className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-leave:duration-100 data-enter:ease-out data-leave:ease-in"
         />
 
         <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
           <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
             <DialogPanel
               transition
-              className="relative transform overflow-hidden rounded-lg bg-background px-4 pb-4 pt-5 text-left shadow-xl transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-leave:duration-200 data-enter:ease-out data-leave:ease-in sm:my-8 sm:w-full sm:max-w-sm sm:p-6 sm:data-closed:translate-y-0 sm:data-closed:scale-95"
+              className="relative transform overflow-hidden rounded-lg bg-background px-4 pb-4 pt-5 text-left shadow-xl transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-leave:duration-100 data-enter:ease-out data-leave:ease-in sm:my-8 sm:w-full sm:max-w-sm sm:p-6 sm:data-closed:translate-y-0 sm:data-closed:scale-95"
             >
               <div>
                 <div className="mt-3 text-center sm:mt-5">
@@ -202,7 +202,7 @@ const Email = () => {
                 <Button
                   disabled={isLoading}
                   type="submit"
-                  className="block gap-2 w-full rounded-md bg-primary px-3.5 py-2.5 text-center t4 font-medium text-foreground hover:bg-primary/80 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-primary/80 duration-200"
+                  className="block gap-2 w-full rounded-md bg-primary px-3.5 py-2.5 text-center t4 font-medium text-foreground hover:bg-primary/80 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-primary/80 duration-100"
                 >
                   <div className="flex items-center w-full h-full justify-center gap-2 text-white">
                     {isLoading && (

@@ -104,11 +104,11 @@
 }
 
 @utility item-desc {
-  @apply t5 text-foreground lg:text-muted-foreground lg:group-hover:text-foreground duration-200;
+  @apply t5 text-foreground lg:text-muted-foreground lg:group-hover:text-foreground duration-100;
 }
 
 @utility code-editor {
-  @apply !px-0 !pt-0 !my-0 !bg-background !rounded-none !text-xs lg:!text-sm scroll-smooth-thin;
+  @apply !my-0 !bg-background !rounded-none !text-xs lg:!text-sm scroll-smooth-thin;
   text-shadow: none !important;
 }
 

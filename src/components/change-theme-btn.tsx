@@ -26,14 +26,14 @@ const ChangeThemeBtn = memo(() => {
       <Button
         onClick={() => setTheme("light")}
         className={twMerge(
-          "relative p-1 cursor-pointer group hover:-translate-y-1 hover:opacity-100 duration-200",
+          "relative p-1 cursor-pointer group hover:-translate-y-1 hover:opacity-100 duration-100",
           theme === "light" ? "-translate-y-1" : "opacity-50",
         )}
       >
         <IoSunnySharp className={twMerge("text-sun")} size={20} />
         <div
           className={twMerge(
-            "absolute inset-0 w-7 h-7 rounded-full bg-sun opacity-0 blur-md duration-200 group-hover:opacity-50",
+            "absolute inset-0 w-7 h-7 rounded-full bg-sun opacity-0 blur-md duration-100 group-hover:opacity-50",
             theme === "light" && "opacity-50",
           )}
         ></div>
@@ -43,7 +43,7 @@ const ChangeThemeBtn = memo(() => {
       <Button
         onClick={() => setTheme("dark")}
         className={twMerge(
-          "relative p-1 cursor-pointer group hover:-translate-y-1 hover:opacity-100 duration-200",
+          "relative p-1 cursor-pointer group hover:-translate-y-1 hover:opacity-100 duration-100",
           theme === "dark" ? "-translate-y-1" : "opacity-50",
         )}
       >
@@ -53,7 +53,7 @@ const ChangeThemeBtn = memo(() => {
         />
         <div
           className={twMerge(
-            "absolute inset-0 w-7 h-7 rounded-full bg-moon opacity-0 blur-md duration-200 group-hover:opacity-50",
+            "absolute inset-0 w-7 h-7 rounded-full bg-moon opacity-0 blur-md duration-100 group-hover:opacity-50",
             theme === "dark" && "opacity-50",
           )}
         ></div>

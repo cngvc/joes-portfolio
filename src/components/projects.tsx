@@ -21,7 +21,7 @@ const Projects = () => {
 
       <ol className="gap-2 overflow-hidden list-none group/list">
         {projects.map((e, index) => (
-          <li className="lg:hover:opacity-100! lg:group-hover/list:opacity-50 duration-200">
+          <li className="lg:hover:opacity-100! lg:group-hover/list:opacity-50 duration-100">
             <Project
               key={index}
               image={e.image}

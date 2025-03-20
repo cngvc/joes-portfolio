@@ -5,7 +5,7 @@ const SideProjects = () => {
   return (
     <ol className="gap-2 overflow-hidden list-none group/list">
       {sides.map((e, index) => (
-        <li className="lg:hover:opacity-100! lg:group-hover/list:opacity-50 duration-200">
+        <li className="lg:hover:opacity-100! lg:group-hover/list:opacity-50 duration-100">
           <SideProject
             key={index}
             url={e.url}
