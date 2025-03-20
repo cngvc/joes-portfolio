@@ -8,7 +8,9 @@
 @layer utilities {
   :root {
     --background: oklch(1 0 0);
-    --primary: oklch(0.7 0.2 45);
+    --primary: oklch(44.14% 0.0898 245.13);
+    --primary-lighter: oklch(55.72% 0.0715 241.48);
+    --primary-darker: oklch(38% 0.0746 243.96);
     --foreground: oklch(0.145 0 0);
     --muted: oklch(0.97 0 0);
     --muted-foreground: oklch(0.556 0 0);
@@ -46,6 +48,8 @@
   /* Dark Mode */
   --background: oklch(0.2 0 0);
   --primary: oklch(0.7 0.2 45);
+  --primary-lighter: oklch(74.31% 0.1715 51.49);
+  --primary-darker: oklch(59.19% 0.168485 45.258);
   --foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);
   --muted-foreground: oklch(0.708 0 0);
@@ -93,6 +97,8 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
+  --color-primary-lighter: var(--primary-lighter);
+  --color-primary-darker: var(--primary-darker);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-moon: var(--moon);

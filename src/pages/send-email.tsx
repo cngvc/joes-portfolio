@@ -11,7 +11,6 @@ import {
 import emailjs from "@emailjs/browser";
 import { FormEvent, useEffect, useRef, useState } from "react";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import { internal } from "../urls";
 
@@ -83,11 +82,6 @@ const Email = () => {
       <div className="max-w-(--breakpoint-2xl) w-full flex flex-col mx-auto my-auto px-6 md:px-12 lg:px-24 py-5">
         <div className="flex flex-col items-center justify-center h-full max-w-lg m-auto hero !bg-background relative">
           <div className="flex flex-col flex-1 bg-primary/5 p-8 gap-4">
-            <LazyLoadImage
-              alt="Call Me"
-              src={"/assets/call-me.png"}
-              className="max-w-[11rem] w-full h-auto object-contain absolute bottom-0 right-0 z-10 hidden lg:block pointer-events-none"
-            />
             <h2 className="text-center">
               Send me a <span className="text-primary">message</span>!
             </h2>

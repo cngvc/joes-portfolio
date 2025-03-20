@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
 import { memo } from "react";
-import { FaCloudMoon } from "react-icons/fa";
+import { IoMoon } from "react-icons/io5";
 import { MdSunny } from "react-icons/md";
 import { Button } from "./ui/button";
 
@@ -66,7 +66,7 @@ const ChangeThemeBtn = memo(() => {
                 theme === "dark" ? "-translate-y-1" : "opacity-50",
               )}
             >
-              <FaCloudMoon
+              <IoMoon
                 className={cn(
                   "size-5",
                   theme === "dark" ? "text-moon" : "text-muted-foreground",

@@ -1,9 +1,12 @@
+import { useTheme } from "next-themes";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import BackHome from "../components/back-home";
 import Layout from "../components/main-layout";
 import Surface from "../components/surface";
 
 const NotFound = () => {
+  const { theme } = useTheme();
+
   return (
     <Layout hideProgress>
       <Surface />
@@ -12,7 +15,11 @@ const NotFound = () => {
           <div className="flex flex-col gap-2 relative w-full md:w-4/5 lg:w-3/5 items-center">
             <LazyLoadImage
               alt="Not found"
-              src={"/assets/not-found.png"}
+              src={
+                theme === "dark"
+                  ? "/assets/not-found.png"
+                  : "/assets/not-found-light.png"
+              }
               className="max-w-[12rem] w-full h-auto object-contain absolute -translate-y-full z-50"
             />
             <div className="border border-primary flex flex-col p-6 items-center justify-center w-full gap-4 bg-primary/5">
