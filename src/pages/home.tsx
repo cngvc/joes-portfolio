@@ -74,9 +74,12 @@ function Main() {
             <div className="marker-variation">
               <h2 dangerouslySetInnerHTML={sanitizedContent}></h2>
             </div>
-            <p className="t3" dangerouslySetInnerHTML={sanitizedRole} />
+            <p
+              className="t4 font-code"
+              dangerouslySetInnerHTML={sanitizedRole}
+            />
             <p className="t5" dangerouslySetInnerHTML={sanitizedBio} />
-            <p className="t5 text-primary font-bold font-code">{`/* ${skills} */`}</p>
+            <p className="t4 text-primary font-bold font-code">{`// ${skills}`}</p>
           </div>
 
           <div className="flex flex-col gap-2 w-max">

@@ -65,7 +65,8 @@ const Window = () => {
 
           <div className="flex items-center gap-1">
             <span className="text-sm leading-normal text-foreground flex items-center font-code p-2 bg-primary/40 rounded-md">
-              <span className="text-blue-400">{`{{gateway}}`}</span>/auth/me
+              <span className="text-code-editor-value">{`{{gateway}}`}</span>
+              /auth/me
             </span>
 
             <TooltipProvider>
