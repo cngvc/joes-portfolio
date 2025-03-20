@@ -16,7 +16,7 @@ const MainLayout: React.FC<{ children: ReactNode; hideProgress?: boolean }> = ({
       const scrollPercent = scrollTop / (docHeight - winHeight);
       const percent = scrollPercent * 100;
       const scrollPercentRounded = Math.max(Number(percent.toFixed(2)), 0.1);
-      setPagePercent(scrollPercentRounded);
+      setPagePercent(Math.ceil(scrollPercentRounded * 10) / 10);
     };
     window.addEventListener("scroll", handleScroll);
     return () => {

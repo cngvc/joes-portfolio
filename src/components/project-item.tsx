@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFileCode } from "react-icons/fa";
+import { PiImageSquare } from "react-icons/pi";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Card from "./card";
 import Lists from "./lists-item";
@@ -49,7 +49,9 @@ const Project: React.FC<{
               alt={title}
             />
           ) : (
-            <FaFileCode className="w-3/5 h-auto text-primary" />
+            <div className="w-full aspect-square flex items-center justify-center bg-primary/20 rounded-md">
+              <PiImageSquare className="w-5/12 h-auto text-primary" />
+            </div>
           )}
         </div>
         <div className="col-span-full md:col-span-9 mt-0.5">

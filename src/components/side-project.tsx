@@ -1,6 +1,8 @@
 import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
+import { PiImageSquare } from "react-icons/pi";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import Card from "./card";
 import Lists from "./lists-item";
 import Techs from "./techs";
@@ -15,11 +17,41 @@ const SideProject: React.FC<{
   repo: string;
   subtitle?: string;
   goal?: string;
-}> = ({ url, title, description, techs, repo, features, subtitle, goal }) => {
+  onOpenPhotoLightBox?: () => void;
+}> = ({
+  url,
+  image,
+  title,
+  description,
+  techs,
+  repo,
+  features,
+  subtitle,
+  goal,
+  onOpenPhotoLightBox,
+}) => {
   return (
     <Card>
       <div className="group grid grid-cols-12 p-3 md:p-6">
-        <div className="col-span-full mt-0.5">
+        <div className="col-span-3 py-2 justify-center items-start hidden md:flex mr-4 md:mr-8">
+          {image ? (
+            <LazyLoadImage
+              src={image}
+              className="w-full h-auto object-contain rounded-md"
+              onClick={(e) => {
+                e.preventDefault();
+                onOpenPhotoLightBox?.();
+              }}
+              alt={title}
+            />
+          ) : (
+            <div className="w-full aspect-square flex items-center justify-center bg-primary/20 rounded-md">
+              <PiImageSquare className="w-5/12 h-auto text-primary" />
+            </div>
+          )}
+        </div>
+
+        <div className="col-span-full md:col-span-9 mt-0.5">
           <div className="flex flex-col">
             <a
               target="_blank"

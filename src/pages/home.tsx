@@ -113,10 +113,10 @@ function Main() {
             <div className="p-6 flex gap-2 items-center" ref={about}>
               <span className="c1">01.</span> About me{" "}
               <motion.div
-                animate={{ rotate: [0, 10, -10, 0] }}
+                animate={{ rotate: [0, 15, 0] }}
                 transition={{
                   repeat: Infinity,
-                  duration: 2,
+                  duration: 1.5,
                   ease: "easeInOut",
                 }}
               >

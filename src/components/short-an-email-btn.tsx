@@ -1,22 +1,22 @@
 import { motion } from "framer-motion";
 import { LuMailPlus } from "react-icons/lu";
-import { Link } from "react-router-dom";
+import { Link as RLink } from "react-router-dom";
 import { internal } from "../urls";
+
+const Link = motion(RLink);
 
 const ShortAnEmailBtn = () => {
   return (
-    <motion.div
-      className="w-max gap-2 group"
-      whileHover={{ scale: 1.025, opacity: 1 }}
-    >
+    <div className="group">
       <Link
         to={internal.email}
+        whileHover={{ scale: 1.025, opacity: 1 }}
         aria-label="Send me an email"
-        className="item-desc flex items-center gap-2"
+        className="item-desc flex items-center gap-2 w-max "
       >
         <LuMailPlus /> Shoot me an email!
-      </Link>{" "}
-    </motion.div>
+      </Link>
+    </div>
   );
 };
 

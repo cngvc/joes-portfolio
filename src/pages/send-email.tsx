@@ -1,3 +1,6 @@
+import BackHome from "@/components/back-home";
+import Layout from "@/components/main-layout";
+import Surface from "@/components/surface";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -10,9 +13,6 @@ import { FormEvent, useEffect, useRef, useState } from "react";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
-import BackHome from "../components/back-home";
-import Layout from "../components/main-layout";
-import Surface from "../components/surface";
 import { internal } from "../urls";
 
 const Email = () => {
@@ -181,14 +181,12 @@ const Email = () => {
                   disabled={isLoading}
                   type="submit"
                   size="lg"
-                  className="flex w-full"
+                  className="flex w-full items-center justify-center gap-2 cursor-pointer"
                 >
-                  <div className="flex items-center justify-center gap-2">
-                    {isLoading && (
-                      <AiOutlineLoading3Quarters className="ease-in-out animate-spin" />
-                    )}
-                    {isLoading ? "Sending..." : "Let's talk"}
-                  </div>
+                  {isLoading && (
+                    <AiOutlineLoading3Quarters className="ease-in-out animate-spin" />
+                  )}
+                  {isLoading ? "Sending..." : "Let's talk"}
                 </Button>
               </div>
 

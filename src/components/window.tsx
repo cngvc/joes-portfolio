@@ -5,6 +5,12 @@ import "prismjs/plugins/line-numbers/prism-line-numbers.min.css";
 import "prismjs/plugins/line-numbers/prism-line-numbers.min.js";
 import "prismjs/themes/prism-okaidia.min.css";
 
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { useEffect, useState } from "react";
 import { FaGithub, FaLinkedinIn, FaUserCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -62,47 +68,63 @@ const Window = () => {
               <span className="text-blue-400">{`{{gateway}}`}</span>/auth/me
             </span>
 
-            <div className="p-2 bg-primary/10 hover:bg-primary/40 duration-100 rounded-md">
-              <a
-                href={externals.linkedin}
-                target="_blank"
-                className="text-sm leading-normal text-foreground flex items-center font-code"
-              >
-                <FaLinkedinIn className="w-4 h-4 text-foreground" />
-                <span className="hidden lg:block">/@jv98</span>
-              </a>
-            </div>
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger>
+                  <div className="p-2 bg-primary/10 hover:bg-primary/40 duration-100 rounded-md">
+                    <a
+                      href={externals.linkedin}
+                      target="_blank"
+                      className="text-sm leading-normal text-foreground flex items-center font-code"
+                    >
+                      <FaLinkedinIn className="w-4 h-4 text-foreground" />
+                      <span className="hidden lg:block">/@jv98</span>
+                    </a>
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent>My Linkedin</TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
 
-            <div className="p-2 bg-primary/10 hover:bg-primary/40 duration-100 rounded-md">
-              <a
-                href={externals.github}
-                target="_blank"
-                className="text-sm leading-normal text-foreground flex items-center font-code"
-              >
-                <FaGithub className="w-4 h-4 text-foreground" />
-                <span className="hidden lg:block">/@cngvc</span>
-              </a>
-            </div>
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger>
+                  <div className="p-2 bg-primary/10 hover:bg-primary/40 duration-100 rounded-md">
+                    <a
+                      href={externals.github}
+                      target="_blank"
+                      className="text-sm leading-normal text-foreground flex items-center font-code"
+                    >
+                      <FaGithub className="w-4 h-4 text-foreground" />
+                      <span className="hidden lg:block">/@cngvc</span>
+                    </a>
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent>My Github</TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
 
-            <div className="p-2 bg-primary/10 hover:bg-primary/40 duration-100 rounded-md">
-              <Link
-                to={internal.cv}
-                target="_blank"
-                className="text-sm leading-normal text-foreground flex items-center font-code"
-              >
-                <FaUserCircle className="w-4 h-4 text-foreground" />
-                <span className="hidden lg:block">/resume</span>
-              </Link>
-            </div>
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger>
+                  <div className="p-2 bg-primary/10 hover:bg-primary/40 duration-100 rounded-md">
+                    <Link
+                      to={internal.cv}
+                      target="_blank"
+                      className="text-sm leading-normal text-foreground flex items-center font-code"
+                    >
+                      <FaUserCircle className="w-4 h-4 text-foreground" />
+                      <span className="hidden lg:block">/resume</span>
+                    </Link>
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent>My Resume</TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
           </div>
         </div>
         <pre className="line-numbers code-editor" data-language="JavaScript">
-          <code
-            className="language-javascript !text-foreground"
-            style={{ textShadow: "none" }}
-          >
-            {code}
-          </code>
+          <code className="language-javascript !text-foreground">{code}</code>
         </pre>
       </div>
     </div>

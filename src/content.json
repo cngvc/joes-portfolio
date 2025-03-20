@@ -66,7 +66,7 @@
   ],
   "projects": [
     {
-      "image": "assets/ico.png",
+      "image": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742478003/eyuuj4cfasvitfyn7kla.png",
       "url": "",
       "title": "Blockchain Project (ICO Token)",
       "composition": {
@@ -86,7 +86,7 @@
       "techs": ["React", "Node.js", "Solidity"]
     },
     {
-      "image": "assets/fitness.jpg",
+      "image": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742479389/qoqkxjeza428sxvypcqv.png",
       "url": "",
       "title": "Fitness Mobile Application",
       "composition": {
@@ -106,7 +106,7 @@
       "techs": ["React Native", "Expo Go", "Azure Portal", "Azure Pipelines"]
     },
     {
-      "image": "assets/grapeseed.png",
+      "image": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742485711/bkjmt2fjtuwocax1akeo.png",
       "url": "https://apps.apple.com/app/grapeseed-connect/id1638056937",
       "title": "GrapeSEED Connect",
       "subtitle": "Stream Learning Platform",
@@ -126,7 +126,7 @@
       "techs": ["Vue", "React Native", "Agora SDK", "Zoom SDK", ".NET Core"]
     },
     {
-      "image": "assets/om.png",
+      "image": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742485711/wwrihlaghwzjpjeox76m.png",
       "title": "Work Management",
       "subtitle": "Projects Management",
       "description": [
@@ -146,7 +146,7 @@
       "techs": ["React", "React Native", "Groovy"]
     },
     {
-      "image": "assets/base23.png",
+      "image": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742485711/lksayowctso3kzrysu6w.png",
       "url": "https://play.google.com/store/apps/details?id=se.ekokardiografi.BASE23",
       "title": "Dance School",
       "subtitle": "School Management",
@@ -166,7 +166,7 @@
       "techs": ["React", "React Native", ".NET Core"]
     },
     {
-      "image": "assets/mas.png",
+      "image": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742485711/luc7kvwmhgltxqwp8tdi.png",
       "url": "https://www.milesatsea.com",
       "title": "Miles At Sea",
       "subtitle": "Travel Tracking",
@@ -186,7 +186,7 @@
       "techs": ["React Native", "Firebase", "Google Map APIs"]
     },
     {
-      "image": "assets/osouji.png",
+      "image": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742485711/qwk5uqpoq7hskpwhk3n7.png",
       "title": "Osouji",
       "subtitle": "Cleaner booking",
       "composition": {
@@ -227,6 +227,8 @@
     {
       "url": "https://www.congvc.com",
       "title": "Personal Portfolio Website",
+      "image": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742476414/ph9qvavzri0lcxu5deyd.png",
+      "demo": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742478064/t7wjxfihkfagrmv9iewk.gif",
       "description": [
         "A responsive portfolio website built with React and Tailwind CSS, showcasing my projects and skills. Designed to deliver a smooth user experience on both desktop and mobile devices.",
         "Achieved a Performance score of over 90 on Google PageSpeed Insights."
@@ -235,16 +237,18 @@
         "Responsive Design: Optimized for all screen sizes with Tailwind CSS, providing an engaging experience on both desktop and mobile.",
         "Deployed with Vercel: Hosted on Vercel and automatic updates with every Git commit."
       ],
-      "techs": ["React", "Tailwind CSS"],
+      "techs": ["React", "Tailwind CSS", "Shadcn"],
       "goal": "Create a responsive and visually appealing website to showcase my projects, skills, and experience.",
       "repo": "https://github.com/cngvc/joes-portfolio"
     },
     {
       "url": "https://meme-network.congvc.com/",
       "title": "MEME Network",
+      "image": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742476414/xdmrwxaveec9xchbkfb5.png",
+      "demo": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742475094/y5gbg8aw5rsv8orrjsll.gif",
       "subtitle": "Buy $MEME presale token on sepolia testnet",
       "description": [
-        "A decentralized application (dApp) that combines a React frontend with a smart contract using Solidity, allowing users to interact with the Ethereum blockchain."
+        "A decentralized application (DApp) that combines a React frontend with a smart contract using Solidity, allowing users to interact with the Ethereum blockchain."
       ],
       "features": [
         "Smart Contract Development: Created using Hardhat, enabling deployment and testing on the Ethereum network.",

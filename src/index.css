@@ -227,7 +227,8 @@
   color: var(--code-editor-value);
 }
 
-:root {
+code[class*="language-"] {
+  text-shadow: none;
 }
 
 @layer base {

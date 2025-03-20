@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link as RLink } from "react-router-dom";
 import { internal } from "../urls";
+
+const Link = motion(RLink);
 
 interface SparklesButtonProps extends React.HTMLAttributes<HTMLDivElement> {
   colors?: { first: string; second: string };
@@ -22,17 +24,16 @@ interface SparkleProps {
 
 const ResumeBtn = () => {
   return (
-    <motion.div whileHover={{ scale: 1.05 }} className="flex items-center">
-      <Link
-        to={internal.cv}
-        target="_blank"
-        className="relative inline-flex items-center justify-center overflow-hidden rounded-xl bg-linear-to-r from-orange-400 to-orange-600 text-foreground focus:ring-0 focus:outline-hidden shadow-lg shadow-primary/40"
-      >
-        <span className="t5 font-normal text-white px-6 py-3 z-30">
-          My Resume
-        </span>
-      </Link>
-    </motion.div>
+    <Link
+      to={internal.cv}
+      whileHover={{ scale: 1.05 }}
+      target="_blank"
+      className="relative inline-flex items-center justify-center overflow-hidden rounded-xl bg-linear-to-r from-orange-400 to-orange-600 text-foreground focus:ring-0 focus:outline-hidden shadow-lg shadow-primary/40"
+    >
+      <span className="t5 font-normal text-white px-6 py-3 z-30">
+        My Resume
+      </span>
+    </Link>
   );
 };
 
