@@ -10,7 +10,7 @@ const SideProjects = () => {
   const [selectedImageIndex, $selectedImage] = useState(0);
 
   return (
-    <>
+    <div>
       <Suspense fallback={<div />}>
         <FsLightbox
           toggler={isOpenLightBox}
@@ -20,9 +20,11 @@ const SideProjects = () => {
       </Suspense>
       <ol className="gap-2 overflow-hidden list-none group/list">
         {sides.map((item, index) => (
-          <li className="lg:hover:opacity-100! lg:group-hover/list:opacity-50 duration-100">
+          <li
+            key={index}
+            className="lg:hover:opacity-100! lg:group-hover/list:opacity-50 duration-100"
+          >
             <SideProject
-              key={index}
               {...item}
               onOpenPhotoLightBox={() => {
                 $isOpenLightBox((cur) => !cur);
@@ -32,7 +34,7 @@ const SideProjects = () => {
           </li>
         ))}
       </ol>
-    </>
+    </div>
   );
 };
 

@@ -2,14 +2,12 @@ import { useTheme } from "next-themes";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import BackHome from "../components/back-home";
 import Layout from "../components/main-layout";
-import Surface from "../components/surface";
 
 const NotFound = () => {
   const { theme } = useTheme();
 
   return (
     <Layout hideProgress>
-      <Surface />
       <div className="h-screen max-w-(--breakpoint-2xl) w-full flex flex-col mx-auto px-6 md:px-12 lg:px-24">
         <div className="flex flex-col items-center justify-center h-full">
           <div className="flex flex-col gap-2 relative w-full md:w-4/5 lg:w-3/5 items-center">

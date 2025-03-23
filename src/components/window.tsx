@@ -54,7 +54,7 @@ const Window = () => {
   }, [code]);
 
   return (
-    <div className="flex-1">
+    <div className="flex-1 z-20">
       <div className="bg-gray-950 relative">
         <div className="flex items-center bg-background border-b border-b-primary py-0.5">
           <div className="px-4 py-3 flex items-center gap-2">

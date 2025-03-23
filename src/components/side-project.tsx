@@ -53,18 +53,21 @@ const SideProject: React.FC<{
 
         <div className="col-span-full md:col-span-9 mt-0.5">
           <div className="flex flex-col">
-            <a
-              target="_blank"
-              href={url ?? "#"}
-              className="t4 leading-7 font-medium mb-2 item-desc flex flex-wrap items-center gap-2"
-              aria-label={title}
-            >
-              {title}
-              {subtitle && (
-                <span className="t5 font-light text-muted-foreground">
-                  ({subtitle})
-                </span>
-              )}
+            <div className="flex flex-wrap item-desc mb-2 items-center gap-2">
+              <a
+                target="_blank"
+                href={url ?? "#"}
+                className="t4 leading-7 font-medium"
+                aria-label={title}
+              >
+                {title}
+                {subtitle && (
+                  <span className="t5 font-light text-muted-foreground">
+                    {" "}
+                    ({subtitle})
+                  </span>
+                )}
+              </a>
 
               <a
                 target="_blank"
@@ -75,7 +78,7 @@ const SideProject: React.FC<{
                 <FaGithub className="w-5 h-5" />
               </a>
               <BsArrowUpRight className="w-5 h-5 lg:group-hover:-translate-y-1 lg:group-hover:translate-x-1 duration-100 ease-in-out" />
-            </a>
+            </div>
 
             {description.map((e, index) => (
               <p key={index} className="item-desc mb-2">

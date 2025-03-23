@@ -1,12 +1,13 @@
 import { ReactNode, useEffect, useState } from "react";
 import LoadingBar from "react-top-loading-bar";
 import RootLayout from "./root-layout";
+import Surface from "./surface";
 
 const MainLayout: React.FC<{ children: ReactNode; hideProgress?: boolean }> = ({
   children,
   hideProgress = false,
 }) => {
-  const [pagePercent, setPagePercent] = useState(0);
+  const [pagePercent, $pagePercent] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,7 +17,7 @@ const MainLayout: React.FC<{ children: ReactNode; hideProgress?: boolean }> = ({
       const scrollPercent = scrollTop / (docHeight - winHeight);
       const percent = scrollPercent * 100;
       const scrollPercentRounded = Math.max(Number(percent.toFixed(2)), 0.1);
-      setPagePercent(Math.ceil(scrollPercentRounded * 10) / 10);
+      $pagePercent(Math.ceil(scrollPercentRounded * 10) / 10);
     };
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -30,6 +31,8 @@ const MainLayout: React.FC<{ children: ReactNode; hideProgress?: boolean }> = ({
         className="relative bg-pane"
         style={{ backgroundSize: "55px 45px" }}
       >
+        <Surface />
+
         <div className="bg-pane-html">
           {!hideProgress && (
             <LoadingBar

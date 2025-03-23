@@ -1,6 +1,5 @@
 import BackHome from "@/components/back-home";
 import Layout from "@/components/main-layout";
-import Surface from "@/components/surface";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -61,8 +60,6 @@ const Email = () => {
 
   return (
     <Layout hideProgress>
-      <Surface />
-
       <Dialog open={open} onOpenChange={$open}>
         <DialogContent className="max-w-sm">
           <DialogHeader>

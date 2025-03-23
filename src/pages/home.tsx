@@ -5,13 +5,12 @@ import { useInView } from "react-intersection-observer";
 import About from "../components/about";
 import ChangeThemeBtn from "../components/change-theme-btn";
 import Companies from "../components/companies";
-import MainLayout from "../components/main-layout";
+import Layout from "../components/main-layout";
 import Projects from "../components/projects";
 import SparklesButton from "../components/resume-btn";
 import ShortAnEmailBtn from "../components/short-an-email-btn";
 import SideProjects from "../components/side-projects";
 import SocialList from "../components/social-list";
-import Surface from "../components/surface";
 import { bio, name, role, skills } from "../content.json";
 
 function Main() {
@@ -65,8 +64,7 @@ function Main() {
     [bio],
   );
   return (
-    <MainLayout>
-      <Surface />
+    <Layout>
       <div className="grid grid-cols-1 lg:grid-cols-12">
         <div className="lg:col-span-5 p-4 lg:h-screen lg:sticky top-0 flex flex-col gap-4 lg:w-11/12 lg:pt-10 lg:pb-5 overflow-y-auto scroll-smooth-thin">
           <div className="flex flex-col gap-2.5">
@@ -157,7 +155,7 @@ function Main() {
           </div>
         </div>
       </div>
-    </MainLayout>
+    </Layout>
   );
 }
 
