@@ -1,56 +1,33 @@
 import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
-import { PiImageSquare } from "react-icons/pi";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import Card from "./card";
-import List from "./list-item";
-import Techs from "./techs";
+import StaticList from "./static-list-item";
+import TechStack from "./tech-stack";
 
-const SideProject: React.FC<{
+const GrowingProject: React.FC<{
   url?: string;
-  image?: string;
   title: string;
   description: string[];
   features: string[];
-  techs: string[];
+  stack: { label: string; stack: string[] }[];
   repo: string;
   subtitle?: string;
   goal?: string;
-  onOpenPhotoLightBox?: () => void;
+  future_development?: string[];
 }> = ({
   url,
-  image,
   title,
   description,
-  techs,
+  stack,
   repo,
   features,
   subtitle,
   goal,
-  onOpenPhotoLightBox,
+  future_development,
 }) => {
   return (
-    <Card>
-      <div className="grid grid-cols-12 p-3 md:p-6">
-        <div className="col-span-3 py-2 justify-center items-start hidden md:flex mr-4 md:mr-8">
-          {image ? (
-            <LazyLoadImage
-              src={image}
-              className="w-full h-auto object-contain rounded-md"
-              onClick={(e) => {
-                e.preventDefault();
-                onOpenPhotoLightBox?.();
-              }}
-              alt={title}
-            />
-          ) : (
-            <div className="w-full aspect-square flex items-center justify-center bg-primary/20 rounded-md">
-              <PiImageSquare className="w-5/12 h-auto text-primary" />
-            </div>
-          )}
-        </div>
-
+    <div className="group hero !bg-primary/5 overflow-hidden h-auto">
+      <div className="flex flex-col p-3 md:p-6">
         <div className="col-span-full md:col-span-9 mt-0.5">
           <div className="flex flex-col">
             <div className="flex flex-wrap item-desc mb-2 items-center gap-2">
@@ -68,7 +45,6 @@ const SideProject: React.FC<{
                   </span>
                 )}
               </a>
-
               <a
                 target="_blank"
                 href={repo ?? "#"}
@@ -79,23 +55,40 @@ const SideProject: React.FC<{
               </a>
               <BsArrowUpRight className="w-5 h-5 lg:group-hover:-translate-y-1 lg:group-hover:translate-x-1 duration-100 ease-in-out" />
             </div>
-
             {description.map((e, index) => (
-              <p key={index} className="item-desc mb-2">
+              <p key={index} className="t5 mb-2">
                 {e}
               </p>
             ))}
 
-            <List label="Main Features" data={features} />
+            <StaticList label="Main Features" data={features} />
 
-            {goal && <div className="item-desc mb-2">Goal: {goal}</div>}
+            <TechStack label="Technical Stack" data={stack} />
 
-            <Techs techs={techs} />
+            {!!future_development?.length && (
+              <div className="t5 mb-2 flex items-center flex-wrap break-words">
+                Future Features:
+                {future_development.map((keyword, index) => (
+                  <>
+                    <span
+                      key={index}
+                      className="t5 mx-1 text-primary font-medium"
+                    >
+                      {`${keyword}`}
+                    </span>
+                    {index !== future_development.length - 1 && (
+                      <span> • </span>
+                    )}
+                  </>
+                ))}
+              </div>
+            )}
+            {goal && <div className="t5 mb-2">Goal: {goal}</div>}
           </div>
         </div>
       </div>
-    </Card>
+    </div>
   );
 };
 
-export default SideProject;
+export default GrowingProject;

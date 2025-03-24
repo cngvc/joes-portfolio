@@ -7,7 +7,7 @@ const Companies = () => {
       {companies.map((e, index) => (
         <li
           key={index}
-          className="lg:hover:opacity-100! lg:group-hover/list:opacity-50 duration-100"
+          className="lg:hover:opacity-100! lg:group-hover/list:opacity-60 duration-100"
         >
           <Company {...e} />
         </li>

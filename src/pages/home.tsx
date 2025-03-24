@@ -1,3 +1,4 @@
+import GrowingProject from "@/components/growing-project";
 import DOMPurify from "dompurify";
 import { motion } from "framer-motion";
 import { useMemo, useRef } from "react";
@@ -11,15 +12,18 @@ import SparklesButton from "../components/resume-btn";
 import ShortAnEmailBtn from "../components/short-an-email-btn";
 import SideProjects from "../components/side-projects";
 import SocialList from "../components/social-list";
-import { bio, name, role, skills } from "../content.json";
+import { bio, growing, name, role, skills } from "../content.json";
 
 function Main() {
   const about = useRef<HTMLDivElement | null>(null);
   const exp = useRef<HTMLDivElement | null>(null);
+  const currentWorkingOn = useRef<HTMLDivElement | null>(null);
   const project = useRef<HTMLDivElement | null>(null);
   const sideProject = useRef<HTMLDivElement | null>(null);
 
   const { ref: aboutRef, inView: aboutPoint } = useInView();
+  const { ref: currentlyWorkingOnRef, inView: currentlyWorkingOnPoint } =
+    useInView();
   const { ref: expRef, inView: experiencePoint } = useInView();
   const { ref: projectRef, inView: projectPoint } = useInView();
   const { ref: sideProjectRef, inView: sideProjectPoint } = useInView();
@@ -27,21 +31,33 @@ function Main() {
   const menu = useMemo(() => {
     return [
       { ref: about, point: aboutPoint, index: "01", label: "🤔 about" },
-      { ref: exp, point: experiencePoint, index: "02", label: "🧑‍💻 experience" },
+      {
+        ref: currentWorkingOn,
+        point: currentlyWorkingOnPoint,
+        index: "02",
+        label: "🌱 growing project",
+      },
+      { ref: exp, point: experiencePoint, index: "03", label: "🧑‍💻 experience" },
       {
         ref: project,
         point: projectPoint,
-        index: "03",
+        index: "04",
         label: "💻 participated projects",
       },
       {
         ref: sideProject,
         point: sideProjectPoint,
-        index: "04",
+        index: "05",
         label: "💪 personal projects",
       },
     ];
-  }, [aboutPoint, experiencePoint, projectPoint, sideProjectPoint]);
+  }, [
+    aboutPoint,
+    currentlyWorkingOnPoint,
+    experiencePoint,
+    projectPoint,
+    sideProjectPoint,
+  ]);
 
   const sanitizedContent = useMemo(
     () => ({
@@ -83,6 +99,7 @@ function Main() {
                 key={e.index}
                 className="t4 cursor-pointer"
                 onClick={() => {
+                  console.log(e.ref.current);
                   e.ref.current?.scrollIntoView({ behavior: "smooth" });
                 }}
               >
@@ -121,13 +138,24 @@ function Main() {
                 👋
               </motion.div>
             </div>
+
             <About />
+          </div>
+
+          {/* growing */}
+          <div ref={currentlyWorkingOnRef} className="mb-10">
+            <div className="p-3 md:p-6" ref={currentWorkingOn}>
+              <span className="c1">02.</span> A project I’m developing to
+              showcase in my portfolio
+            </div>
+
+            <GrowingProject {...growing} />
           </div>
 
           {/* exp */}
           <div ref={expRef} className="mb-10">
             <div className="p-3 md:p-6" ref={exp}>
-              <span className="c1">02.</span> Where I've worked
+              <span className="c1">03.</span> Where I've worked
             </div>
 
             <Companies />
@@ -136,7 +164,7 @@ function Main() {
           {/* projects */}
           <div ref={projectRef}>
             <div className="p-3 md:p-6" ref={project}>
-              <span className="c1">03.</span> Projects I've participated in{" "}
+              <span className="c1">04.</span> Projects I've participated in{" "}
               <span className="italic text-muted-foreground font-thin">
                 (some projects cannot be disclosed due to privacy policies)
               </span>
@@ -148,7 +176,7 @@ function Main() {
           {/* side projects */}
           <div ref={sideProjectRef} className="">
             <div className="p-3 md:p-6" ref={sideProject}>
-              <span className="c1">04.</span> Side Projects I’ve Built
+              <span className="c1">05.</span> Side Projects I’ve Built
             </div>
 
             <SideProjects />

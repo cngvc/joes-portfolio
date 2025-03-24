@@ -260,5 +260,53 @@
       "goal": "Develop a full-stack web3 application integrating React with smart contracts using Hardhat and wallet connectivity.",
       "repo": "https://github.com/cngvc/simple-token-presale"
     }
-  ]
+  ],
+  "growing": {
+    "url": "https://github.com/cngvc/theshopi",
+    "title": "The Shopi",
+    "subtitle": "Scalable e-commerce platform with microservices architecture",
+    "description": [
+      "An e-commerce platform built with a microservices architecture. It is designed to handle essential workflows like user auth, product management, cart operations, order processing, and real-time communication.",
+      "The project is powered entirely by Node.js, with a hybrid API Gateway that uses HTTP for client-facing requests and gRPC for service-to-service communication."
+    ],
+    "features": [
+      "Microservices Architecture: Separate services for features communicating via gRPC and RabbitMQ. Containerized with Docker for deployment flexibility.",
+      "Authentication: Supports OAuth (SSO with GitHub) and email-password authentication. Implements JWT with a Key-Token mechanism, Fingerprint and RBAC to securely manage refresh tokens across multiple devices.",
+      "High performance Search: Utilizes Elasticsearch for fast object searching, syncing data whenever a new object is added/updated.",
+      "Real-time Communication: A Socket service handles connections for chat and presence status.",
+      "Asynchronous Event Handling: RabbitMQ for handling events like object create/updates, authentication requirements, and payment confirmations, etc."
+    ],
+    "stack": [
+      {
+        "label": "Backend",
+        "stack": ["Node.js", "Express.js", "TypeORM", "Elasticsearch"]
+      },
+      {
+        "label": "Frontend",
+        "stack": ["Next.js", "Shadcn"]
+      },
+      {
+        "label": "Database",
+        "stack": ["MongoDB", "MySQL", "Redis"]
+      },
+      {
+        "label": "Messaging",
+        "stack": ["RabbitMQ", "gRPC"]
+      },
+      {
+        "label": "Infrastructure",
+        "stack": ["Docker", "K8s"]
+      }
+    ],
+    "future_development": [
+      "GraphQL",
+      "Recommendations System",
+      "Load Balancing",
+      "ELS Stack",
+      "CI/CD (K8s & Jenkins)",
+      "Complete FE"
+    ],
+    "goal": "Build a scalable e-commerce system with microservices architecture, as a way to gain experience with large projects due to limited time working on them in a job.",
+    "repo": "https://github.com/cngvc/theshopi"
+  }
 }

@@ -2,7 +2,7 @@ import React from "react";
 import { PiImageSquare } from "react-icons/pi";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Card from "./card";
-import Lists from "./lists-item";
+import List from "./list-item";
 import Techs from "./techs";
 
 const Project: React.FC<{
@@ -91,8 +91,8 @@ const Project: React.FC<{
               </ul>
             )}
 
-            <Lists label="My Responsibility" data={role} />
-            <Lists label="Achievements" data={achievements} />
+            <List label="My Responsibility" data={role} />
+            <List label="Achievements" data={achievements} />
             <Techs techs={techs} />
           </div>
         </div>
