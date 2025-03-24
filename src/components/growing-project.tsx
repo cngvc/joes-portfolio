@@ -12,8 +12,7 @@ const GrowingProject: React.FC<{
   stack: { label: string; stack: string[] }[];
   repo: string;
   subtitle?: string;
-  goal?: string;
-  future_development?: string[];
+  objective?: string;
 }> = ({
   url,
   title,
@@ -22,8 +21,7 @@ const GrowingProject: React.FC<{
   repo,
   features,
   subtitle,
-  goal,
-  future_development,
+  objective,
 }) => {
   return (
     <div className="group hero !bg-primary/5 overflow-hidden h-auto">
@@ -65,25 +63,7 @@ const GrowingProject: React.FC<{
 
             <TechStack label="Technical Stack" data={stack} />
 
-            {!!future_development?.length && (
-              <div className="t5 mb-2 flex items-center flex-wrap break-words">
-                Future Features:
-                {future_development.map((keyword, index) => (
-                  <>
-                    <span
-                      key={index}
-                      className="t5 mx-1 text-primary font-medium"
-                    >
-                      {`${keyword}`}
-                    </span>
-                    {index !== future_development.length - 1 && (
-                      <span> • </span>
-                    )}
-                  </>
-                ))}
-              </div>
-            )}
-            {goal && <div className="t5 mb-2">Goal: {goal}</div>}
+            {objective && <div className="t5 mb-2">Objective: {objective}</div>}
           </div>
         </div>
       </div>

@@ -238,7 +238,7 @@
         "Deployed with Vercel: Hosted on Vercel and automatic updates with every Git commit."
       ],
       "techs": ["React", "Tailwind CSS", "Shadcn"],
-      "goal": "Create a responsive and visually appealing website to showcase my projects, skills, and experience.",
+      "objective": "Create a responsive and visually appealing website to showcase my projects, skills, and experience.",
       "repo": "https://github.com/cngvc/joes-portfolio"
     },
     {
@@ -257,7 +257,7 @@
         "Testnet Support: Allows users to make presale transactions through the Sepolia testnet"
       ],
       "techs": ["React", "Tailwind CSS", "Hardhat", "Rainbow", "Ethers.js"],
-      "goal": "Develop a full-stack web3 application integrating React with smart contracts using Hardhat and wallet connectivity.",
+      "objective": "Develop a full-stack web3 application integrating React with smart contracts using Hardhat and wallet connectivity.",
       "repo": "https://github.com/cngvc/simple-token-presale"
     }
   ],
@@ -298,15 +298,7 @@
         "stack": ["Docker", "K8s"]
       }
     ],
-    "future_development": [
-      "GraphQL",
-      "Recommendations System",
-      "Load Balancing",
-      "ELS Stack",
-      "CI/CD (K8s & Jenkins)",
-      "Complete FE"
-    ],
-    "goal": "Build a scalable e-commerce system with microservices architecture, as a way to gain experience with large projects due to limited time working on them in a job.",
+    "objective": "Build a scalable e-commerce system with microservices architecture, as a way to gain experience with large projects due to limited time working on them in a job. Future enhancements will include GraphQL, a Recommendation System, Load Balancing, ELS Stack, CI/CD with Kubernetes and Jenkins, and a fully developed frontend.",
     "repo": "https://github.com/cngvc/theshopi"
   }
 }

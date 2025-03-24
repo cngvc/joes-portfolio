@@ -16,7 +16,7 @@ const SideProject: React.FC<{
   techs: string[];
   repo: string;
   subtitle?: string;
-  goal?: string;
+  objective?: string;
   onOpenPhotoLightBox?: () => void;
 }> = ({
   url,
@@ -27,7 +27,7 @@ const SideProject: React.FC<{
   repo,
   features,
   subtitle,
-  goal,
+  objective,
   onOpenPhotoLightBox,
 }) => {
   return (
@@ -88,7 +88,9 @@ const SideProject: React.FC<{
 
             <List label="Main Features" data={features} />
 
-            {goal && <div className="item-desc mb-2">Goal: {goal}</div>}
+            {objective && (
+              <div className="item-desc mb-2">Objective: {objective}</div>
+            )}
 
             <Techs techs={techs} />
           </div>
