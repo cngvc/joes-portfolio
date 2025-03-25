@@ -11,19 +11,22 @@
       "description": "Collaborated with clients in Vietnam and the United States to deliver scalable web and mobile applications.",
       "domains": "Blockchain (ICO), Fitness.",
       "job": [
-        "Achieved >78% productivity in a fully remote environment, and contributed to the successful delivery of 5+ projects.",
-        "Delivered smart contract-based purchase systems using <span class='text-normal-primary'>Solidity</span>, leading to the successful deployment of 3+ projects.",
+        "Achieved 78+% productivity in a fully remote environment, contributed to successful delivery of 5+ projects.",
+        "Built and optimized backend services using Node.js, PostgreSQL and MongoDB, while also contributing to .NET Core projects using Entity Framework.",
+        "Developed solidity-based purchase systems, successfully deploying 3+ projects.",
         "Developed responsive, mobile-first landing pages from Figma designs, focusing on mobile-first design and aligning closely with client requirements.",
         "Provided client support to ensure system reliability and timely issue resolution, quickly addressing concerns.",
-        "Authored technical documentation, implemented <span class='text-normal-primary'>CI/CD pipelines</span> on Azure, improving deployment efficiency and system reliability."
+        "Developed mobile applications using Expo, authored technical docs, and implemented CI/CD on Azure, improving deployment efficiency and reliability."
       ],
       "techs": [
         "Node.js",
-        "Solidity",
+        ".Net Core",
+        "MongoDB",
         "React",
         "Next.js",
-        "Vercel",
-        ".Net Core"
+        "Solidity",
+        "Docker",
+        "Vercel"
       ]
     },
     {
@@ -37,16 +40,17 @@
         "Conducted code reviews, built foundations for 5+ projects, mentored interns during development, and participated in 10+ projects.",
         "Designed and maintained a mobile app for teachers to manage students and classes, along with a custom CMS for employee and session management, with 15+ teachers actively using the apps.",
         "Developed real-time web and mobile apps to enhance student-teacher interaction, which were also utilized for daily team meetings during the development phase.",
-        "Worked on <span class='text-normal-primary'>.NET Core</span> for various backend tasks and contributed to developing 3+ projects before transitioning to <span class='text-normal-primary'>Node.js</span>, where I expanded my backend development skills.",
+        "Worked on .NET Core for various backend tasks and contributed to developing 3+ projects before transitioning to Node.js, where I expanded my backend development skills.",
         "Partnered onsite with client companies for six months and contributed to 2 major app deployments."
       ],
       "techs": [
+        "Node.js",
+        ".Net Core",
+        "MsSQL",
         "React",
         "React Native",
-        ".NET Core",
-        "Firebase",
-        "MSSQL",
-        "AWS"
+        "Docker",
+        "AWS (EC2)"
       ]
     },
     {
@@ -69,9 +73,6 @@
       "image": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742478003/eyuuj4cfasvitfyn7kla.png",
       "url": "",
       "title": "Blockchain Project (ICO Token)",
-      "composition": {
-        "size": "2 members (1 developer and 1 designer)."
-      },
       "role": [
         "Smart Contract Integration: Designed and implemented smart contracts for presale token purchases.",
         "Full-Stack Development: Developed a landing page, client dashboard, and admin dashboard using React. Built a Node.js backend server to manage operations, supporting over 4,000 users.",
@@ -89,9 +90,6 @@
       "image": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742479389/qoqkxjeza428sxvypcqv.png",
       "url": "",
       "title": "Fitness Mobile Application",
-      "composition": {
-        "size": "4 members (1 project manager, 1 designer, 1 backend developer, and myself as the frontend developer)."
-      },
       "role": [
         "Frontend Development: Developed the mobile UI to enhance user experience and engagement.",
         "Backend Integration: Collaborated with the backend team to ensure seamless API integration.",
@@ -110,12 +108,9 @@
       "url": "https://apps.apple.com/app/grapeseed-connect/id1638056937",
       "title": "GrapeSEED Connect",
       "subtitle": "Stream Learning Platform",
-      "composition": {
-        "size": "3 members (React Native developers and 1 QA)."
-      },
       "role": [
-        "Frontend Development: Led the development of the frontend using React Native and Vue, focusing on UI design and real-time video streaming capabilities.",
-        "Backend Contribution: Collaborated with the client's backend team to contribute for backend real-time feature."
+        "Frontend Development: Led the frontend development using React Native and Vue, focusing on UI design and real-time video streaming capabilities.",
+        "Backend Contribution: Collaborated with client’s backend team to contribute to backend real-time features."
       ],
       "description": [
         "An online platform designed to enhance student-teacher interaction through real-time video streaming, improving the overall online learning experience."
@@ -132,9 +127,6 @@
       "description": [
         "Managed the end-to-end lifecycle of software projects, overseeing team tasks, processes, and ensuring timely deliverables."
       ],
-      "composition": {
-        "size": "3+ members (backend developer, frontend and mobile developers, QA)."
-      },
       "role": [
         "Project Lifecycle Management: Coordinated team members through all phases of the project lifecycle, including planning, development, and deployment.",
         "Frontend and Mobile Development: Contributed to frontend and mobile development, implementing key features and ensuring smooth UX.",
@@ -153,11 +145,8 @@
       "description": [
         "A comprehensive school management system designed to efficiently manage classrooms, students, schedules, and includes reminder functionalities."
       ],
-      "composition": {
-        "size": "4 members (full-stack developer, frontend developers, mobile developers, and QA team)."
-      },
       "role": [
-        "API Development: Covered core functionalities such as user authentication, data management using Entity Framework",
+        "API Development: Implemented authentication and data management with Entity Framework.",
         "Frontend Support: Assisted frontend developers as needed, helping with frontend-related tasks and resolving any issues."
       ],
       "achievements": [
@@ -173,9 +162,6 @@
       "description": [
         "An application for tracking and logging distance traveled, with rewards earned based on completing quests along the route."
       ],
-      "composition": {
-        "size": "2 members (both full-stack developers)."
-      },
       "role": [
         "Google Maps Integration: Integrated the Google Maps API to enable distance tracking functionality within the application.",
         "Mobile UI Development: Developed and implemented the mobile UI to ensure a functional user experience."
@@ -189,12 +175,9 @@
       "image": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742485711/qwk5uqpoq7hskpwhk3n7.png",
       "title": "Osouji",
       "subtitle": "Cleaner booking",
-      "composition": {
-        "size": "7+ members (project manager, designer, two backend developers, two frontend developers, and QA team)."
-      },
       "role": [
-        "Mobile Development: Developed and implemented the mobile UI for the job marketplace application following Figma designs.",
-        "Backend Integration: Assisted in a few backend tasks by collaborating with backend developers to ensure basic functionality between the mobile UI and core features."
+        "Mobile Development: Built the job marketplace UI based on Figma designs.",
+        "Backend Integration: Assisted in backend tasks by collaborating with backend developers to ensure seamless integration between mobile UI and core features."
       ],
       "description": [
         "A job marketplace focused on services related to house cleaning and hotels, integrating payment systems and providing directions for seamless transactions."
@@ -210,9 +193,6 @@
       "description": [
         "A platform aimed at providing students with real-time information about current and upcoming events in their vicinity."
       ],
-      "composition": {
-        "size": "6 members (project manager, designer, two backend developers, and two frontend developers)."
-      },
       "role": [
         "Frontend Development: Created the frontend web application following Figma designs, ensuring a functional and responsive user experience.",
         "Frontend Management: Managed frontend tasks, including task allocation and progress tracking."
@@ -271,8 +251,8 @@
     ],
     "features": [
       "Microservices Architecture: Separate services for features communicating via gRPC and RabbitMQ. Containerized with Docker for deployment flexibility.",
-      "Authentication: Supports OAuth (SSO with GitHub) and email-password authentication. Implements JWT with a Key-Token mechanism, Fingerprint and RBAC to securely manage refresh tokens across multiple devices.",
-      "High performance Search: Utilizes Elasticsearch for fast object searching, syncing data whenever a new object is added/updated.",
+      "Authentication: Supports OAuth (GitHub SSO) and email-password authentication with JWT, Key-Token, Fingerprint, and RBAC for secure multi-device refresh tokens.",
+      "High-performance Search: Utilizes Elasticsearch for fast object searching, syncing data whenever a new object is added/updated.",
       "Real-time Communication: A Socket service handles connections for chat and presence status.",
       "Asynchronous Event Handling: RabbitMQ for handling events like object create/updates, authentication requirements, and payment confirmations, etc."
     ],

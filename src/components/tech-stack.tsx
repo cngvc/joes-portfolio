@@ -8,7 +8,7 @@ const TechStack = ({
   return (
     <>
       <div className="t5">{label}:</div>
-      <ul className="list-disc mb-4 list-outside pl-[18px] t5">
+      <ul className="list-disc mb-2 list-outside pl-[18px] t5">
         {data?.map(({ label, stack }, index) => (
           <li key={index}>
             <div className="flex items-center">

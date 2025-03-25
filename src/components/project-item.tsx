@@ -11,11 +11,6 @@ const Project: React.FC<{
   title: string;
   subtitle?: string;
   description: string[];
-  composition:
-    | {
-        size: string;
-      }
-    | undefined;
   role: string[] | undefined;
   achievements?: string[] | undefined;
 
@@ -29,7 +24,6 @@ const Project: React.FC<{
   description,
 
   techs,
-  composition,
   role,
   achievements,
   onOpenPhotoLightBox,
@@ -71,25 +65,10 @@ const Project: React.FC<{
             </a>
 
             {description.map((e, index) => (
-              <p key={index} className="item-desc ">
+              <p key={index} className="item-desc">
                 {e}
               </p>
             ))}
-
-            <div className="item-desc">Team Composition:</div>
-            {composition && (
-              <ul className="list-disc mb-2 list-outside pl-[18px] t5">
-                {composition && (
-                  <>
-                    <li>
-                      <span className="item-desc">
-                        Size: {composition?.size}
-                      </span>
-                    </li>
-                  </>
-                )}
-              </ul>
-            )}
 
             <List label="My Responsibility" data={role} />
             <List label="Achievements" data={achievements} />

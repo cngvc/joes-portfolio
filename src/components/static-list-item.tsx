@@ -3,7 +3,7 @@ const StaticList = ({ data, label }: { label: string; data?: string[] }) => {
     data && (
       <>
         <div className="t5">{label}:</div>
-        <ul className="list-disc mb-4 list-outside pl-[18px] t5">
+        <ul className="list-disc mb-2 list-outside pl-[18px] t5">
           {data?.map((e, index) => (
             <li key={index}>
               <span className="t5">{e}</span>
