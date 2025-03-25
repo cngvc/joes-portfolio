@@ -91,8 +91,8 @@
       "url": "",
       "title": "Fitness Mobile Application",
       "role": [
-        "Frontend Development: Developed the mobile UI to enhance user experience and engagement.",
-        "Backend Integration: Collaborated with the backend team to ensure seamless API integration.",
+        "Frontend Development: Developed the mobile UI to enhance UX, implemented OAuth2 authentication with Azure and integrated a custom login/signup template for Azure authentication.",
+        "Backend Integration: Collaborated with the backend team to ensure seamless API integration. Supported and contributed to writing CRUD operations for content management.",
         "Azure API Research: Researched Azure Portal APIs, authored detailed integration documents for the team, and implemented Azure Pipelines to reduce deployment time."
       ],
       "description": [
@@ -109,7 +109,7 @@
       "title": "GrapeSEED Connect",
       "subtitle": "Stream Learning Platform",
       "role": [
-        "Frontend Development: Led the frontend development using React Native and Vue, focusing on UI design and real-time video streaming capabilities.",
+        "Frontend Development: Led the frontend development using React Native and Vue, focusing on UI/UX and real-time video streaming feature. Made sure web and mobile work smoothly together.",
         "Backend Contribution: Collaborated with client’s backend team to contribute to backend real-time features."
       ],
       "description": [
