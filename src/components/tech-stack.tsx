@@ -15,15 +15,12 @@ const TechStack = ({
               <span className="t5">{label}: </span>
               <div className="flex items-center">
                 {stack.map((tech, index) => (
-                  <>
-                    <span
-                      key={index}
-                      className="t5 mx-1 text-primary font-medium"
-                    >
+                  <div key={index} className="mx-1">
+                    <span key={index} className="t5 text-primary font-medium">
                       {`${tech}`}
                     </span>
                     {index !== stack.length - 1 && <span> • </span>}
-                  </>
+                  </div>
                 ))}
               </div>
             </div>

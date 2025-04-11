@@ -3,7 +3,7 @@ import { LuMailPlus } from "react-icons/lu";
 import { Link as RLink } from "react-router-dom";
 import { internal } from "../urls";
 
-const Link = motion(RLink);
+const Link = motion.create(RLink);
 
 const ShortAnEmailBtn = () => {
   return (

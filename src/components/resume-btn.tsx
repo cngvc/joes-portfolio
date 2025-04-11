@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Link as RLink } from "react-router-dom";
 import { internal } from "../urls";
 
-const Link = motion(RLink);
+const Link = motion.create(RLink);
 
 interface SparklesButtonProps extends React.HTMLAttributes<HTMLDivElement> {
   colors?: { first: string; second: string };
