@@ -1,0 +1,296 @@
+{
+  "name": "Cong <span class='text-primary'>'Joe'</span> Vu",
+  "role": "<span class='text-primary'>Middle Full-Stack</span> Developer",
+  "skills": "React, Next.js, Node.js",
+  "bio": "5+ years of experience in building large-scale projects (combining both Backend and Frontend development) using <span class='text-normal-primary'>React, Next.js</span> and <span class='text-normal-primary'>Node.js</span>. Skilled in optimizing UI/UX and working with cross-functional teams and product development through diverse domains.",
+  "companies": [
+    {
+      "time": "Feb 2023 - Present",
+      "company": "GK-Team (Freelancer Team)",
+      "role": "Full-Stack Developer",
+      "description": "Collaborated with clients in Vietnam and the United States to deliver scalable web and mobile applications.",
+      "domains": "Blockchain (ICO), Fitness.",
+      "job": [
+        "Achieved 78+% productivity in a fully remote environment, contributed to successful delivery of 5+ projects.",
+        "Built and optimized backend services using Node.js, PostgreSQL and MongoDB, while also contributing to .NET Core projects using Entity Framework.",
+        "Developed solidity-based purchase systems, successfully deploying 3+ projects.",
+        "Developed responsive, mobile-first landing pages from Figma designs, focusing on mobile-first design and aligning closely with client requirements.",
+        "Provided client support to ensure system reliability and timely issue resolution, quickly addressing concerns.",
+        "Developed mobile applications using Expo, authored technical docs, and implemented CI/CD on Azure, improving deployment efficiency and reliability."
+      ],
+      "techs": [
+        "Node.js",
+        ".Net Core",
+        "MongoDB",
+        "React",
+        "Next.js",
+        "Solidity",
+        "Docker",
+        "Vercel"
+      ]
+    },
+    {
+      "time": "Apr 2025 - Jul 2025",
+      "company": "Roshi - Loan Marketplace",
+      "role": "Full-Stack Developer",
+      "description": "A Singapore-based fintech startup connecting borrowers with lenders through a digital lending platform.",
+      "domains": "Fintech.",
+      "job": [
+        "Participated in the development of core web applications with integrated Role-Based Access Control (RBAC) for admin, borrower, and lender.",
+        "Built a tool to fetch CVs from the HR platform and use ChatGPT and Gemini to parse and scope key profile data, syncing results to Google Sheets.",
+        "Forked the Singapore version to build a localized Vietnamese version with redesigned UI and adapted loan workflows.",
+        "Used the existing React codebase with CapacitorJS to build and deploy a cross-platform mobile app for Android and iOS."
+      ],
+      "techs": [
+        "Node.js",
+        ".Net Core",
+        "MongoDB",
+        "React",
+        "Next.js",
+        "Solidity",
+        "Docker",
+        "Vercel"
+      ]
+    },
+    {
+      "time": "Jul 2019 - Feb 2023",
+      "company": "Bright Software Solution",
+      "url": "https://www.brightsoftsolution.com/",
+      "role": "Full-Stack Developer",
+      "description": "Collaborated with clients across Sweden, India, and Europe to deliver innovative web and mobile solutions.",
+      "domains": "Education, Project Management.",
+      "job": [
+        "Conducted code reviews, built foundations for 5+ projects, mentored interns during development, and participated in 10+ projects.",
+        "Designed and maintained a mobile app for teachers to manage students and classes, along with a custom CMS for employee and session management, with 15+ teachers actively using the apps.",
+        "Developed real-time web and mobile apps to enhance student-teacher interaction, which were also utilized for daily team meetings during the development phase.",
+        "Worked on .NET Core for various backend tasks and contributed to developing 3+ projects before transitioning to Node.js, where I expanded my backend development skills.",
+        "Partnered onsite with client companies for six months and contributed to 2 major app deployments."
+      ],
+      "techs": [
+        "Node.js",
+        ".Net Core",
+        "MsSQL",
+        "React",
+        "React Native",
+        "Docker",
+        "AWS (EC2)"
+      ]
+    },
+    {
+      "time": "Mar 2018 - May 2019",
+      "company": "Rabiloo Co., Ltd",
+      "url": "https://rabiloo.com/en",
+      "role": "Fresher Mobile Developer",
+      "description": "Collaborated with Japanese clients to deliver high-quality mobile solutions.",
+      "domains": "Service Industry.",
+      "job": [
+        "Developed a cleaner booking app featuring payment processing, real-time chat, and location-based services with map integration.",
+        "Worked closely with design and testing teams to ensure seamless functionality and an optimal user experience.",
+        "Gained backend experience by contributing to small backend tasks, supporting the backend development alongside the team."
+      ],
+      "techs": ["React Native"]
+    }
+  ],
+  "projects": [
+    {
+      "image": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742478003/eyuuj4cfasvitfyn7kla.png",
+      "url": "",
+      "title": "Blockchain Project (ICO Token)",
+      "role": [
+        "Smart Contract Integration: Designed and implemented smart contracts for presale token purchases.",
+        "Full-Stack Development: Developed a landing page, client dashboard, and admin dashboard using React. Built a Node.js backend server to manage operations, supporting over 4,000 users.",
+        "Supported the pre-sale process, helping the platform raise over $300,000 in funds."
+      ],
+      "description": [
+        "Built a platform to facilitate token pre-sales, integrating blockchain technology and third-party services for efficient and user-friendly digital asset management."
+      ],
+      "achievements": [
+        "In this project, I quickly adjusted to the fast pace of blockchain work, making sure smart contracts were well-tested before going live. I provided prompt customer support, helping users with their needs."
+      ],
+      "techs": ["React", "Node.js", "Solidity"]
+    },
+    {
+      "image": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742479389/qoqkxjeza428sxvypcqv.png",
+      "url": "",
+      "title": "Fitness Mobile Application",
+      "role": [
+        "Frontend Development: Developed the mobile UI to enhance UX, implemented OAuth2 authentication with Azure and integrated a custom login/signup template for Azure authentication.",
+        "Backend Integration: Collaborated with the backend team to ensure seamless API integration. Supported and contributed to writing CRUD operations for content management.",
+        "Azure API Research: Researched Azure Portal APIs, authored detailed integration documents for the team, and implemented Azure Pipelines to reduce deployment time."
+      ],
+      "description": [
+        "A mobile app designed to deliver personalized workout courses tailored to specific muscle groups."
+      ],
+      "achievements": [
+        "Through this project, I learned the importance of being meticulous and following a multi-step process to ensure accuracy and efficiency. I contributed to writing documentation and researching Azure APIs, improving backend processes. Additionally, I implemented Azure Pipelines, which helped reduce deployment time."
+      ],
+      "techs": ["React Native", "Expo Go", "Azure Portal", "Azure Pipelines"]
+    },
+    {
+      "image": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742485711/bkjmt2fjtuwocax1akeo.png",
+      "url": "https://apps.apple.com/app/grapeseed-connect/id1638056937",
+      "title": "GrapeSEED Connect",
+      "subtitle": "Stream Learning Platform",
+      "role": [
+        "Frontend Development: Led the frontend development using React Native and Vue, focusing on UI/UX and real-time video streaming feature. Made sure web and mobile work smoothly together.",
+        "Backend Contribution: Collaborated with client’s backend team to contribute to backend real-time features."
+      ],
+      "description": [
+        "An online platform designed to enhance student-teacher interaction through real-time video streaming, improving the overall online learning experience."
+      ],
+      "achievements": [
+        "Through this project, I learned how to work effectively with different teams from different companies, improving collaboration and streamlining workflows."
+      ],
+      "techs": ["Vue", "React Native", "Agora SDK", "Zoom SDK", ".NET Core"]
+    },
+    {
+      "image": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742485711/wwrihlaghwzjpjeox76m.png",
+      "title": "Work Management",
+      "subtitle": "Projects Management",
+      "description": [
+        "Managed the end-to-end lifecycle of software projects, overseeing team tasks, processes, and ensuring timely deliverables."
+      ],
+      "role": [
+        "Project Lifecycle Management: Coordinated team members through all phases of the project lifecycle, including planning, development, and deployment.",
+        "Frontend and Mobile Development: Contributed to frontend and mobile development, implementing key features and ensuring smooth UX.",
+        "Collaboration: Worked closely with backend developers and QA teams, providing support where necessary to maintain quality and meet deadlines."
+      ],
+      "achievements": [
+        "In this project, I learned to manage different parts of development, working mostly on my own to handle frontend, backend, and mobile tasks, which helped me gain a big-picture view of the entire development process."
+      ],
+      "techs": ["React", "React Native", "Groovy"]
+    },
+    {
+      "image": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742485711/lksayowctso3kzrysu6w.png",
+      "url": "https://play.google.com/store/apps/details?id=se.ekokardiografi.BASE23",
+      "title": "Dance School",
+      "subtitle": "School Management",
+      "description": [
+        "A comprehensive school management system designed to efficiently manage classrooms, students, schedules, and includes reminder functionalities."
+      ],
+      "role": [
+        "API Development: Implemented authentication and data management with Entity Framework.",
+        "Frontend Support: Assisted frontend developers as needed, helping with frontend-related tasks and resolving any issues."
+      ],
+      "achievements": [
+        "In this project, I started as a frontend developer and became a full-stack developer, taking on key responsibilities. I gained valuable experience and learned a lot from it."
+      ],
+      "techs": ["React", "React Native", ".NET Core"]
+    },
+    {
+      "image": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742485711/luc7kvwmhgltxqwp8tdi.png",
+      "url": "https://www.milesatsea.com",
+      "title": "Miles At Sea",
+      "subtitle": "Travel Tracking",
+      "description": [
+        "An application for tracking and logging distance traveled, with rewards earned based on completing quests along the route."
+      ],
+      "role": [
+        "Google Maps Integration: Integrated the Google Maps API to enable distance tracking functionality within the application.",
+        "Mobile UI Development: Developed and implemented the mobile UI to ensure a functional user experience."
+      ],
+      "achievements": [
+        "In this project, we integrated the distance tracking API and developed the mobile UI. I learned the importance of testing and using mocks."
+      ],
+      "techs": ["React Native", "Firebase", "Google Map APIs"]
+    },
+    {
+      "image": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742485711/qwk5uqpoq7hskpwhk3n7.png",
+      "title": "Osouji",
+      "subtitle": "Cleaner booking",
+      "role": [
+        "Mobile Development: Built the job marketplace UI based on Figma designs.",
+        "Backend Integration: Assisted in backend tasks by collaborating with backend developers to ensure seamless integration between mobile UI and core features."
+      ],
+      "description": [
+        "A job marketplace focused on services related to house cleaning and hotels, integrating payment systems and providing directions for seamless transactions."
+      ],
+      "achievements": [
+        "In this project, I worked on mobile development, following Figma designs to build the UI, and collaborated with backend developers to ensure core functionality. It was my first project as a mobile developer, and I learned a lot from my mentor."
+      ],
+      "techs": ["React Native"]
+    },
+    {
+      "image": "",
+      "title": "Vio Studio",
+      "description": [
+        "A platform aimed at providing students with real-time information about current and upcoming events in their vicinity."
+      ],
+      "role": [
+        "Frontend Development: Created the frontend web application following Figma designs, ensuring a functional and responsive user experience.",
+        "Frontend Management: Managed frontend tasks, including task allocation and progress tracking."
+      ],
+      "achievements": [
+        "In this project, I worked closely with the client to define the solution, collaborated with the freelancer team, and managed the frontend development team to meet project deadlines."
+      ],
+      "techs": ["React", "Django"]
+    }
+  ],
+  "sides": [
+    {
+      "url": "https://www.congvc.com",
+      "title": "Personal Portfolio Website",
+      "image": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742476414/ph9qvavzri0lcxu5deyd.png",
+      "demo": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742478064/t7wjxfihkfagrmv9iewk.gif",
+      "description": [
+        "A responsive portfolio website built with React and Tailwind CSS, showcasing my projects and skills. Designed to deliver a smooth user experience on both desktop and mobile devices.",
+        "Achieved a Performance score of over 90 on Google PageSpeed Insights."
+      ],
+      "features": [
+        "Responsive Design: Optimized for all screen sizes with Tailwind CSS, providing an engaging experience on both desktop and mobile.",
+        "Deployed with Vercel: Hosted on Vercel and automatic updates with every Git commit."
+      ],
+      "techs": ["React", "Tailwind CSS", "Shadcn"],
+      "objective": "Create a responsive and visually appealing website to showcase my projects, skills, and experience.",
+      "repo": "https://github.com/cngvc/joes-portfolio"
+    },
+    {
+      "url": "https://meme-network.congvc.com/",
+      "title": "MEME Network",
+      "image": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742476414/xdmrwxaveec9xchbkfb5.png",
+      "demo": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742475094/y5gbg8aw5rsv8orrjsll.gif",
+      "subtitle": "Presale token on sepolia testnet",
+      "description": [
+        "A decentralized application (DApp) that combines a React frontend with a smart contract using Solidity, allowing users to interact with the Ethereum blockchain."
+      ],
+      "features": [
+        "Smart Contract Development: Created using Hardhat, enabling deployment and testing on the Ethereum network.",
+        "Blockchain Interaction: Users can interact with smart contract functions directly from the React frontend.",
+        "Wallet Connection: Integrates Rainbow to connect MetaMask for user authentication and transaction handling.",
+        "Testnet Support: Allows users to make presale transactions through the Sepolia testnet"
+      ],
+      "techs": ["React", "Tailwind CSS", "Hardhat", "Rainbow", "Ethers.js"],
+      "objective": "Develop a full-stack web3 application integrating React with smart contracts using Hardhat and wallet connectivity.",
+      "repo": "https://github.com/cngvc/simple-token-presale"
+    },
+    {
+      "url": "https://github.com/cngvc/theshopi",
+      "title": "The Shopi",
+      "subtitle": "Scalable e-commerce platform with microservices architecture",
+      "description": [
+        "An e-commerce platform built with a microservices architecture. It is designed to handle essential workflows like user auth, product management, cart operations, order processing, and real-time communication.",
+        "The project is powered entirely by Node.js, with a hybrid API Gateway that uses HTTP for client-facing requests and gRPC for service-to-service communication."
+      ],
+      "features": [
+        "Microservices Architecture: Separate services for features communicating via gRPC and RabbitMQ. Containerized with Docker for deployment flexibility.",
+        "Authentication: Supports OAuth (GitHub SSO) and email-password authentication with JWT, Key-Token, Fingerprint, and RBAC for secure multi-device refresh tokens.",
+        "High-performance Search: Utilizes Elasticsearch for fast object searching, syncing data whenever a new object is added/updated.",
+        "Real-time Communication: A Socket service handles connections for chat and presence status.",
+        "Asynchronous Event Handling: RabbitMQ for handling events like object create/updates, authentication requirements, and payment confirmations, etc."
+      ],
+      "techs": [
+        "Node.js",
+        "TypeORM",
+        "Elasticsearch",
+        "MongoDB",
+        "MySQL",
+        "Redis",
+        "RabbitMQ",
+        "gRPC",
+        "Docker"
+      ],
+      "objective": "Build a scalable e-commerce system with microservices architecture, as a way to gain experience with large projects due to limited time working on them in a job. Future enhancements will include GraphQL, a Recommendation System, Load Balancing, ELS Stack, CI/CD with Kubernetes and Jenkins, and a fully developed frontend.",
+      "repo": "https://github.com/cngvc/theshopi"
+    }
+  ]
+}

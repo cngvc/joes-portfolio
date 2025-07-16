@@ -1,0 +1,7 @@
+# robots.txt for Portfolio
+
+User-agent: *
+Allow: /
+
+# Sitemap location (if available)
+Sitemap: https://congvc.com/sitemap.xml
