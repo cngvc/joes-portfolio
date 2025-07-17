@@ -1,8 +1,7 @@
-import { lazy, Suspense, useState } from "react";
+import FsLightbox from "fslightbox-react";
+import { Suspense, useState } from "react";
 import { projects } from "../content.json";
 import Project from "./project-item";
-
-const FsLightbox = lazy(() => import("fslightbox-react"));
 
 const images = projects.map((e) => e.image);
 

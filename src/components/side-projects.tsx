@@ -1,8 +1,8 @@
-import { lazy, Suspense, useState } from "react";
+import FsLightbox from "fslightbox-react";
+import { Suspense, useState } from "react";
 import { sides } from "../content.json";
 import SideProject from "./side-project";
 
-const FsLightbox = lazy(() => import("fslightbox-react"));
 const images = sides.map((e) => `${e.demo}`);
 
 const SideProjects = () => {
