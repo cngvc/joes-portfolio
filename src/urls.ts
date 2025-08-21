@@ -1,7 +1,7 @@
 export const externals = {
   linkedin: "https://www.linkedin.com/in/jvudev/",
   github: "https://github.com/cngvc",
-  email: "mailto:joevu.work@gmail.com",
+  email: "mailto:congvu.work@gmail.com",
   leetcode: "https://leetcode.com/u/cngvc/",
 };
 
