@@ -4,4 +4,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location (if available)
-Sitemap: https://congvc.com/sitemap.xml
+Sitemap: https://joevuportfolio.vercel.app/sitemap.xml

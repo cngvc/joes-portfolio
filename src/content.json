@@ -5,7 +5,7 @@
   "bio": "5+ years of experience in building large-scale projects (combining both Backend and Frontend development) using <span class='text-normal-primary'>React, Next.js</span> and <span class='text-normal-primary'>Node.js</span>. Skilled in optimizing UI/UX and working with cross-functional teams and product development through diverse domains.",
   "companies": [
     {
-      "time": "Feb 2023 - Present",
+      "time": "Feb 2023 - Nov 2025",
       "company": "GK-Team (Freelancer Team)",
       "role": "Full-Stack Developer",
       "description": "Collaborated with clients in Vietnam and the United States to deliver scalable web and mobile applications.",
@@ -16,7 +16,8 @@
         "Developed solidity-based purchase systems, successfully deploying 3+ projects.",
         "Developed responsive, mobile-first landing pages from Figma designs, focusing on mobile-first design and aligning closely with client requirements.",
         "Provided client support to ensure system reliability and timely issue resolution, quickly addressing concerns.",
-        "Developed mobile applications using Expo, authored technical docs, and implemented CI/CD on Azure, improving deployment efficiency and reliability."
+        "Developed mobile applications using Expo, authored technical docs, and implemented CI/CD on Azure, improving deployment efficiency and reliability.",
+        "Developed a full-stack multi-service platform combining Node.js/TypeScript, Next.js and Python microservices for binary file parsing, data processing, and analytics with RBAC."
       ],
       "techs": [
         "Node.js",
@@ -228,7 +229,7 @@
   ],
   "sides": [
     {
-      "url": "https://www.congvc.com",
+      "url": "https://joevuportfolio.vercel.app",
       "title": "Personal Portfolio Website",
       "image": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742476414/ph9qvavzri0lcxu5deyd.png",
       "demo": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742478064/t7wjxfihkfagrmv9iewk.gif",
@@ -245,7 +246,7 @@
       "repo": "https://github.com/cngvc/joes-portfolio"
     },
     {
-      "url": "https://meme-network.congvc.com/",
+      "url": "https://meme-network-coral.vercel.app/",
       "title": "MEME Network",
       "image": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742476414/xdmrwxaveec9xchbkfb5.png",
       "demo": "https://res.cloudinary.com/dm214rrp8/image/upload/v1742475094/y5gbg8aw5rsv8orrjsll.gif",
